@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "273499636998",
+    "project_id": "not-cinema-app",
+    "storage_bucket": "not-cinema-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:273499636998:android:9acc927ca2d5f84c3c8a87",
+        "android_client_info": {
+          "package_name": "com.example.groupproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "273499636998-ft5hl1t3uinluej85csl9komgkio0oto.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBW-8R7gB0I7l2ruSjAYSXHylCqdkDk4g4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "273499636998-ft5hl1t3uinluej85csl9komgkio0oto.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
