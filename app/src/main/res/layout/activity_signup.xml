@@ -11,7 +11,7 @@
         android:id="@+id/tv_text3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="ALREADY HAVE AN ACCOUT? LOGIN"
+        android:text="ALREADY HAVE AN ACCOUNT? LOGIN"
         android:textColor="#858484"
         android:textColorHighlight="#FFFFFF"
         android:textSize="14sp"
