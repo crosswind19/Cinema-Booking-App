@@ -35,8 +35,8 @@
 
     <EditText
         android:id="@+id/tv_fullname"
-        android:layout_width="365dp"
-        android:layout_height="50dp"
+        android:layout_width="280dp"
+        android:layout_height="45dp"
         android:ems="10"
         android:hint="Full Name"
         android:inputType="textPersonName"
@@ -45,15 +45,15 @@
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.63"
+        app:layout_constraintHorizontal_bias="0.534"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.458" />
+        app:layout_constraintVertical_bias="0.454" />
 
     <EditText
         android:id="@+id/tv_username2"
-        android:layout_width="363dp"
-        android:layout_height="47dp"
+        android:layout_width="280dp"
+        android:layout_height="45dp"
         android:ems="10"
         android:hint="Username"
         android:inputType="textPersonName"
@@ -61,15 +61,15 @@
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.589"
+        app:layout_constraintHorizontal_bias="0.549"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.544" />
+        app:layout_constraintVertical_bias="0.553" />
 
     <EditText
         android:id="@+id/tv_email"
-        android:layout_width="365dp"
-        android:layout_height="49dp"
+        android:layout_width="280dp"
+        android:layout_height="45dp"
         android:ems="10"
         android:hint="Email"
         android:inputType="textEmailAddress"
@@ -77,15 +77,15 @@
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.652"
+        app:layout_constraintHorizontal_bias="0.549"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.636" />
+        app:layout_constraintVertical_bias="0.635" />
 
     <EditText
         android:id="@+id/tv_phoneno"
-        android:layout_width="366dp"
-        android:layout_height="53dp"
+        android:layout_width="280dp"
+        android:layout_height="45dp"
         android:ems="10"
         android:hint="Phone No."
         android:inputType="phone"
@@ -94,15 +94,15 @@
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.644"
+        app:layout_constraintHorizontal_bias="0.549"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.727" />
 
     <EditText
         android:id="@+id/tv_password2"
-        android:layout_width="366dp"
-        android:layout_height="52dp"
+        android:layout_width="280dp"
+        android:layout_height="45dp"
         android:ems="10"
         android:hint="Password"
         android:inputType="textPassword"
@@ -110,10 +110,10 @@
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.644"
+        app:layout_constraintHorizontal_bias="0.549"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.824" />
+        app:layout_constraintVertical_bias="0.823" />
 
     <TextView
         android:id="@+id/tv_text"
