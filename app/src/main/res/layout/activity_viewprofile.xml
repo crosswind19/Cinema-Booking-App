@@ -6,45 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".activity_viewprofile">
 
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/navigation_viewprofile"
-        android:layout_width="563dp"
-        android:layout_height="93dp"
-        android:layout_marginTop="872dp"
-        android:background="#FDD4C1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.138"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <ImageButton
-            android:id="@+id/ib_viewprofile"
-            android:layout_width="63dp"
-            android:layout_height="73dp"
-            android:layout_gravity="center|right"
-            android:background="#AA2323"
-            android:scaleType="fitCenter"
-            app:srcCompat="@drawable/ic_viewprofile" />
-
-        <ImageButton
-            android:id="@+id/ib_menu"
-            android:layout_width="58dp"
-            android:layout_height="55dp"
-            android:layout_gravity="center|center"
-            android:background="#FF412525"
-            android:scaleType="fitCenter"
-            app:srcCompat="@drawable/ic_viewmenu" />
-
-        <ImageButton
-            android:id="@+id/ib_home"
-            android:layout_width="66dp"
-            android:layout_height="71dp"
-            android:layout_gravity="center|left"
-            android:background="#FFFFFF"
-            android:scaleType="fitCenter"
-            app:srcCompat="@drawable/ic_viewhome" />
-    </com.google.android.material.bottomnavigation.BottomNavigationView>
-
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="180dp"
@@ -60,13 +21,13 @@
         android:id="@+id/imageView3"
         android:layout_width="33dp"
         android:layout_height="26dp"
-        android:background="#FF412525"
+        android:background="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.079"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.348"
+        app:layout_constraintVertical_bias="0.358"
         app:srcCompat="@drawable/ic_name" />
 
     <TextView
@@ -77,24 +38,24 @@
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.203"
+        app:layout_constraintHorizontal_bias="0.213"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.349" />
+        app:layout_constraintVertical_bias="0.359" />
 
     <EditText
         android:id="@+id/pt_name"
-        android:layout_width="384dp"
+        android:layout_width="280dp"
         android:layout_height="46dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Your Name"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.527"
+        app:layout_constraintHorizontal_bias="0.511"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.384" />
+        app:layout_constraintVertical_bias="0.398" />
 
     <ImageView
         android:id="@+id/iv_email"
@@ -105,7 +66,7 @@
         app:layout_constraintHorizontal_bias="0.079"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.458"
+        app:layout_constraintVertical_bias="0.472"
         app:srcCompat="@drawable/ic_email" />
 
     <TextView
@@ -116,24 +77,24 @@
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.183"
+        app:layout_constraintHorizontal_bias="0.182"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.457" />
+        app:layout_constraintVertical_bias="0.471" />
 
     <EditText
         android:id="@+id/e_mail1"
-        android:layout_width="384dp"
+        android:layout_width="280dp"
         android:layout_height="46dp"
         android:ems="10"
         android:inputType="textEmailAddress"
         android:text="Your Email Address"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.527"
+        app:layout_constraintHorizontal_bias="0.511"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.494" />
+        app:layout_constraintVertical_bias="0.521" />
 
     <ImageView
         android:id="@+id/iv_phone"
@@ -144,73 +105,90 @@
         app:layout_constraintHorizontal_bias="0.079"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.561"
+        app:layout_constraintVertical_bias="0.594"
         app:srcCompat="@drawable/ic_phone" />
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="137dp"
         android:layout_height="30dp"
+        android:layout_marginTop="416dp"
         android:text="Phone Number"
         android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="@+id/navigation_viewprofile"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.222"
+        app:layout_constraintHorizontal_bias="0.244"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.561" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/phone1"
-        android:layout_width="384dp"
+        android:layout_width="280dp"
         android:layout_height="46dp"
         android:ems="10"
         android:inputType="phone"
         android:text="Your Phone Number"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.527"
+        app:layout_constraintHorizontal_bias="0.511"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.601" />
+        app:layout_constraintVertical_bias="0.639" />
 
     <Button
         android:id="@+id/btn_changeprofile"
-        android:layout_width="300dp"
-        android:layout_height="61dp"
+        android:layout_width="182dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="496dp"
         android:text="Change Profile Picture"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="@+id/navigation_viewprofile"
+        android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintHorizontal_bias="0.93"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.696" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/btn_changepass"
-        android:layout_width="300dp"
-        android:layout_height="61dp"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
         android:text="CHANGE PASSWORD"
-        android:textSize="18sp"
+        android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintHorizontal_bias="0.075"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.779" />
+        app:layout_constraintVertical_bias="0.729" />
 
     <Button
         android:id="@+id/button3"
-        android:layout_width="300dp"
+        android:layout_width="215dp"
         android:layout_height="61dp"
         android:text="LOGOUT"
-        android:textSize="18sp"
+        android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.484"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.862" />
+        app:layout_constraintVertical_bias="0.831" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="416dp"
+        android:layout_height="55dp"
+        android:background="#E8B298"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" >
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:background="#E8B298"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/ic_viewhome" />
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
