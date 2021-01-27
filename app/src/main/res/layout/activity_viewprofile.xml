@@ -138,13 +138,15 @@
         android:id="@+id/btn_changeprofile"
         android:layout_width="182dp"
         android:layout_height="53dp"
-        android:layout_marginTop="496dp"
         android:text="Change Profile Picture"
         android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.93"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.728" />
 
     <Button
         android:id="@+id/btn_changepass"
@@ -152,6 +154,7 @@
         android:layout_height="50dp"
         android:text="CHANGE PASSWORD"
         android:textSize="14sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.075"
@@ -165,6 +168,7 @@
         android:layout_height="61dp"
         android:text="LOGOUT"
         android:textSize="14sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -184,11 +188,31 @@
 
         <ImageButton
             android:id="@+id/imageButton"
-            android:layout_width="45dp"
-            android:layout_height="match_parent"
+            android:layout_width="46dp"
+            android:layout_height="43dp"
+            android:layout_gravity="center|left"
             android:background="#E8B298"
             android:scaleType="fitXY"
             app:srcCompat="@drawable/ic_viewhome" />
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="46dp"
+            android:layout_height="43dp"
+            android:layout_gravity="center|center_horizontal"
+            android:background="#E8B298"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/ic_viewmenu" />
+
+        <ImageButton
+            android:id="@+id/imageButton4"
+            android:layout_width="46dp"
+            android:layout_height="43dp"
+            android:layout_gravity="center|right
+"
+            android:background="#E8B298"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/ic_viewprofile" />
     </com.google.android.material.bottomnavigation.BottomNavigationView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
