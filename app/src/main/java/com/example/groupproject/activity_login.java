@@ -1,6 +1,7 @@
 package com.example.groupproject;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.DialogInterface;
@@ -18,6 +19,7 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 public class activity_login extends AppCompatActivity {
 
@@ -65,8 +67,7 @@ public class activity_login extends AppCompatActivity {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if(task.isSuccessful()){
-                            Toast.makeText(activity_login.this, "Login Successful", Toast.LENGTH_SHORT).show();
-                            startActivity(new Intent(getApplicationContext(), MainActivity.class));
+                            checkEmailVerification(v);
                         } else {
                             Toast.makeText(activity_login.this, "Error !" + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
                             counter--;
@@ -95,16 +96,28 @@ public class activity_login extends AppCompatActivity {
         });
     }
 
-  /*  private void validate(String userName, String userPassword){
-        if((userName == "Admin") && (userPassword == "1234")){
-            Intent intent = new Intent(activity_login.this, MainActivity.class);
-            startActivity(intent);
+    private void checkEmailVerification(View v){
+        FirebaseUser fUser = fAuth.getInstance().getCurrentUser();
+        Boolean emailflag = fUser.isEmailVerified();
+      if(emailflag){
+          finish();
+          Toast.makeText(activity_login.this, "Login Successful", Toast.LENGTH_SHORT).show();
+          startActivity(new Intent(getApplicationContext(), MainActivity.class));
         }else{
-            counter--;
+          EditText verifyEmail = new EditText(v.getContext());
+          AlertDialog.Builder verifyEmailDialog = new AlertDialog.Builder(v.getContext());
+          verifyEmailDialog.setTitle("Error! Email not verified");
+          verifyEmailDialog.setMessage("Please verify your email before login");
 
-            if(counter==0){
-                Login.setEnabled(false);
-            }
+          verifyEmailDialog.setNegativeButton("Close", new DialogInterface.OnClickListener() {
+              @Override
+              public void onClick(DialogInterface dialog, int which) {
+              }
+          });
+
+          verifyEmailDialog.create().show();
+          fAuth.signOut();
         }
-    }*/
+    }
+
 }
