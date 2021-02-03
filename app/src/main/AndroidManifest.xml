@@ -11,7 +11,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.GROUPPROJECT">
-        <activity android:name=".activity_viewprofile"></activity>
+        <activity android:name=".changeprofile"></activity>
+        <activity android:name=".changepassword" />
+        <activity android:name=".activity_viewprofile" />
         <activity android:name=".MainActivity" />
         <activity android:name=".activity_forgotpassword" />
         <activity android:name=".activity_signup" />
