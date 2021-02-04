@@ -7,7 +7,7 @@
     tools:context=".activity_viewprofile">
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/tv_ProfileEmail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="tmg_111@hotmail.my"
@@ -21,7 +21,7 @@
         app:layout_constraintVertical_bias="0.519" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/tv_ProfilePhone"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="011-1221 2112"
@@ -204,7 +204,7 @@
     </com.google.android.material.bottomnavigation.BottomNavigationView>
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/tv_ProfileName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="tgvmbogsc_111"
