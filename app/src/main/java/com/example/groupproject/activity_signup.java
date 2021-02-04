@@ -61,12 +61,7 @@ public class activity_signup extends AppCompatActivity {
                         @Override
                         public void onComplete(@NonNull Task<AuthResult> task) {
                             if (task.isSuccessful()) {
-//                                sendEmailVerification();
-//                                sendUserData();
-                                sendUserData();
-                                fAuth.signOut();
-                                Toast.makeText(activity_signup.this, "Verification link has been sent.", Toast.LENGTH_SHORT).show();
-                                finish();
+                              sendEmailVerification();
                             }else{
                                 Toast.makeText(activity_signup.this, "Registration Failed", Toast.LENGTH_SHORT).show();
                             }
@@ -128,10 +123,9 @@ public class activity_signup extends AppCompatActivity {
                 public void onComplete(@NonNull Task<Void> task) {
                     if(task.isSuccessful()){
                         sendUserData();
-                        Toast.makeText(activity_signup.this, "Verification link has been sent.", Toast.LENGTH_SHORT).show();
                         fAuth.signOut();
+                        Toast.makeText(activity_signup.this, "User register complete,verification link has been sent.", Toast.LENGTH_SHORT).show();
                         finish();
-                        Toast.makeText(activity_signup.this, "User Created", Toast.LENGTH_SHORT).show();
                         startActivity(new Intent(getApplicationContext(), activity_login.class));
                     }else {
                         Toast.makeText(activity_signup.this, "Verification link has not been sent.", Toast.LENGTH_SHORT).show();
