@@ -38,15 +38,17 @@ public class activity_viewprofile extends AppCompatActivity {
         firebaseAuth = FirebaseAuth.getInstance();
         firebaseDatabase = FirebaseDatabase.getInstance();
 
-        DatabaseReference databaseReference = firebaseDatabase.getReference(firebaseAuth.getCurrentUser().getUid());
+        DatabaseReference databaseReference = firebaseDatabase.getReference(firebaseAuth.getUid());
 
         databaseReference.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
-                UserProfile userProfile = snapshot.getValue(UserProfile.class);
-                pName.setText(userProfile.getName());
-                pEmail.setText(userProfile.getEmailAddress());
-                pPhone.setText(userProfile.getPhone());
+                String Email = snapshot.child("EmailAddress").getValue().toString();
+                String Name = snapshot.child("Name").getValue().toString();
+                String Phone = snapshot.child("Phone").getValue().toString();
+                pName.setText(Name);
+                pEmail.setText(Email);
+                pPhone.setText(Phone);
             }
 
             @Override
