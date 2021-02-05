@@ -44,9 +44,9 @@ public class activity_viewprofile extends AppCompatActivity {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 UserProfile userProfile = snapshot.getValue(UserProfile.class);
-               /* pName.setText(userProfile.getName());
+                pName.setText(userProfile.getName());
                 pEmail.setText(userProfile.getEmailAddress());
-                pPhone.setText(userProfile.getPhone());*/
+                pPhone.setText(userProfile.getPhone());
             }
 
             @Override
