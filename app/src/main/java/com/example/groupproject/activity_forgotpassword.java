@@ -27,17 +27,14 @@ public class activity_forgotpassword extends AppCompatActivity {
 
         passwordEmail = (EditText)findViewById(R.id.tv_sendemailtoresetpass);
         resetPassword = (Button)findViewById(R.id.btn_reset);
-        //database function
         firebaseAuth = FirebaseAuth.getInstance();
 
         resetPassword.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //fetching user email, convert to string then remove all whitespaces.
                 String useremail = passwordEmail.getText().toString().trim();
 
                 if(useremail.equals("")) {
-                    //if user does not enter anything into the text box
                     Toast.makeText(activity_forgotpassword.this, "Please enter your registered email ID.", Toast.LENGTH_LONG).show();
                 } else {
                     firebaseAuth.sendPasswordResetEmail(useremail).addOnCompleteListener(new OnCompleteListener<Void>() {

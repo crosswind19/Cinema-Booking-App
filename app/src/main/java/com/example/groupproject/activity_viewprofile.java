@@ -3,7 +3,10 @@ package com.example.groupproject;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.MenuItem;
+import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -20,7 +23,7 @@ public class activity_viewprofile extends AppCompatActivity {
 
     private ImageView ProfilePic;
     private TextView pName, pEmail, pPhone;
-    private Button pChangeProfile;
+    private Button pChangeProfile, pChangePassword, pLogout;
     private FirebaseAuth firebaseAuth;
     private FirebaseDatabase firebaseDatabase;
 
@@ -34,6 +37,8 @@ public class activity_viewprofile extends AppCompatActivity {
         pEmail = findViewById(R.id.tv_ProfileEmail);
         pPhone = findViewById(R.id.tv_ProfilePhone);
         pChangeProfile = findViewById(R.id.btn_changeprofile);
+        pChangePassword = findViewById(R.id.btn_changepass);
+        pLogout = findViewById(R.id.btn_edit);
 
         firebaseAuth = FirebaseAuth.getInstance();
         firebaseDatabase = FirebaseDatabase.getInstance();
@@ -56,5 +61,36 @@ public class activity_viewprofile extends AppCompatActivity {
                 Toast.makeText(activity_viewprofile.this, error.getCode(), Toast.LENGTH_SHORT).show();
             }
         });
+
+        pChangeProfile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(activity_viewprofile.this, changeprofile.class));
+            }
+        });
+
+        pChangePassword.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(activity_viewprofile.this, changepassword.class));
+            }
+        });
+
+        pLogout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FirebaseAuth.getInstance().signOut();
+                startActivity(new Intent(activity_viewprofile.this, activity_login.class));
+                finish();
+            }
+        });
+    }
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item){
+        switch(item.getItemId()){
+            case android.R.id.home:
+                onBackPressed();
+        }
+        return super.onOptionsItemSelected(item);
     }
 }
