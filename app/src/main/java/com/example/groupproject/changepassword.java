@@ -38,33 +38,16 @@ public class changepassword extends AppCompatActivity {
         reset.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(!oldPassword.toString().equals("") || !newPassword.toString().equals("") || !reNewPassword.toString().equals("")) {
-                    if (!oldPassword.equals(newPassword)) {
-                        if (newPassword.length() >= 8 && newPassword.equals(reNewPassword)) {
-                            String userPasswordNew = newPassword.getText().toString();
-                            firebaseUser.updatePassword(userPasswordNew).addOnCompleteListener(new OnCompleteListener<Void>() {
-                                @Override
-                                public void onComplete(@NonNull Task<Void> task) {
-                                    if (task.isSuccessful())
-                                        Toast.makeText(changepassword.this, "Password Changed", Toast.LENGTH_SHORT).show();
-                                    else
-                                        Toast.makeText(changepassword.this, "Password Update Failed", Toast.LENGTH_SHORT).show();
-                                }
-                            });
-                        } else {
-                            newPassword.setError("Password does not match");
-                            reNewPassword.setError("Password does not match");
-                        }
-                    } else
-                        newPassword.setError("New Password can't be Old Password");
-                } else {
-                    if(oldPassword == null)
-                        oldPassword.setError("This field cannot be left empty");
-                    else if(newPassword == null)
-                        newPassword.setError("This field cannot be left empty");
-                    else if(reNewPassword == null)
-                        reNewPassword.setError("This field cannot be left empty");
-                }
+                String userPasswordNew = newPassword.getText().toString();
+                firebaseUser.updatePassword(userPasswordNew).addOnCompleteListener(new OnCompleteListener<Void>() {
+                    @Override
+                    public void onComplete(@NonNull Task<Void> task) {
+                        if (task.isSuccessful())
+                            Toast.makeText(changepassword.this, "Password Changed", Toast.LENGTH_SHORT).show();
+                        else
+                            Toast.makeText(changepassword.this, "Password Update Failed", Toast.LENGTH_SHORT).show();
+                    }
+                });
             }
         });
     }
