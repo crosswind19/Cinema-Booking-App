@@ -11,8 +11,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".activity_viewprofile"
-        tools:layout_editor_absoluteX="-98dp"
-        tools:layout_editor_absoluteY="0dp">
+        tools:layout_editor_absoluteX="-184dp"
+        tools:layout_editor_absoluteY="-229dp">
 
         <TextView
             android:id="@+id/tv_resetpassword2"
@@ -37,12 +37,12 @@
             android:ems="10"
             android:inputType="textPersonName"
             android:text="011_1221 2112"
-            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintBottom_toBottomOf="@+id/bottomNavigationView"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.577"
+            app:layout_constraintHorizontal_bias="0.422"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView4"
-            app:layout_constraintVertical_bias="0.075" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.72" />
 
         <ImageView
             android:id="@+id/iv_profilePic"
@@ -145,6 +145,46 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.859" />
 
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigationView"
+            android:layout_width="416dp"
+            android:layout_height="55dp"
+            android:background="#E8B298"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.6"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0">
+
+            <ImageButton
+                android:id="@+id/imageButton"
+                android:layout_width="46dp"
+                android:layout_height="43dp"
+                android:layout_gravity="center|left"
+                android:background="#E8B298"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/ic_viewhome" />
+
+            <ImageButton
+                android:id="@+id/imageButton2"
+                android:layout_width="46dp"
+                android:layout_height="43dp"
+                android:layout_gravity="center|center_horizontal"
+                android:background="#E8B298"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/ic_viewmenu" />
+
+            <ImageButton
+                android:id="@+id/imageButton4"
+                android:layout_width="46dp"
+                android:layout_height="43dp"
+                android:layout_gravity="center|right
+"
+                android:background="#E8B298"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/ic_viewprofile" />
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
 
         <EditText
             android:id="@+id/tv_newname"
@@ -153,11 +193,14 @@
             android:ems="10"
             android:inputType="textPersonName"
             android:text="tgvmbogsc_111"
-            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintBottom_toBottomOf="@+id/bottomNavigationView"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.422"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tv_name"
-            app:layout_constraintVertical_bias="0.02" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.455" />
+
+
 
         <Button
             android:id="@+id/button"
@@ -179,12 +222,12 @@
             android:text="tmg_111@hotmail.my"
             android:textColor="#0C0202"
             android:textSize="18sp"
-            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintBottom_toBottomOf="@+id/bottomNavigationView"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.291"
+            app:layout_constraintHorizontal_bias="0.205"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tv_email1"
-            app:layout_constraintVertical_bias="0.03" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.577" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
