@@ -76,6 +76,7 @@
     <orderEntry type="library" name="Gradle: androidx.appcompat:appcompat:1.2.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.google.firebase:firebase-database:19.6.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.google.firebase:firebase-firestore:22.0.1@aar" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.firebase:firebase-storage:19.2.1@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.google.firebase:firebase-auth:20.0.2@aar" level="project" />
     <orderEntry type="library" name="Gradle: androidx.viewpager2:viewpager2:1.0.0@aar" level="project" />
     <orderEntry type="library" name="Gradle: com.google.firebase:firebase-auth-interop:19.0.0@aar" level="project" />
@@ -141,6 +142,6 @@
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.test:runner:1.1.0-alpha3@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.test:monitor:1.1.0-alpha3@aar" level="project" />
     <orderEntry type="library" scope="TEST" name="Gradle: androidx.test.espresso:espresso-idling-resource:3.1.0-alpha3@aar" level="project" />
-    <orderEntry type="library" scope="TEST" name="Gradle: junit:junit:4.13.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: junit:junit:4.13.2" level="project" />
   </component>
 </module>
