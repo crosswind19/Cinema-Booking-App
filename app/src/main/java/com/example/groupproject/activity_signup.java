@@ -65,8 +65,7 @@ public class activity_signup extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signup);
-
-
+        
         Fullname = findViewById(R.id.tv_fullname);
         Username = findViewById(R.id.tv_username2);
         Email = findViewById(R.id.tv_email);
@@ -74,6 +73,7 @@ public class activity_signup extends AppCompatActivity {
         Password = findViewById(R.id.tv_password2);
         Go = findViewById(R.id.btn_go);
         Login = findViewById(R.id.tv_text3);
+        userProfilePic = findViewById(R.id.iv_userProfile);
 
         fAuth = FirebaseAuth.getInstance();
         fStore = FirebaseFirestore.getInstance();
