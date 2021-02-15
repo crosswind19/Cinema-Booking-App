@@ -15,10 +15,10 @@
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.426"
+        app:layout_constraintHorizontal_bias="0.373"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_email1"
-        app:layout_constraintVertical_bias="0.042" />
+        app:layout_constraintVertical_bias="0.044" />
 
     <TextView
         android:id="@+id/tv_ProfilePhone"
@@ -52,6 +52,7 @@
         android:id="@+id/tv_name"
         android:layout_width="97dp"
         android:layout_height="20dp"
+        android:layout_marginTop="39dp"
         android:layout_marginBottom="468dp"
         android:text="Full Name"
         android:textSize="18sp"
@@ -60,7 +61,7 @@
         app:layout_constraintHorizontal_bias="0.03"
         app:layout_constraintStart_toEndOf="@+id/imageView3"
         app:layout_constraintTop_toBottomOf="@+id/iv_profilePic"
-        app:layout_constraintVertical_bias="0.8" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <ImageView
         android:id="@+id/iv_email"
@@ -71,7 +72,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.042"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_ProfileName"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
         app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/ic_email" />
 
@@ -93,11 +94,13 @@
         android:id="@+id/iv_phone"
         android:layout_width="33dp"
         android:layout_height="26dp"
-        android:layout_marginBottom="296dp"
+        android:layout_marginBottom="292dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.063"
+        app:layout_constraintHorizontal_bias="0.042"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_email"
+        app:layout_constraintVertical_bias="0.903"
         app:srcCompat="@drawable/ic_phone" />
 
     <TextView
@@ -175,8 +178,8 @@
 
     <ImageView
         android:id="@+id/iv_profilePic"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
