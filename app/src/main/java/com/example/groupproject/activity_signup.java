@@ -182,7 +182,7 @@ public class activity_signup extends AppCompatActivity {
 
     private void sendUserData(){
         FirebaseDatabase firebaseDatabase = FirebaseDatabase.getInstance();
-        DatabaseReference myRef = firebaseDatabase.getReference(fAuth.getUid());
+        DatabaseReference myRef = firebaseDatabase.getReference("User Info").child(fAuth.getUid());
         StorageReference imageReference = storageReference.child(fAuth.getUid()).child("Images").child("Profile Pic");
 
         UploadTask uploadTask = imageReference.putFile(imagePath);

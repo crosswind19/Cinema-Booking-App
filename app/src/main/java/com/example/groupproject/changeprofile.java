@@ -69,7 +69,7 @@ public class changeprofile extends AppCompatActivity {
         newUserEmail = findViewById(R.id.tv_newemail);
         newUserPhoneNumber = findViewById(R.id.tv_newnum);
         save = findViewById(R.id.btn_edit);
-        updateProfilePic = (ImageView)findViewById(R.id.iv_profilePic);
+        updateProfilePic = (ImageView)findViewById(R.id.iv_newpic);
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
@@ -79,7 +79,7 @@ public class changeprofile extends AppCompatActivity {
 
 //        final DatabaseReference databaseReference = firebaseDatabase.getReference(firebaseAuth.getUid());
 
-        final DatabaseReference databaseReference = firebaseDatabase.getReference("UserInfo").child(firebaseAuth.getUid());
+        final DatabaseReference databaseReference = firebaseDatabase.getReference("User Info").child(firebaseAuth.getUid());
         storageReference = firebaseStorage.getReference();
 
         StorageReference mImageRef = FirebaseStorage.getInstance().getReference().child(firebaseAuth.getUid()).child("Images").child("Profile Pic");
@@ -119,10 +119,10 @@ public class changeprofile extends AppCompatActivity {
         databaseReference.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
-                UserProfile userProfile = snapshot.getValue(UserProfile.class);
-                String Email = snapshot.child("EmailAddress").getValue().toString();
-                String Name = snapshot.child("Name").getValue().toString();
-                String Phone = snapshot.child("Phone").getValue().toString();
+//                UserProfile userProfile = snapshot.getValue(UserProfile.class);
+                String Email = snapshot.child("emailAddress").getValue().toString();
+                String Name = snapshot.child("name").getValue().toString();
+                String Phone = snapshot.child("phone").getValue().toString();
                 newUserName.setText(Name);
                 newUserEmail.setText(Email);
                 newUserPhoneNumber.setText(Phone);

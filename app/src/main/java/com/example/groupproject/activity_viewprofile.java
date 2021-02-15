@@ -73,9 +73,9 @@ public class activity_viewprofile extends AppCompatActivity {
         firebaseDatabase = FirebaseDatabase.getInstance();
         firebaseStorage = FirebaseStorage.getInstance();
 
-        DatabaseReference databaseReference = firebaseDatabase.getReference(firebaseAuth.getUid());
+        DatabaseReference databaseReference = firebaseDatabase.getReference("User Info").child(firebaseAuth.getUid());
 
-        StorageReference storageReference = firebaseStorage.getReference();
+        storageReference = firebaseStorage.getReference();
 
         StorageReference mImageRef = FirebaseStorage.getInstance().getReference().child(firebaseAuth.getUid()).child("Images").child("Profile Pic");
         final long ONE_MEGABYTE = 1024 * 1024;
@@ -101,9 +101,13 @@ public class activity_viewprofile extends AppCompatActivity {
         databaseReference.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
-                String Email = snapshot.child("EmailAddress").getValue().toString();
-                String Name = snapshot.child("Name").getValue().toString();
-                String Phone = snapshot.child("Phone").getValue().toString();
+//                UserProfile classUserProfile = snapshot.getValue(UserProfile.class);
+//                pName.setText("Name: " + classUserProfile.getName());
+//                pEmail.setText("Email: " + classUserProfile.getEmailAddress());
+//                pPhone.setText("Phone: " + classUserProfile.getPhone());
+                String Email = snapshot.child("emailAddress").getValue().toString();
+                String Name = snapshot.child("name").getValue().toString();
+                String Phone = snapshot.child("phone").getValue().toString();
                 pName.setText(Name);
                 pEmail.setText(Email);
                 pPhone.setText(Phone);
