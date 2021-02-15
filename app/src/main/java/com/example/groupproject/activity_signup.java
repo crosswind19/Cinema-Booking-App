@@ -153,8 +153,6 @@ public class activity_signup extends AppCompatActivity {
         else if (TextUtils.isEmpty(phone)){
             Phoneno.setError("Phone Number is Required.");
 
-        }else if (imagePath == null){
-            Toast.makeText(this,"Please insert Profile Picture", Toast.LENGTH_SHORT).show();
         }else{
             result = true;
         }
