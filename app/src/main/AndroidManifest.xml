@@ -11,7 +11,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.GROUPPROJECT">
-        <activity android:name=".viewmenu"></activity>
+        <activity android:name=".bookinginfo"></activity>
+        <activity android:name=".showingmovie" />
+        <activity android:name=".comingsoonmovie2" />
+        <activity android:name=".comingsoonmovie" />
+        <activity android:name=".viewmenu" />
         <activity android:name=".changeprofile" />
         <activity android:name=".changepassword" />
         <activity android:name=".activity_viewprofile" />
