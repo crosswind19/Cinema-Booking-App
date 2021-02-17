@@ -153,14 +153,14 @@ public class changeprofile extends AppCompatActivity {
                     @Override
                     public void onFailure(@NonNull Exception e) {
 
-                        Toast.makeText(changeprofile.this,"Upload Failed", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(changeprofile.this,"Photo exceeds 1mb", Toast.LENGTH_SHORT).show();
                     }
                 }).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
                     @Override
                     public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
 
                         Toast.makeText(changeprofile.this,"Upload Successful", Toast.LENGTH_SHORT).show();
-                        startActivity(new Intent(changeprofile.this, changeprofile.class));
+                        startActivity(new Intent(changeprofile.this, activity_viewprofile.class));
                     }
                 });
             }
