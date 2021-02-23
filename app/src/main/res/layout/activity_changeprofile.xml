@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".activity_viewprofile"
-        tools:layout_editor_absoluteX="124dp"
+        tools:layout_editor_absoluteX="48dp"
         tools:layout_editor_absoluteY="0dp">
 
         <TextView
@@ -64,7 +64,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.079"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/iv_newpic"
+            app:layout_constraintTop_toBottomOf="@+id/tv_description"
             app:layout_constraintVertical_bias="0.059"
             app:srcCompat="@drawable/ic_name" />
 
@@ -78,7 +78,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.043"
             app:layout_constraintStart_toEndOf="@+id/imageView3"
-            app:layout_constraintTop_toBottomOf="@+id/iv_newpic"
+            app:layout_constraintTop_toBottomOf="@+id/tv_description"
             app:layout_constraintVertical_bias="0.06" />
 
         <ImageView
@@ -169,6 +169,17 @@
             app:layout_constraintHorizontal_bias="0.083"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tv_email1" />
+
+        <TextView
+            android:id="@+id/tv_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tap to change profile picture"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iv_newpic"
+            app:layout_constraintVertical_bias="0.0" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

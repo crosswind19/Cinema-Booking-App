@@ -21,7 +21,9 @@
         <activity android:name=".activity_viewprofile" />
         <activity android:name=".MainActivity" />
         <activity android:name=".activity_forgotpassword" />
-        <activity android:name=".activity_signup" />
+        <activity
+            android:name=".activity_signup"
+            android:parentActivityName=".activity_login"/>
         <activity android:name=".activity_login">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

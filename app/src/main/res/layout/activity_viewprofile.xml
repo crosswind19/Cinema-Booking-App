@@ -92,10 +92,10 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.207"
+        app:layout_constraintHorizontal_bias="0.509"
         app:layout_constraintStart_toEndOf="@+id/btn_changepass"
         app:layout_constraintTop_toBottomOf="@+id/tv_ProfilePhone"
-        app:layout_constraintVertical_bias="0.971" />
+        app:layout_constraintVertical_bias="0.974" />
 
     <Button
         android:id="@+id/btn_changepass"
@@ -107,10 +107,10 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.258"
+        app:layout_constraintHorizontal_bias="0.167"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_ProfilePhone"
-        app:layout_constraintVertical_bias="0.943" />
+        app:layout_constraintVertical_bias="0.958" />
 
     <Button
         android:id="@+id/btn_edit"
@@ -148,7 +148,7 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.091"
+        app:layout_constraintVertical_bias="0.05"
         tools:srcCompat="@tools:sample/avatars" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
