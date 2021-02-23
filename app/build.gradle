@@ -49,4 +49,16 @@ dependencies {
     implementation 'com.google.firebase:firebase-auth:20.0.2'
     implementation 'com.google.firebase:firebase-firestore'
     implementation 'com.google.firebase:firebase-storage'
+
+    implementation "androidx.recyclerview:recyclerview:1.1.0"
+    // For control over item selection of both touch and mouse driven selection
+    implementation "androidx.recyclerview:recyclerview-selection:1.1.0"
+    implementation "androidx.cardview:cardview:1.0.0"
+    implementation 'com.github.arcadefire:nice-spinner:1.4.4'
+    implementation 'com.squareup.retrofit2:retrofit:2.4.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.4.0'
+    implementation 'io.paperdb:paperdb:2.7.1'
+    implementation 'com.github.florent37:diagonallayout:1.0.9'
+    implementation 'com.flaviofaria:kenburnsview:1.0.7'
+    implementation 'com.squareup.picasso:picasso:2.5.2'
 }
