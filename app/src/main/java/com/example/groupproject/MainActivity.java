@@ -26,4 +26,10 @@ public class MainActivity extends AppCompatActivity {
         startActivity(new Intent(getApplicationContext(), activity_viewprofile.class));
         finish();
     }
+
+    public void searchList(View view){
+        startActivity(new Intent(getApplicationContext(),searchlist.class));
+        finish();
+    }
+
 }

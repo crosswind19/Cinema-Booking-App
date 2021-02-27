@@ -2,15 +2,19 @@
   <library name="Gradle: com.github.florent37:diagonallayout:1.0.9@aar">
     <ANNOTATIONS>
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/48dde122fd1cd3fcd54eed3824174c28/jetified-diagonallayout-1.0.9/annotations.zip!/" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/90160b402de2a835d9502c77fee177a7/jetified-diagonallayout-1.0.9/annotations.zip!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/4b59f6672cfdb40f063b8842f363546d/jetified-diagonallayout-1.0.9/annotations.zip!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/404f772789691549c6069b72e822ab6a/jetified-diagonallayout-1.0.9/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/48dde122fd1cd3fcd54eed3824174c28/jetified-diagonallayout-1.0.9/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/48dde122fd1cd3fcd54eed3824174c28/jetified-diagonallayout-1.0.9/res" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/48dde122fd1cd3fcd54eed3824174c28/jetified-diagonallayout-1.0.9/AndroidManifest.xml" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/90160b402de2a835d9502c77fee177a7/jetified-diagonallayout-1.0.9/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/90160b402de2a835d9502c77fee177a7/jetified-diagonallayout-1.0.9/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/90160b402de2a835d9502c77fee177a7/jetified-diagonallayout-1.0.9/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/4b59f6672cfdb40f063b8842f363546d/jetified-diagonallayout-1.0.9/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/4b59f6672cfdb40f063b8842f363546d/jetified-diagonallayout-1.0.9/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/4b59f6672cfdb40f063b8842f363546d/jetified-diagonallayout-1.0.9/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/404f772789691549c6069b72e822ab6a/jetified-diagonallayout-1.0.9/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/404f772789691549c6069b72e822ab6a/jetified-diagonallayout-1.0.9/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/404f772789691549c6069b72e822ab6a/jetified-diagonallayout-1.0.9/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.florent37/diagonallayout/1.0.9/ebfce3f9cca193d74ed4f1572781ea83dffb760c/diagonallayout-1.0.9-javadoc.jar!/" />
