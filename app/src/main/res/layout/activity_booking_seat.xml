@@ -1,0 +1,819 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffa500"
+    tools:context=".booking_seat">
+
+    <Button
+        android:id="@+id/exit"
+        android:layout_width="47dp"
+        android:layout_height="40dp"
+        android:background="@drawable/ic_close"
+        android:layout_marginStart="4dp"
+        app:layout_constraintBottom_toTopOf="@+id/relativeLayout2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.457"
+        android:layout_marginLeft="4dp" />
+    
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="411dp"
+        android:layout_height="55dp"
+        app:layout_constraintBottom_toTopOf="@+id/relativeLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="358dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginRight="5dp"
+        android:fontFamily="@font/g_bold"
+        android:text="Sonic: The HedgeHog"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:gravity="center_horizontal" />
+        
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="413dp"
+        android:layout_height="71dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintStart_toStartOf="parent">
+
+    <TextView
+        android:id="@+id/v1"
+        android:layout_width="359dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/g_bold"
+        android:text="Kuala Lumpur - Mid Valley Megamall"
+        android:textAlignment="center"
+        android:gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/v2"
+        android:fontFamily="@font/g_bold"
+        android:layout_width="500dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/v1"
+        android:text="Hall - 2"
+        android:textAlignment="center"
+        android:gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="500dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/v2"
+        android:fontFamily="@font/g_bold"
+        android:text="Sat 22 Feb, 10:00 PM"
+        android:textAlignment="center"
+        android:gravity="center_horizontal" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="303dp"
+        android:layout_height="15dp"
+        android:background="@drawable/btn_buy_dark"
+        android:text="SCREEN"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/layoutSeat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        android:gravity="center_horizontal" />
+
+    <RelativeLayout
+        android:id="@+id/layoutSeat"
+        android:layout_width="415dp"
+        android:layout_height="305dp"
+        android:scrollbars="vertical"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.582"
+        android:gravity="center_horizontal">
+
+        <RelativeLayout
+            android:id="@+id/S1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <ToggleButton
+                android:id="@+id/a"
+                android:onClick="countIN"
+                android:text=""
+                android:layout_marginTop="10dp"
+                android:textOn="A1"
+                android:textOff="A1"
+                android:layout_marginLeft="15dp"
+                android:textColor="#ffff00"
+                android:layout_width="45dp"
+                android:layout_height="45dp"/>
+            <ToggleButton
+                android:layout_toRightOf="@id/a"
+                android:id="@+id/b"
+                android:textOn="A2"
+                android:textOff="A2"
+                android:onClick="countIN"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="1dp"
+                android:textColor="#ffff00"
+                android:layout_width="45dp"
+                android:layout_height="45dp"/>
+
+            <ToggleButton
+                android:id="@+id/c"
+                android:layout_toRightOf="@id/b"
+                android:text=""
+                android:onClick="countIN"
+                android:layout_marginTop="10dp"
+                android:textOn="A3"
+                android:textOff="A3"
+                android:textColor="#ffff00"
+                android:layout_marginLeft="1dp"
+                android:layout_width="45dp"
+                android:layout_height="45dp"/>
+            <ToggleButton
+                android:layout_toRightOf="@id/c"
+                android:id="@+id/d"
+                android:textOn="A4"
+                android:onClick="countIN"
+                android:textOff="A4"
+                android:textColor="#ffff00"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="1dp"
+                android:layout_width="45dp"
+                android:layout_height="45dp"/>
+
+            <ToggleButton
+                android:layout_toRightOf="@id/d"
+                android:id="@+id/e"
+                android:textOn="A5"
+                android:textOff="A5"
+                android:onClick="countIN"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="1dp"
+                android:textColor="#ffff00"
+                android:layout_width="45dp"
+                android:layout_height="45dp"/>
+
+            <ToggleButton
+                android:layout_toRightOf="@id/e"
+                android:id="@+id/f"
+                android:textOn="A6"
+                android:textOff="A6"
+                android:onClick="countIN"
+                android:textColor="#ffff00"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="1dp"
+                android:layout_width="45dp"
+                android:layout_height="45dp"/>
+
+            <ToggleButton
+                android:layout_toRightOf="@id/f"
+                android:id="@+id/g"
+                android:textOn="A7"
+                android:onClick="countIN"
+                android:textOff="A7"
+                android:textColor="#ffff00"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="1dp"
+                android:layout_width="45dp"
+                android:layout_height="45dp"/>
+
+            <ToggleButton
+                android:layout_toRightOf="@id/g"
+                android:id="@+id/h"
+                android:textOn="A8"
+                android:onClick="countIN"
+                android:textOff="A8"
+                android:textColor="#ffff00"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="1dp"
+                android:layout_width="45dp"
+                android:layout_height="45dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/S2"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/S1"
+            android:onClick="countIN"
+            android:layout_height="50dp">
+            <ToggleButton
+                android:id="@+id/a2"
+                android:text=""
+                android:layout_marginTop="10dp"
+                android:textOn="A1"
+                android:textOff="A1"
+                android:layout_marginLeft="15dp"
+                android:onClick="countIN"
+                android:textColor="#ffff00"
+                android:layout_width="45dp"
+                android:layout_height="45dp"/>
+            <ToggleButton
+                android:layout_toRightOf="@id/a2"
+                android:id="@+id/b2"
+                android:textOn="A2"
+                android:textOff="A2"
+                android:layout_marginTop="10dp"
+                android:onClick="countIN"
+                android:layout_marginLeft="1dp"
+                android:textColor="#ffff00"
+                android:layout_width="45dp"
+                android:layout_height="45dp"/>
+
+            <ToggleButton
+                android:id="@+id/c2"
+                android:layout_toRightOf="@id/b2"
+                android:text=""
+                android:layout_marginTop="10dp"
+                android:textOn="A3"
+                android:textOff="A3"
+                android:onClick="countIN"
+                android:textColor="#ffff00"
+                android:layout_marginLeft="1dp"
+                android:layout_width="45dp"
+                android:layout_height="45dp"/>
+            <ToggleButton
+                android:layout_toRightOf="@id/c2"
+                android:id="@+id/d2"
+                android:textOn="A4"
+                android:onClick="countIN"
+                android:textOff="A4"
+                android:textColor="#ffff00"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="1dp"
+                android:layout_width="45dp"
+                android:layout_height="45dp"/>
+
+            <ToggleButton
+                android:layout_toRightOf="@id/d2"
+                android:id="@+id/e2"
+                android:textOn="A5"
+                android:textOff="A5"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="1dp"
+                android:onClick="countIN"
+                android:textColor="#ffff00"
+                android:layout_width="45dp"
+                android:layout_height="45dp"/>
+
+            <ToggleButton
+                android:layout_toRightOf="@id/e2"
+                android:id="@+id/f2"
+                android:textOn="A6"
+                android:textOff="A6"
+                android:onClick="countIN"
+                android:textColor="#ffff00"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="1dp"
+                android:layout_width="45dp"
+                android:layout_height="45dp"/>
+
+            <ToggleButton
+                android:layout_toRightOf="@id/f2"
+                android:id="@+id/g2"
+                android:textOn="A7"
+                android:textOff="A7"
+                android:textColor="#ffff00"
+                android:onClick="countIN"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="1dp"
+                android:layout_width="45dp"
+                android:layout_height="45dp"/>
+
+            <ToggleButton
+                android:layout_toRightOf="@id/g2"
+                android:id="@+id/h2"
+                android:textOn="A8"
+                android:textOff="A8"
+                android:onClick="countIN"
+                android:textColor="#ffff00"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="1dp"
+                android:layout_width="45dp"
+                android:layout_height="45dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/S3"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/S2"
+            android:onClick="countIN"
+            android:layout_height="50dp">
+            <ToggleButton
+                android:id="@+id/a3"
+                android:text=""
+                android:layout_marginTop="10dp"
+                android:textOn="A1"
+                android:onClick="countIN"
+                android:textOff="A1"
+                android:layout_marginLeft="15dp"
+                android:textColor="#ffff00"
+                android:layout_width="45dp"
+                android:layout_height="45dp"/>
+            <ToggleButton
+                android:layout_toRightOf="@id/a3"
+                android:id="@+id/b3"
+                android:textOn="A2"
+                android:textOff="A2"
+                android:layout_marginTop="10dp"
+                android:onClick="countIN"
+                android:layout_marginLeft="1dp"
+                android:textColor="#ffff00"
+                android:layout_width="45dp"
+                android:layout_height="45dp"/>
+
+            <ToggleButton
+                android:id="@+id/c3"
+                android:layout_toRightOf="@id/b3"
+                android:text=""
+                android:layout_marginTop="10dp"
+                android:textOn="A3"
+                android:textOff="A3"
+                android:onClick="countIN"
+                android:textColor="#ffff00"
+                android:layout_marginLeft="1dp"
+                android:layout_width="45dp"
+                android:layout_height="45dp"/>
+            <ToggleButton
+                android:layout_toRightOf="@id/c3"
+                android:id="@+id/d3"
+                android:textOn="A4"
+                android:textOff="A4"
+                android:textColor="#ffff00"
+                android:onClick="countIN"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="1dp"
+                android:layout_width="45dp"
+                android:layout_height="45dp"/>
+
+            <ToggleButton
+                android:layout_toRightOf="@id/d3"
+                android:id="@+id/e3"
+                android:textOn="A5"
+                android:textOff="A5"
+                android:onClick="countIN"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="1dp"
+                android:textColor="#ffff00"
+                android:layout_width="45dp"
+                android:layout_height="45dp"/>
+
+            <ToggleButton
+                android:layout_toRightOf="@id/e3"
+                android:id="@+id/f3"
+                android:textOn="A6"
+                android:textOff="A6"
+                android:textColor="#ffff00"
+                android:onClick="countIN"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="1dp"
+                android:layout_width="45dp"
+                android:layout_height="45dp"/>
+
+            <ToggleButton
+                android:layout_toRightOf="@id/f3"
+                android:id="@+id/g3"
+                android:textOn="A7"
+                android:textOff="A7"
+                android:textColor="#ffff00"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="1dp"
+                android:layout_width="45dp"
+                android:onClick="countIN"
+                android:layout_height="45dp"/>
+
+            <ToggleButton
+                android:layout_toRightOf="@id/g3"
+                android:id="@+id/h3"
+                android:textOn="A8"
+                android:textOff="A8"
+                android:textColor="#ffff00"
+                android:onClick="countIN"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="1dp"
+                android:layout_width="45dp"
+                android:layout_height="45dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/S4"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/S3"
+            android:layout_height="50dp">
+            <ToggleButton
+                android:id="@+id/a4"
+                android:text=""
+                android:onClick="countIN"
+                android:layout_marginTop="10dp"
+                android:textOn="A1"
+                android:textOff="A1"
+                android:layout_marginLeft="15dp"
+                android:textColor="#ffff00"
+                android:layout_width="45dp"
+                android:layout_height="45dp"/>
+            <ToggleButton
+                android:layout_toRightOf="@id/a4"
+                android:id="@+id/b4"
+                android:textOn="A2"
+                android:textOff="A2"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="1dp"
+                android:onClick="countIN"
+                android:textColor="#ffff00"
+                android:layout_width="45dp"
+                android:layout_height="45dp"/>
+
+            <ToggleButton
+                android:id="@+id/c4"
+                android:layout_toRightOf="@id/b4"
+                android:text=""
+                android:layout_marginTop="10dp"
+                android:textOn="A3"
+                android:textOff="A3"
+                android:onClick="countIN"
+                android:textColor="#ffff00"
+                android:layout_marginLeft="1dp"
+                android:layout_width="45dp"
+                android:layout_height="45dp"/>
+            <ToggleButton
+                android:layout_toRightOf="@id/c4"
+                android:id="@+id/d4"
+                android:textOn="A4"
+                android:textOff="A4"
+                android:textColor="#ffff00"
+                android:onClick="countIN"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="1dp"
+                android:layout_width="45dp"
+                android:layout_height="45dp"/>
+
+            <ToggleButton
+                android:layout_toRightOf="@id/d4"
+                android:id="@+id/e4"
+                android:textOn="A5"
+                android:textOff="A5"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="1dp"
+                android:onClick="countIN"
+                android:textColor="#ffff00"
+                android:layout_width="45dp"
+                android:layout_height="45dp"/>
+
+            <ToggleButton
+                android:layout_toRightOf="@id/e4"
+                android:id="@+id/f4"
+                android:onClick="countIN"
+                android:textOn="A6"
+                android:textOff="A6"
+                android:textColor="#ffff00"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="1dp"
+                android:layout_width="45dp"
+                android:layout_height="45dp"/>
+
+            <ToggleButton
+                android:layout_toRightOf="@id/f4"
+                android:id="@+id/g4"
+                android:textOn="A7"
+                android:textOff="A7"
+                android:textColor="#ffff00"
+                android:layout_marginTop="10dp"
+                android:onClick="countIN"
+                android:layout_marginLeft="1dp"
+                android:layout_width="45dp"
+                android:layout_height="45dp"/>
+
+            <ToggleButton
+                android:layout_toRightOf="@id/g4"
+                android:id="@+id/h4"
+                android:textOn="A8"
+                android:textOff="A8"
+                android:textColor="#ffff00"
+                android:layout_marginTop="10dp"
+                android:onClick="countIN"
+                android:layout_marginLeft="1dp"
+                android:layout_width="45dp"
+                android:layout_height="45dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/S5"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/S4"
+            android:layout_height="50dp">
+            <ToggleButton
+                android:id="@+id/a5"
+                android:text=""
+                android:layout_marginTop="10dp"
+                android:onClick="countIN"
+                android:textOn="A1"
+                android:textOff="A1"
+                android:layout_marginLeft="15dp"
+                android:textColor="#ffff00"
+                android:layout_width="45dp"
+                android:layout_height="45dp"/>
+            <ToggleButton
+                android:layout_toRightOf="@id/a5"
+                android:id="@+id/b5"
+                android:textOn="A2"
+                android:onClick="countIN"
+                android:textOff="A2"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="1dp"
+                android:textColor="#ffff00"
+                android:layout_width="45dp"
+                android:layout_height="45dp"/>
+
+            <ToggleButton
+                android:id="@+id/c5"
+                android:layout_toRightOf="@id/b5"
+                android:text=""
+                android:layout_marginTop="10dp"
+                android:textOn="A3"
+                android:textOff="A3"
+                android:onClick="countIN"
+                android:textColor="#ffff00"
+                android:layout_marginLeft="1dp"
+                android:layout_width="45dp"
+                android:layout_height="45dp"/>
+            <ToggleButton
+                android:layout_toRightOf="@id/c5"
+                android:id="@+id/d5"
+                android:textOn="A4"
+                android:onClick="countIN"
+                android:textOff="A4"
+                android:textColor="#ffff00"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="1dp"
+                android:layout_width="45dp"
+                android:layout_height="45dp"/>
+
+            <ToggleButton
+                android:layout_toRightOf="@id/d5"
+                android:id="@+id/e5"
+                android:onClick="countIN"
+                android:textOn="A5"
+                android:textOff="A5"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="1dp"
+                android:textColor="#ffff00"
+                android:layout_width="45dp"
+                android:layout_height="45dp"/>
+
+            <ToggleButton
+                android:layout_toRightOf="@id/e5"
+                android:id="@+id/f5"
+                android:textOn="A6"
+                android:textOff="A6"
+                android:onClick="countIN"
+                android:textColor="#ffff00"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="1dp"
+                android:layout_width="45dp"
+                android:layout_height="45dp"/>
+
+            <ToggleButton
+                android:layout_toRightOf="@id/f5"
+                android:id="@+id/g5"
+                android:textOn="A7"
+                android:textOff="A7"
+                android:onClick="countIN"
+                android:textColor="#ffff00"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="1dp"
+                android:layout_width="45dp"
+                android:layout_height="45dp"/>
+
+            <ToggleButton
+                android:layout_toRightOf="@id/g5"
+                android:id="@+id/h5"
+                android:textOn="A8"
+                android:textOff="A8"
+                android:textColor="#ffff00"
+                android:layout_marginTop="10dp"
+                android:onClick="countIN"
+                android:layout_marginLeft="1dp"
+                android:layout_width="45dp"
+                android:layout_height="45dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/S6"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/S5"
+            android:layout_height="50dp">
+            <ToggleButton
+                android:id="@+id/a6"
+                android:text=""
+                android:layout_marginTop="10dp"
+                android:onClick="countIN"
+                android:textOn="A1"
+                android:textOff="A1"
+                android:layout_marginLeft="15dp"
+                android:textColor="#ffff00"
+                android:layout_width="45dp"
+                android:layout_height="45dp"/>
+            <ToggleButton
+                android:layout_toRightOf="@id/a6"
+                android:id="@+id/b6"
+                android:textOn="A2"
+                android:textOff="A2"
+                android:onClick="countIN"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="1dp"
+                android:textColor="#ffff00"
+                android:layout_width="45dp"
+                android:layout_height="45dp"/>
+
+            <ToggleButton
+                android:id="@+id/c6"
+                android:layout_toRightOf="@id/b6"
+                android:text=""
+                android:layout_marginTop="10dp"
+                android:textOn="A3"
+                android:textOff="A3"
+                android:onClick="countIN"
+                android:textColor="#ffff00"
+                android:layout_marginLeft="1dp"
+                android:layout_width="45dp"
+                android:layout_height="45dp"/>
+            <ToggleButton
+                android:layout_toRightOf="@id/c6"
+                android:id="@+id/d6"
+                android:textOn="A4"
+                android:textOff="A4"
+                android:textColor="#ffff00"
+                android:onClick="countIN"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="1dp"
+                android:layout_width="45dp"
+                android:layout_height="45dp"/>
+
+            <ToggleButton
+                android:layout_toRightOf="@id/d6"
+                android:id="@+id/e6"
+                android:textOn="A5"
+                android:textOff="A5"
+                android:layout_marginTop="10dp"
+                android:onClick="countIN"
+                android:layout_marginLeft="1dp"
+                android:textColor="#ffff00"
+                android:layout_width="45dp"
+                android:layout_height="45dp"/>
+
+            <ToggleButton
+                android:layout_toRightOf="@id/e6"
+                android:id="@+id/f6"
+                android:textOn="A6"
+                android:textOff="A6"
+                android:textColor="#ffff00"
+                android:onClick="countIN"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="1dp"
+                android:layout_width="45dp"
+                android:layout_height="45dp"/>
+
+            <ToggleButton
+                android:layout_toRightOf="@id/f6"
+                android:id="@+id/g6"
+                android:textOn="A7"
+                android:textOff="A7"
+                android:onClick="countIN"
+                android:textColor="#ffff00"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="1dp"
+                android:layout_width="45dp"
+                android:layout_height="45dp"/>
+
+            <ToggleButton
+                android:layout_toRightOf="@id/g6"
+                android:id="@+id/h6"
+                android:textOn="A8"
+                android:textOff="A8"
+                android:onClick="countIN"
+                android:textColor="#ffff00"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="1dp"
+                android:layout_width="45dp"
+                android:layout_height="45dp"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="412dp"
+        android:layout_height="64dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layoutSeat"
+        app:layout_constraintVertical_bias="0.0">
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="417dp"
+        android:layout_height="50dp"
+        android:background="#ffff00"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layoutSeat"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="252dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/g_bold"
+            android:text="Seat has been taken:"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_toRightOf="@+id/text"
+            android:id="@+id/value"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/g_bold"
+            android:text="0"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/clear"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:text="CLEAR"
+            android:textColor="#ffff00"
+            android:onClick="countClear"
+            android:background="@drawable/btn_buy_dark"
+            android:layout_toRightOf="@+id/value"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_gravity="end|bottom"
+        android:layout_margin="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:fontFamily="@font/g_bold"
+        android:textSize="14dp"
+        android:textAllCaps="false"
+        android:textColor="#ffff00"
+        android:id="@+id/confirm"
+        android:layout_width="353dp"
+        android:layout_height="82dp"
+        android:text="Confirm"
+        android:background="@drawable/btn_buy_dark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layoutSeat"
+        app:layout_constraintVertical_bias="0.826" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/g_bold"
+        android:text="Seats(s)"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.045"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout"
+        app:layout_constraintVertical_bias="0.0" />
+    
+</androidx.constraintlayout.widget.ConstraintLayout>

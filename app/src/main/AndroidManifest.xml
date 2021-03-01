@@ -11,7 +11,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.GROUPPROJECT">
-        <activity android:name=".feedback"></activity>
+        <activity android:name=".booking_food"></activity>
+        <activity android:name=".booking_seat" />
+        <activity android:name=".feedback" />
         <activity android:name=".bookinginfo" />
         <activity android:name=".showingmovie" />
         <activity android:name=".comingsoonmovie2" />
