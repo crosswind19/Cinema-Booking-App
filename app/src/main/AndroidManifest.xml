@@ -11,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.GROUPPROJECT">
-        <activity android:name=".bookinginfo"></activity>
+        <activity android:name=".feedback"></activity>
+        <activity android:name=".bookinginfo" />
         <activity android:name=".showingmovie" />
         <activity android:name=".comingsoonmovie2" />
         <activity android:name=".comingsoonmovie" />
@@ -23,7 +24,7 @@
         <activity android:name=".activity_forgotpassword" />
         <activity
             android:name=".activity_signup"
-            android:parentActivityName=".activity_login"/>
+            android:parentActivityName=".activity_login" />
         <activity android:name=".activity_login">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
