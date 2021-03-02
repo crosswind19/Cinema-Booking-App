@@ -33,7 +33,7 @@ public class searchlist extends AppCompatActivity {
         BottomNavigationView bottomNav = findViewById(R.id.bottom_navigation2);
         bottomNav.setOnNavigationItemSelectedListener(navListener);
 
-        home = (ImageView)findViewById(R.id.home);
+        home = findViewById(R.id.home);
 
         //I added this if statement to keep the selected fragment when rotating the device
         if (savedInstanceState == null) {
@@ -64,8 +64,9 @@ public class searchlist extends AppCompatActivity {
                         case R.id.upcoming:
                             selectedFragment = new UpComingFragment();
                             break;
-                        case R.id.booking:
-                            selectedFragment = new BookingFragment();
+                        case R.id.profile:
+                            Intent intent = new Intent(searchlist.this, activity_viewprofile.class);
+                            startActivity(intent);
                             break;
                     }
 

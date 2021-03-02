@@ -120,14 +120,10 @@ public class changeprofile extends AppCompatActivity {
         databaseReference.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
-//                UserProfile userProfile = snapshot.getValue(UserProfile.class);
-                String Email = snapshot.child("emailAddress").getValue().toString();
-                String Name = snapshot.child("name").getValue().toString();
-                String Phone = snapshot.child("phone").getValue().toString();
-                newUserName.setText(Name);
-                newUserEmail.setText(Email);
-                newUserPhoneNumber.setText(Phone);
-            }
+                UserProfile classUserProfile = snapshot.getValue(UserProfile.class);
+                newUserName.setText("Name: " + classUserProfile.getName());
+                newUserEmail.setText("Email: " + classUserProfile.getEmailAddress());
+                newUserPhoneNumber.setText("Phone: " + classUserProfile.getPhone());            }
 
             @Override
             public void onCancelled(@NonNull DatabaseError error) {

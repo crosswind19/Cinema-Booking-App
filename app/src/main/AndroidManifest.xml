@@ -27,6 +27,7 @@
         <activity android:name=".activity_viewprofile" />
         <activity android:name=".MainActivity" />
         <activity android:name=".activity_forgotpassword" />
+        <activity android:name=".searchlist"/>
         <activity
             android:name=".activity_signup"
             android:parentActivityName=".activity_login" />
