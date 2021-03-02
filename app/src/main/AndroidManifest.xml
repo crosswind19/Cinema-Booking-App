@@ -11,7 +11,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.GROUPPROJECT">
-        <activity android:name=".booking_food"></activity>
+        <activity android:name=".payCard"></activity>
+        <activity android:name=".payment" />
+        <activity android:name=".confirm_order" />
+        <activity android:name=".booking_food" />
         <activity android:name=".booking_seat" />
         <activity android:name=".feedback" />
         <activity android:name=".bookinginfo" />

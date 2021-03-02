@@ -120,9 +120,9 @@
             android:layout_width="match_parent"
             android:layout_height="50dp">
             <ToggleButton
-                android:id="@+id/a"
+                android:id="@+id/button_01"
                 android:onClick="countIN"
-                android:text=""
+                android:text="A1"
                 android:layout_marginTop="10dp"
                 android:textOn="A1"
                 android:textOff="A1"
@@ -131,8 +131,8 @@
                 android:layout_width="45dp"
                 android:layout_height="45dp"/>
             <ToggleButton
-                android:layout_toRightOf="@id/a"
-                android:id="@+id/b"
+                android:layout_toRightOf="@id/button_01"
+                android:id="@+id/button_02"
                 android:textOn="A2"
                 android:textOff="A2"
                 android:onClick="countIN"
@@ -143,8 +143,8 @@
                 android:layout_height="45dp"/>
 
             <ToggleButton
-                android:id="@+id/c"
-                android:layout_toRightOf="@id/b"
+                android:id="@+id/button_03"
+                android:layout_toRightOf="@id/button_02"
                 android:text=""
                 android:onClick="countIN"
                 android:layout_marginTop="10dp"
@@ -155,8 +155,8 @@
                 android:layout_width="45dp"
                 android:layout_height="45dp"/>
             <ToggleButton
-                android:layout_toRightOf="@id/c"
-                android:id="@+id/d"
+                android:layout_toRightOf="@id/button_03"
+                android:id="@+id/button_04"
                 android:textOn="A4"
                 android:onClick="countIN"
                 android:textOff="A4"
@@ -167,8 +167,8 @@
                 android:layout_height="45dp"/>
 
             <ToggleButton
-                android:layout_toRightOf="@id/d"
-                android:id="@+id/e"
+                android:layout_toRightOf="@id/button_04"
+                android:id="@+id/button_05"
                 android:textOn="A5"
                 android:textOff="A5"
                 android:onClick="countIN"
@@ -179,8 +179,8 @@
                 android:layout_height="45dp"/>
 
             <ToggleButton
-                android:layout_toRightOf="@id/e"
-                android:id="@+id/f"
+                android:layout_toRightOf="@id/button_05"
+                android:id="@+id/button_06"
                 android:textOn="A6"
                 android:textOff="A6"
                 android:onClick="countIN"
@@ -191,8 +191,8 @@
                 android:layout_height="45dp"/>
 
             <ToggleButton
-                android:layout_toRightOf="@id/f"
-                android:id="@+id/g"
+                android:layout_toRightOf="@id/button_06"
+                android:id="@+id/button_07"
                 android:textOn="A7"
                 android:onClick="countIN"
                 android:textOff="A7"
@@ -203,8 +203,8 @@
                 android:layout_height="45dp"/>
 
             <ToggleButton
-                android:layout_toRightOf="@id/g"
-                android:id="@+id/h"
+                android:layout_toRightOf="@id/button_07"
+                android:id="@+id/button_08"
                 android:textOn="A8"
                 android:onClick="countIN"
                 android:textOff="A8"
@@ -223,21 +223,21 @@
             android:onClick="countIN"
             android:layout_height="50dp">
             <ToggleButton
-                android:id="@+id/a2"
-                android:text=""
+                android:id="@+id/button_11"
+                android:text="B1"
                 android:layout_marginTop="10dp"
-                android:textOn="A1"
-                android:textOff="A1"
+                android:textOn="B1"
+                android:textOff="B1"
                 android:layout_marginLeft="15dp"
                 android:onClick="countIN"
                 android:textColor="#ffff00"
                 android:layout_width="45dp"
                 android:layout_height="45dp"/>
             <ToggleButton
-                android:layout_toRightOf="@id/a2"
-                android:id="@+id/b2"
-                android:textOn="A2"
-                android:textOff="A2"
+                android:layout_toRightOf="@id/button_11"
+                android:id="@+id/button_12"
+                android:textOn="B2"
+                android:textOff="B2"
                 android:layout_marginTop="10dp"
                 android:onClick="countIN"
                 android:layout_marginLeft="1dp"
@@ -246,47 +246,23 @@
                 android:layout_height="45dp"/>
 
             <ToggleButton
-                android:id="@+id/c2"
-                android:layout_toRightOf="@id/b2"
+                android:id="@+id/button_13"
+                android:layout_toRightOf="@id/button_12"
                 android:text=""
                 android:layout_marginTop="10dp"
-                android:textOn="A3"
-                android:textOff="A3"
+                android:textOn="B3"
+                android:textOff="B3"
                 android:onClick="countIN"
                 android:textColor="#ffff00"
                 android:layout_marginLeft="1dp"
                 android:layout_width="45dp"
                 android:layout_height="45dp"/>
             <ToggleButton
-                android:layout_toRightOf="@id/c2"
-                android:id="@+id/d2"
-                android:textOn="A4"
+                android:layout_toRightOf="@id/button_13"
+                android:id="@+id/button_14"
+                android:textOn="B4"
                 android:onClick="countIN"
-                android:textOff="A4"
-                android:textColor="#ffff00"
-                android:layout_marginTop="10dp"
-                android:layout_marginLeft="1dp"
-                android:layout_width="45dp"
-                android:layout_height="45dp"/>
-
-            <ToggleButton
-                android:layout_toRightOf="@id/d2"
-                android:id="@+id/e2"
-                android:textOn="A5"
-                android:textOff="A5"
-                android:layout_marginTop="10dp"
-                android:layout_marginLeft="1dp"
-                android:onClick="countIN"
-                android:textColor="#ffff00"
-                android:layout_width="45dp"
-                android:layout_height="45dp"/>
-
-            <ToggleButton
-                android:layout_toRightOf="@id/e2"
-                android:id="@+id/f2"
-                android:textOn="A6"
-                android:textOff="A6"
-                android:onClick="countIN"
+                android:textOff="B4"
                 android:textColor="#ffff00"
                 android:layout_marginTop="10dp"
                 android:layout_marginLeft="1dp"
@@ -294,10 +270,34 @@
                 android:layout_height="45dp"/>
 
             <ToggleButton
-                android:layout_toRightOf="@id/f2"
-                android:id="@+id/g2"
-                android:textOn="A7"
-                android:textOff="A7"
+                android:layout_toRightOf="@id/button_14"
+                android:id="@+id/button_15"
+                android:textOn="B5"
+                android:textOff="B5"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="1dp"
+                android:onClick="countIN"
+                android:textColor="#ffff00"
+                android:layout_width="45dp"
+                android:layout_height="45dp"/>
+
+            <ToggleButton
+                android:layout_toRightOf="@id/button_15"
+                android:id="@+id/button_16"
+                android:textOn="B6"
+                android:textOff="B6"
+                android:onClick="countIN"
+                android:textColor="#ffff00"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="1dp"
+                android:layout_width="45dp"
+                android:layout_height="45dp"/>
+
+            <ToggleButton
+                android:layout_toRightOf="@id/button_16"
+                android:id="@+id/button_17"
+                android:textOn="B7"
+                android:textOff="B7"
                 android:textColor="#ffff00"
                 android:onClick="countIN"
                 android:layout_marginTop="10dp"
@@ -306,10 +306,10 @@
                 android:layout_height="45dp"/>
 
             <ToggleButton
-                android:layout_toRightOf="@id/g2"
-                android:id="@+id/h2"
-                android:textOn="A8"
-                android:textOff="A8"
+                android:layout_toRightOf="@id/button_17"
+                android:id="@+id/button_18"
+                android:textOn="B8"
+                android:textOff="B8"
                 android:onClick="countIN"
                 android:textColor="#ffff00"
                 android:layout_marginTop="10dp"
@@ -326,21 +326,21 @@
             android:onClick="countIN"
             android:layout_height="50dp">
             <ToggleButton
-                android:id="@+id/a3"
+                android:id="@+id/button_20"
                 android:text=""
                 android:layout_marginTop="10dp"
-                android:textOn="A1"
+                android:textOn="C1"
                 android:onClick="countIN"
-                android:textOff="A1"
+                android:textOff="C1"
                 android:layout_marginLeft="15dp"
                 android:textColor="#ffff00"
                 android:layout_width="45dp"
                 android:layout_height="45dp"/>
             <ToggleButton
-                android:layout_toRightOf="@id/a3"
-                android:id="@+id/b3"
-                android:textOn="A2"
-                android:textOff="A2"
+                android:layout_toRightOf="@id/button_20"
+                android:id="@+id/button_21"
+                android:textOn="C2"
+                android:textOff="C2"
                 android:layout_marginTop="10dp"
                 android:onClick="countIN"
                 android:layout_marginLeft="1dp"
@@ -349,46 +349,22 @@
                 android:layout_height="45dp"/>
 
             <ToggleButton
-                android:id="@+id/c3"
-                android:layout_toRightOf="@id/b3"
+                android:id="@+id/button_22"
+                android:layout_toRightOf="@id/button_21"
                 android:text=""
                 android:layout_marginTop="10dp"
-                android:textOn="A3"
-                android:textOff="A3"
+                android:textOn="C3"
+                android:textOff="C3"
                 android:onClick="countIN"
                 android:textColor="#ffff00"
                 android:layout_marginLeft="1dp"
                 android:layout_width="45dp"
                 android:layout_height="45dp"/>
             <ToggleButton
-                android:layout_toRightOf="@id/c3"
-                android:id="@+id/d3"
-                android:textOn="A4"
-                android:textOff="A4"
-                android:textColor="#ffff00"
-                android:onClick="countIN"
-                android:layout_marginTop="10dp"
-                android:layout_marginLeft="1dp"
-                android:layout_width="45dp"
-                android:layout_height="45dp"/>
-
-            <ToggleButton
-                android:layout_toRightOf="@id/d3"
-                android:id="@+id/e3"
-                android:textOn="A5"
-                android:textOff="A5"
-                android:onClick="countIN"
-                android:layout_marginTop="10dp"
-                android:layout_marginLeft="1dp"
-                android:textColor="#ffff00"
-                android:layout_width="45dp"
-                android:layout_height="45dp"/>
-
-            <ToggleButton
-                android:layout_toRightOf="@id/e3"
-                android:id="@+id/f3"
-                android:textOn="A6"
-                android:textOff="A6"
+                android:layout_toRightOf="@id/button_22"
+                android:id="@+id/button_23"
+                android:textOn="C4"
+                android:textOff="C4"
                 android:textColor="#ffff00"
                 android:onClick="countIN"
                 android:layout_marginTop="10dp"
@@ -397,10 +373,34 @@
                 android:layout_height="45dp"/>
 
             <ToggleButton
-                android:layout_toRightOf="@id/f3"
-                android:id="@+id/g3"
-                android:textOn="A7"
-                android:textOff="A7"
+                android:layout_toRightOf="@id/button_23"
+                android:id="@+id/button_24"
+                android:textOn="C5"
+                android:textOff="C5"
+                android:onClick="countIN"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="1dp"
+                android:textColor="#ffff00"
+                android:layout_width="45dp"
+                android:layout_height="45dp"/>
+
+            <ToggleButton
+                android:layout_toRightOf="@id/button_24"
+                android:id="@+id/button_25"
+                android:textOn="C6"
+                android:textOff="C6"
+                android:textColor="#ffff00"
+                android:onClick="countIN"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="1dp"
+                android:layout_width="45dp"
+                android:layout_height="45dp"/>
+
+            <ToggleButton
+                android:layout_toRightOf="@id/button_25"
+                android:id="@+id/button_26"
+                android:textOn="C7"
+                android:textOff="C7"
                 android:textColor="#ffff00"
                 android:layout_marginTop="10dp"
                 android:layout_marginLeft="1dp"
@@ -409,10 +409,10 @@
                 android:layout_height="45dp"/>
 
             <ToggleButton
-                android:layout_toRightOf="@id/g3"
-                android:id="@+id/h3"
-                android:textOn="A8"
-                android:textOff="A8"
+                android:layout_toRightOf="@id/button_26"
+                android:id="@+id/button_27"
+                android:textOn="C8"
+                android:textOff="C8"
                 android:textColor="#ffff00"
                 android:onClick="countIN"
                 android:layout_marginTop="10dp"
@@ -428,21 +428,21 @@
             android:layout_below="@+id/S3"
             android:layout_height="50dp">
             <ToggleButton
-                android:id="@+id/a4"
+                android:id="@+id/button_31"
                 android:text=""
                 android:onClick="countIN"
                 android:layout_marginTop="10dp"
-                android:textOn="A1"
-                android:textOff="A1"
+                android:textOn="D1"
+                android:textOff="D1"
                 android:layout_marginLeft="15dp"
                 android:textColor="#ffff00"
                 android:layout_width="45dp"
                 android:layout_height="45dp"/>
             <ToggleButton
-                android:layout_toRightOf="@id/a4"
-                android:id="@+id/b4"
-                android:textOn="A2"
-                android:textOff="A2"
+                android:layout_toRightOf="@id/button_31"
+                android:id="@+id/button_32"
+                android:textOn="D2"
+                android:textOff="D2"
                 android:layout_marginTop="10dp"
                 android:layout_marginLeft="1dp"
                 android:onClick="countIN"
@@ -451,22 +451,22 @@
                 android:layout_height="45dp"/>
 
             <ToggleButton
-                android:id="@+id/c4"
-                android:layout_toRightOf="@id/b4"
+                android:id="@+id/button_33"
+                android:layout_toRightOf="@id/button_32"
                 android:text=""
                 android:layout_marginTop="10dp"
-                android:textOn="A3"
-                android:textOff="A3"
+                android:textOn="D3"
+                android:textOff="D3"
                 android:onClick="countIN"
                 android:textColor="#ffff00"
                 android:layout_marginLeft="1dp"
                 android:layout_width="45dp"
                 android:layout_height="45dp"/>
             <ToggleButton
-                android:layout_toRightOf="@id/c4"
-                android:id="@+id/d4"
-                android:textOn="A4"
-                android:textOff="A4"
+                android:layout_toRightOf="@id/button_33"
+                android:id="@+id/button_34"
+                android:textOn="D4"
+                android:textOff="D4"
                 android:textColor="#ffff00"
                 android:onClick="countIN"
                 android:layout_marginTop="10dp"
@@ -475,10 +475,10 @@
                 android:layout_height="45dp"/>
 
             <ToggleButton
-                android:layout_toRightOf="@id/d4"
-                android:id="@+id/e4"
-                android:textOn="A5"
-                android:textOff="A5"
+                android:layout_toRightOf="@id/button_34"
+                android:id="@+id/button_35"
+                android:textOn="D5"
+                android:textOff="D5"
                 android:layout_marginTop="10dp"
                 android:layout_marginLeft="1dp"
                 android:onClick="countIN"
@@ -487,11 +487,11 @@
                 android:layout_height="45dp"/>
 
             <ToggleButton
-                android:layout_toRightOf="@id/e4"
-                android:id="@+id/f4"
+                android:layout_toRightOf="@id/button_35"
+                android:id="@+id/button_36"
                 android:onClick="countIN"
-                android:textOn="A6"
-                android:textOff="A6"
+                android:textOn="D6"
+                android:textOff="D6"
                 android:textColor="#ffff00"
                 android:layout_marginTop="10dp"
                 android:layout_marginLeft="1dp"
@@ -499,10 +499,10 @@
                 android:layout_height="45dp"/>
 
             <ToggleButton
-                android:layout_toRightOf="@id/f4"
-                android:id="@+id/g4"
-                android:textOn="A7"
-                android:textOff="A7"
+                android:layout_toRightOf="@id/button_36"
+                android:id="@+id/button_37"
+                android:textOn="D7"
+                android:textOff="D7"
                 android:textColor="#ffff00"
                 android:layout_marginTop="10dp"
                 android:onClick="countIN"
@@ -511,10 +511,10 @@
                 android:layout_height="45dp"/>
 
             <ToggleButton
-                android:layout_toRightOf="@id/g4"
-                android:id="@+id/h4"
-                android:textOn="A8"
-                android:textOff="A8"
+                android:layout_toRightOf="@id/button_37"
+                android:id="@+id/button_38"
+                android:textOn="D8"
+                android:textOff="D8"
                 android:textColor="#ffff00"
                 android:layout_marginTop="10dp"
                 android:onClick="countIN"
@@ -530,22 +530,22 @@
             android:layout_below="@+id/S4"
             android:layout_height="50dp">
             <ToggleButton
-                android:id="@+id/a5"
+                android:id="@+id/button_41"
                 android:text=""
                 android:layout_marginTop="10dp"
                 android:onClick="countIN"
-                android:textOn="A1"
-                android:textOff="A1"
+                android:textOn="E1"
+                android:textOff="E1"
                 android:layout_marginLeft="15dp"
                 android:textColor="#ffff00"
                 android:layout_width="45dp"
                 android:layout_height="45dp"/>
             <ToggleButton
-                android:layout_toRightOf="@id/a5"
-                android:id="@+id/b5"
-                android:textOn="A2"
+                android:layout_toRightOf="@id/button_41"
+                android:id="@+id/button_42"
+                android:textOn="E2"
                 android:onClick="countIN"
-                android:textOff="A2"
+                android:textOff="E2"
                 android:layout_marginTop="10dp"
                 android:layout_marginLeft="1dp"
                 android:textColor="#ffff00"
@@ -553,47 +553,23 @@
                 android:layout_height="45dp"/>
 
             <ToggleButton
-                android:id="@+id/c5"
-                android:layout_toRightOf="@id/b5"
+                android:id="@+id/button_43"
+                android:layout_toRightOf="@id/button_42"
                 android:text=""
                 android:layout_marginTop="10dp"
-                android:textOn="A3"
-                android:textOff="A3"
+                android:textOn="E3"
+                android:textOff="E3"
                 android:onClick="countIN"
                 android:textColor="#ffff00"
                 android:layout_marginLeft="1dp"
                 android:layout_width="45dp"
                 android:layout_height="45dp"/>
             <ToggleButton
-                android:layout_toRightOf="@id/c5"
-                android:id="@+id/d5"
-                android:textOn="A4"
+                android:layout_toRightOf="@id/button_43"
+                android:id="@+id/button_44"
+                android:textOn="E4"
                 android:onClick="countIN"
-                android:textOff="A4"
-                android:textColor="#ffff00"
-                android:layout_marginTop="10dp"
-                android:layout_marginLeft="1dp"
-                android:layout_width="45dp"
-                android:layout_height="45dp"/>
-
-            <ToggleButton
-                android:layout_toRightOf="@id/d5"
-                android:id="@+id/e5"
-                android:onClick="countIN"
-                android:textOn="A5"
-                android:textOff="A5"
-                android:layout_marginTop="10dp"
-                android:layout_marginLeft="1dp"
-                android:textColor="#ffff00"
-                android:layout_width="45dp"
-                android:layout_height="45dp"/>
-
-            <ToggleButton
-                android:layout_toRightOf="@id/e5"
-                android:id="@+id/f5"
-                android:textOn="A6"
-                android:textOff="A6"
-                android:onClick="countIN"
+                android:textOff="E4"
                 android:textColor="#ffff00"
                 android:layout_marginTop="10dp"
                 android:layout_marginLeft="1dp"
@@ -601,10 +577,22 @@
                 android:layout_height="45dp"/>
 
             <ToggleButton
-                android:layout_toRightOf="@id/f5"
-                android:id="@+id/g5"
-                android:textOn="A7"
-                android:textOff="A7"
+                android:layout_toRightOf="@id/button_44"
+                android:id="@+id/button_45"
+                android:onClick="countIN"
+                android:textOn="E5"
+                android:textOff="E5"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="1dp"
+                android:textColor="#ffff00"
+                android:layout_width="45dp"
+                android:layout_height="45dp"/>
+
+            <ToggleButton
+                android:layout_toRightOf="@id/button_45"
+                android:id="@+id/button_46"
+                android:textOn="E6"
+                android:textOff="E6"
                 android:onClick="countIN"
                 android:textColor="#ffff00"
                 android:layout_marginTop="10dp"
@@ -613,10 +601,22 @@
                 android:layout_height="45dp"/>
 
             <ToggleButton
-                android:layout_toRightOf="@id/g5"
-                android:id="@+id/h5"
-                android:textOn="A8"
-                android:textOff="A8"
+                android:layout_toRightOf="@id/button_46"
+                android:id="@+id/button_47"
+                android:textOn="E7"
+                android:textOff="E7"
+                android:onClick="countIN"
+                android:textColor="#ffff00"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="1dp"
+                android:layout_width="45dp"
+                android:layout_height="45dp"/>
+
+            <ToggleButton
+                android:layout_toRightOf="@id/button_47"
+                android:id="@+id/button_48"
+                android:textOn="E8"
+                android:textOff="E8"
                 android:textColor="#ffff00"
                 android:layout_marginTop="10dp"
                 android:onClick="countIN"
@@ -632,21 +632,21 @@
             android:layout_below="@+id/S5"
             android:layout_height="50dp">
             <ToggleButton
-                android:id="@+id/a6"
+                android:id="@+id/button_51"
                 android:text=""
                 android:layout_marginTop="10dp"
                 android:onClick="countIN"
-                android:textOn="A1"
-                android:textOff="A1"
+                android:textOn="F1"
+                android:textOff="F1"
                 android:layout_marginLeft="15dp"
                 android:textColor="#ffff00"
                 android:layout_width="45dp"
                 android:layout_height="45dp"/>
             <ToggleButton
-                android:layout_toRightOf="@id/a6"
-                android:id="@+id/b6"
-                android:textOn="A2"
-                android:textOff="A2"
+                android:layout_toRightOf="@id/button_51"
+                android:id="@+id/button_52"
+                android:textOn="F2"
+                android:textOff="F2"
                 android:onClick="countIN"
                 android:layout_marginTop="10dp"
                 android:layout_marginLeft="1dp"
@@ -655,46 +655,22 @@
                 android:layout_height="45dp"/>
 
             <ToggleButton
-                android:id="@+id/c6"
-                android:layout_toRightOf="@id/b6"
+                android:id="@+id/button_53"
+                android:layout_toRightOf="@id/button_52"
                 android:text=""
                 android:layout_marginTop="10dp"
-                android:textOn="A3"
-                android:textOff="A3"
+                android:textOn="F3"
+                android:textOff="F3"
                 android:onClick="countIN"
                 android:textColor="#ffff00"
                 android:layout_marginLeft="1dp"
                 android:layout_width="45dp"
                 android:layout_height="45dp"/>
             <ToggleButton
-                android:layout_toRightOf="@id/c6"
-                android:id="@+id/d6"
-                android:textOn="A4"
-                android:textOff="A4"
-                android:textColor="#ffff00"
-                android:onClick="countIN"
-                android:layout_marginTop="10dp"
-                android:layout_marginLeft="1dp"
-                android:layout_width="45dp"
-                android:layout_height="45dp"/>
-
-            <ToggleButton
-                android:layout_toRightOf="@id/d6"
-                android:id="@+id/e6"
-                android:textOn="A5"
-                android:textOff="A5"
-                android:layout_marginTop="10dp"
-                android:onClick="countIN"
-                android:layout_marginLeft="1dp"
-                android:textColor="#ffff00"
-                android:layout_width="45dp"
-                android:layout_height="45dp"/>
-
-            <ToggleButton
-                android:layout_toRightOf="@id/e6"
-                android:id="@+id/f6"
-                android:textOn="A6"
-                android:textOff="A6"
+                android:layout_toRightOf="@id/button_53"
+                android:id="@+id/button_54"
+                android:textOn="F4"
+                android:textOff="F4"
                 android:textColor="#ffff00"
                 android:onClick="countIN"
                 android:layout_marginTop="10dp"
@@ -703,10 +679,34 @@
                 android:layout_height="45dp"/>
 
             <ToggleButton
-                android:layout_toRightOf="@id/f6"
-                android:id="@+id/g6"
-                android:textOn="A7"
-                android:textOff="A7"
+                android:layout_toRightOf="@id/button_54"
+                android:id="@+id/button_55"
+                android:textOn="F5"
+                android:textOff="F5"
+                android:layout_marginTop="10dp"
+                android:onClick="countIN"
+                android:layout_marginLeft="1dp"
+                android:textColor="#ffff00"
+                android:layout_width="45dp"
+                android:layout_height="45dp"/>
+
+            <ToggleButton
+                android:layout_toRightOf="@id/button_55"
+                android:id="@+id/button_56"
+                android:textOn="F6"
+                android:textOff="F6"
+                android:textColor="#ffff00"
+                android:onClick="countIN"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="1dp"
+                android:layout_width="45dp"
+                android:layout_height="45dp"/>
+
+            <ToggleButton
+                android:layout_toRightOf="@id/button_56"
+                android:id="@+id/button_57"
+                android:textOn="F7"
+                android:textOff="F7"
                 android:onClick="countIN"
                 android:textColor="#ffff00"
                 android:layout_marginTop="10dp"
@@ -715,10 +715,10 @@
                 android:layout_height="45dp"/>
 
             <ToggleButton
-                android:layout_toRightOf="@id/g6"
-                android:id="@+id/h6"
-                android:textOn="A8"
-                android:textOff="A8"
+                android:layout_toRightOf="@id/button_57"
+                android:id="@+id/button_58"
+                android:textOn="F8"
+                android:textOff="F8"
                 android:onClick="countIN"
                 android:textColor="#ffff00"
                 android:layout_marginTop="10dp"
