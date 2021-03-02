@@ -33,7 +33,7 @@ public class NowPlayingMovieAdapter extends RecyclerView.Adapter<NowPlayingMovie
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.upcoming_movie_item,parent,false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.now_playing_movie_item,parent,false);
         return new ViewHolder(view);
     }
 

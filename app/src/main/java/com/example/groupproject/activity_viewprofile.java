@@ -102,16 +102,16 @@ public class activity_viewprofile extends AppCompatActivity {
         databaseReference.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
-//              UserProfile classUserProfile = snapshot.getValue(UserProfile.class);
-//              pName.setText("Name: " + classUserProfile.getName());
-//              pEmail.setText("Email: " + classUserProfile.getEmailAddress());
-//              pPhone.setText("Phone: " + classUserProfile.getPhone());
-                String Email = snapshot.child("emailAddress").getValue().toString();
+                UserProfile classUserProfile = snapshot.getValue(UserProfile.class);
+                pName.setText("Name: " + classUserProfile.getName());
+                pEmail.setText("Email: " + classUserProfile.getEmailAddress());
+                pPhone.setText("Phone: " + classUserProfile.getPhone());
+              /*  String Email = snapshot.child("emailAddress").getValue().toString();
                 String Name = snapshot.child("name").getValue().toString();
                 String Phone = snapshot.child("phone").getValue().toString();
                 pName.setText(Name);
                 pEmail.setText(Email);
-                pPhone.setText(Phone);
+                pPhone.setText(Phone);*/
             }
 
             @Override

@@ -11,7 +11,7 @@
         android:title=""/>
 
     <item
-        android:id="@+id/booking"
+        android:id="@+id/profile"
         android:icon="@drawable/ic_book"
         android:title=""/>
 
