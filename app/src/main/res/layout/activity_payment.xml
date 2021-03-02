@@ -88,20 +88,20 @@
         app:layout_constraintVertical_bias="0.897" />
 
     <Button
-        android:id="@+id/pay"
+        android:id="@+id/card"
         android:layout_width="400dp"
         android:layout_height="55dp"
         android:background="@drawable/btn_buy_dark"
         android:fontFamily="@font/g_bold"
         android:gravity="center"
-        android:text="PROCEED WITH DEBIT/CREDIT CARD"
-        android:textColor="FFD56D"
+        android:text="PROCEED WITH CARD"
+        android:textColor="#FFD56D"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.454"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.991" />
+        app:layout_constraintVertical_bias="0.989" />
 
     <EditText
         android:id="@+id/phoneNumber"

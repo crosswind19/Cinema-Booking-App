@@ -20,7 +20,7 @@ public class payment extends AppCompatActivity {
         setContentView(R.layout.activity_payment);
 
         cash = (Button)findViewById(R.id.cash);
-        card = (Button)findViewById(R.id.pay);
+        card = (Button)findViewById(R.id.card);
 
         card.setOnClickListener( new View.OnClickListener() {
             public void onClick(View v) {
