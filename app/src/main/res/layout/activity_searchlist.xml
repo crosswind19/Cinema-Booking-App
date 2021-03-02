@@ -6,98 +6,72 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".searchlist">
-  <Toolbar
-    android:id="@+id/toolbar"
-      android:layout_width="match_parent"
-      android:layout_height="50dp"
-      android:contentInsetEnd="0dp"
-      android:contentInsetStart="0dp"
-      android:contentInsetRight="0dp"
-      android:contentInsetLeft="0dp">
-      <androidx.constraintlayout.widget.ConstraintLayout
-          android:layout_width="match_parent"
-          android:layout_height="match_parent"
-          android:background="@android:color/transparent">
 
-        <ImageView
-            android:id="@+id/iv_applogo"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_marginStart="15dp"
-            android:src="@mipmap/ic_launcher"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0"/>
-
-        <TextView
-            android:id="@+id/tv_appname"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Not-Cinema-App"
-            android:textColor="#000000"
-            android:textSize="24sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.066"
-            app:layout_constraintStart_toEndOf="@+id/iv_applogo"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.011"/>
-
-      </androidx.constraintlayout.widget.ConstraintLayout>
-
-  </Toolbar>
-
-    <View
-    android:id="@+id/toolbar_shadow"
-    android:layout_width="match_parent"
-    android:layout_height="40dp"
-    android:background="@drawable/toolbar_shadow"/>
-
-  <org.angmarch.views.NiceSpinner
-      android:id="@+id/source_spinner"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:layout_below="@+id/toolbar_shadow"
-      android:background="@drawable/spinner_border"
-      app:textTint="#000"
-      android:padding="20dp"/>
-
-  <androidx.appcompat.widget.LinearLayoutCompat
-    android:id="@+id/search_layout"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="horizontal"
-    android:layout_below="@+id/source_spinner"
-    android:layout_margin="10dp">
-
-      <EditText
-        android:id="@+id/et_search"
-        android:layout_width="0dp"
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/bar"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="3"
-        android:lines="1"
-        android:inputType="text"
-        android:padding="10dp"
-        android:hint="Enter title"
-        android:textColor="#000000"
-        android:textColorHint="#393939"
-        android:background="@drawable/edittext_bg"/>
+        android:background="#000000">
 
-      <Button
-          android:id="@+id/btn_search"
-          android:layout_width="0dp"
-          android:layout_height="wrap_content"
-          android:layout_weight="1"
-          android:textAllCaps="false"
-          android:text="Search"/>
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
 
-  </androidx.appcompat.widget.LinearLayoutCompat>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
-  <androidx.recyclerview.widget.RecyclerView
-      android:id="@+id/rv_results"
-      android:layout_width="match_parent"
-      android:layout_height="match_parent"
-      android:layout_below="@+id/search_layout"/>
+                <ImageView
+                    android:id="@+id/imaafe"
+                    android:layout_width="50dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/movie"
+                    android:layout_marginLeft="5dp"/>
+
+                <TextView
+                    android:id="@+id/username"
+                    android:layout_width="148dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_toRightOf="@+id/imaafe"
+                    android:fontFamily="monospace"
+                    android:text="Not Cinema App"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/home"
+                    android:layout_width="wrap_content"
+                    android:layout_height="36dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/ic_home2" />
+
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/movie_bottom_navigation"
+        android:background="#FFFF00"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/fragmentContainer"/>
+
 
 </RelativeLayout>

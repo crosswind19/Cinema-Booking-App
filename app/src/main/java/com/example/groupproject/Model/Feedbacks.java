@@ -1,4 +1,4 @@
-package com.example.groupproject.ViewHolders;
+package com.example.groupproject.Model;
 
 public class Feedbacks {
     private String Username;

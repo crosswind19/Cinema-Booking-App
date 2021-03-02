@@ -1,16 +1,19 @@
-package com.example.groupproject;
+package com.example.groupproject.Model;
 
 import com.google.firebase.database.DataSnapshot;
 
 public class UserProfile {
-    public String emailAddress;
-    public String name;
-    public String phone;
+    private String emailAddress;
+    private String name;
+    private String phone;
 
     public UserProfile(String emailAddress, String name,String phone) {
         this.emailAddress = emailAddress;
         this.name = name;
         this.phone = phone;
+    }
+
+    public UserProfile() {
     }
 
     public String getEmailAddress() {

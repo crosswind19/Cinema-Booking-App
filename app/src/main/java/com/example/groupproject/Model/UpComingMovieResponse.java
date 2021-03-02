@@ -2,13 +2,13 @@ package com.example.groupproject.Model;
 
 import java.util.List;
 
-public class MovieResponse {
+public class UpComingMovieResponse {
     private String page;
 
     private String total_pages;
 
 
-    private List<NowPlaying> results;
+    private List<Upcoming> results;
 
     private String total_results;
 
@@ -28,11 +28,11 @@ public class MovieResponse {
         this.total_pages = total_pages;
     }
 
-    public List<NowPlaying> getResults() {
+    public List<Upcoming> getResults() {
         return results;
     }
 
-    public void setResults(List<NowPlaying> results) {
+    public void setResults(List<Upcoming> results) {
         this.results = results;
     }
 

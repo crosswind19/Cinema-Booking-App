@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nowplaying"
+        android:icon="@drawable/ic_new"
+        android:title=""/>
+
+    <item
+        android:id="@+id/upcoming"
+        android:icon="@drawable/ic_upcoming"
+        android:title=""/>
+
+    <item
+        android:id="@+id/booking"
+        android:icon="@drawable/ic_book"
+        android:title=""/>
+
+</menu>

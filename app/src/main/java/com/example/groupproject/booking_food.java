@@ -24,7 +24,7 @@ public class booking_food extends AppCompatActivity {
         totalcal();
 
         btnbuy.setOnClickListener((view) -> {
-            Intent intent = new Intent(booking_food.this, PaymentActivity.class);
+            Intent intent = new Intent(booking_food.this, MainActivity.class);
             startActivity(intent);
         });
     }
