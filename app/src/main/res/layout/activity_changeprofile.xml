@@ -34,14 +34,13 @@
             android:id="@+id/tv_newnum"
             android:layout_width="295dp"
             android:layout_height="42dp"
-            android:layout_marginTop="20dp"
             android:ems="10"
             android:inputType="textPersonName"
             android:text="Phone Number"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.258"
+            app:layout_constraintHorizontal_bias="0.543"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+            tools:layout_editor_absoluteY="485dp" />
 
         <ImageView
             android:id="@+id/iv_newpic"
@@ -55,80 +54,50 @@
             app:layout_constraintVertical_bias="0.181"
             tools:srcCompat="@tools:sample/avatars" />
 
-        <ImageView
-            android:id="@+id/imageView3"
-            android:layout_width="33dp"
-            android:layout_height="26dp"
-            android:background="#FFFFFF"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.079"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tv_description"
-            app:layout_constraintVertical_bias="0.059"
-            app:srcCompat="@drawable/ic_name" />
-
         <TextView
             android:id="@+id/tv_name"
-            android:layout_width="97dp"
-            android:layout_height="28dp"
+            android:layout_width="231dp"
+            android:layout_height="31dp"
+            android:drawableLeft="@drawable/ic_name"
+            android:drawablePadding="10dp"
             android:text="Full Name"
             android:textSize="18sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.043"
-            app:layout_constraintStart_toEndOf="@+id/imageView3"
-            app:layout_constraintTop_toBottomOf="@+id/tv_description"
-            app:layout_constraintVertical_bias="0.06" />
-
-        <ImageView
-            android:id="@+id/iv_email"
-            android:layout_width="33dp"
-            android:layout_height="26dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.079"
+            app:layout_constraintHorizontal_bias="0.151"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tv_newname"
-            app:layout_constraintVertical_bias="0.031"
-            app:srcCompat="@drawable/ic_email" />
+            app:layout_constraintTop_toBottomOf="@+id/tv_description"
+            app:layout_constraintVertical_bias="0.034" />
 
         <TextView
             android:id="@+id/tv_email1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_email"
+            android:drawablePadding="10dp"
             android:text="Email"
             android:textSize="18sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.036"
-            app:layout_constraintStart_toEndOf="@+id/iv_email"
-            app:layout_constraintTop_toBottomOf="@+id/tv_newname"
-            app:layout_constraintVertical_bias="0.036" />
-
-        <ImageView
-            android:id="@+id/iv_phone"
-            android:layout_width="33dp"
-            android:layout_height="26dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.079"
+            app:layout_constraintHorizontal_bias="0.081"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tv_newemail"
-            app:layout_constraintVertical_bias="0.062"
-            app:srcCompat="@drawable/ic_phone" />
+            app:layout_constraintTop_toBottomOf="@+id/tv_newname"
+            app:layout_constraintVertical_bias="0.056" />
 
         <TextView
             android:id="@+id/textView4"
-            android:layout_width="137dp"
-            android:layout_height="30dp"
-            android:layout_marginTop="12dp"
+            android:layout_width="135dp"
+            android:layout_height="23dp"
+            android:drawableLeft="@drawable/ic_phone"
+            android:drawablePadding="10dp"
             android:text="Phone Number"
             android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.052"
-            app:layout_constraintStart_toEndOf="@+id/iv_phone"
-            app:layout_constraintTop_toBottomOf="@+id/tv_newemail" />
+            app:layout_constraintHorizontal_bias="0.097"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_newemail"
+            app:layout_constraintVertical_bias="0.055" />
 
 
         <Button
@@ -153,22 +122,21 @@
             android:inputType="textPersonName"
             android:text="Full Name"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.258"
+            app:layout_constraintHorizontal_bias="0.543"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tv_name" />
 
         <EditText
             android:id="@+id/tv_newemail"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
+            android:layout_width="192dp"
+            android:layout_height="44dp"
             android:text="Email"
             android:textColor="#0C0202"
             android:textSize="18sp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.083"
+            app:layout_constraintHorizontal_bias="0.287"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tv_email1" />
+            tools:layout_editor_absoluteY="404dp" />
 
         <TextView
             android:id="@+id/tv_description"
