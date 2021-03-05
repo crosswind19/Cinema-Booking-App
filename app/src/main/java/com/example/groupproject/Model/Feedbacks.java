@@ -4,7 +4,7 @@ public class Feedbacks {
     private String Username;
     private String Feedback;
 
-    public String getUsername() {
+    public String getUsername(String trim) {
         return Username;
     }
 

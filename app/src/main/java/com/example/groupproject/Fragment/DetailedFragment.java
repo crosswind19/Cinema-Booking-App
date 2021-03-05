@@ -17,7 +17,7 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import com.example.groupproject.R;
-import com.example.groupproject.booking_seat;
+import com.example.groupproject.showingmovie;
 import com.squareup.picasso.Picasso;
 
 
@@ -48,7 +48,7 @@ public class DetailedFragment extends Fragment {
                 alert.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        Intent intent = new Intent(getActivity(), booking_seat.class);
+                        Intent intent = new Intent(getActivity(), showingmovie.class);
                         startActivity(intent);
 
                     }
