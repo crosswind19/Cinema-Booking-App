@@ -11,13 +11,16 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.groupproject.Fragment.DetailedFragment;
 
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Locale;
+
 public class booking_seat extends AppCompatActivity {
 
 //    TextView tvTitle,tvDesc,tvRating,tvReleaseDate;
     Button exit,confirm;
 //    ImageView movieImage;
 //    public String movieTitle,movieRating,movieReleaseDate,movieDesc,movieImagePath;
-
 
     Button clear;
 
@@ -27,8 +30,6 @@ public class booking_seat extends AppCompatActivity {
 
     ToggleButton a1,a2,a3,a4,a5,a6,b1,b2,b3,b4,b5,b6,c1,c2,c3,c4,c5,c6,d1,d2,d3,d4,d5,d6,e1,e2,e3,e4,e5,e6,f1,f2,f3,f4,f5,f6,g1,g2,g3,g4,g5,g6,h1,h2,h3,h4,h5,h6;
 //      ToggleButton buttons [][] = new ToggleButton [6][8];
-
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -63,7 +64,7 @@ public class booking_seat extends AppCompatActivity {
         c3 = findViewById(R.id.button_23);
         d3 = findViewById(R.id.button_24);
         e3 = findViewById(R.id.button_25);
-        e3 = findViewById(R.id.button_26);
+        f3 = findViewById(R.id.button_26);
         g3 = findViewById(R.id.button_27);
         h3 = findViewById(R.id.button_28);
 
@@ -82,7 +83,7 @@ public class booking_seat extends AppCompatActivity {
         c5 = findViewById(R.id.button_43);
         d5 = findViewById(R.id.button_44);
         e5 = findViewById(R.id.button_45);
-        e5 = findViewById(R.id.button_46);
+        f5 = findViewById(R.id.button_46);
         g5 = findViewById(R.id.button_47);
         h5 = findViewById(R.id.button_48);
 
@@ -104,6 +105,12 @@ public class booking_seat extends AppCompatActivity {
 //
 //            }
 //        }
+
+        TextView date = findViewById(R.id.tvDate);
+        Calendar calendar = Calendar.getInstance();
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("EEEE, dd-MMM-yyyy hh:mm a");
+        String dateTime = simpleDateFormat.format(calendar.getTime());
+        date.setText(dateTime);
 
         exit.setOnClickListener((v -> {
             Intent intent = new Intent(booking_seat.this, DetailedFragment.class);
