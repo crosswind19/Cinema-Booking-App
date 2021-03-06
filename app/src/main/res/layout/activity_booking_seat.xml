@@ -75,14 +75,15 @@
         android:textAlignment="center"
         android:gravity="center_horizontal" />
 
-    <TextView
-        android:layout_width="500dp"
-        android:layout_height="20dp"
-        android:layout_below="@id/v2"
-        android:fontFamily="@font/g_bold"
-        android:text="Sat 22 Feb, 10:00 PM"
-        android:textAlignment="center"
-        android:gravity="center_horizontal" />
+        <TextView
+            android:id="@+id/tvDate"
+            android:layout_width="500dp"
+            android:layout_height="20dp"
+            android:layout_below="@id/v2"
+            android:fontFamily="@font/g_bold"
+            android:gravity="center_horizontal"
+            android:text="Sat 22 Feb, 10:00 PM"
+            android:textAlignment="center" />
 
     </RelativeLayout>
 
