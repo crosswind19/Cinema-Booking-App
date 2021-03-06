@@ -11,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.GROUPPROJECT">
-        <activity android:name=".payCard"></activity>
+        <activity android:name=".sendFeedback"></activity>
+        <activity android:name=".payCard" />
         <activity android:name=".payment" />
         <activity android:name=".confirm_order" />
         <activity android:name=".booking_food" />
@@ -27,7 +28,7 @@
         <activity android:name=".activity_viewprofile" />
         <activity android:name=".MainActivity" />
         <activity android:name=".activity_forgotpassword" />
-        <activity android:name=".searchlist"/>
+        <activity android:name=".searchlist" />
         <activity
             android:name=".activity_signup"
             android:parentActivityName=".activity_login" />

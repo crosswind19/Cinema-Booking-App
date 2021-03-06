@@ -1,22 +1,31 @@
 package com.example.groupproject.Model;
 
 public class Feedbacks {
-    private String Username;
-    private String Feedback;
+    String username;
+    String message;
 
-    public String getUsername(String trim) {
-        return Username;
+    public Feedbacks(){
+
+    }
+
+    public Feedbacks(String username, String feedback){
+        this.username = username;
+        this.message = feedback;
+    }
+
+    public String getUsername() {
+        return username;
     }
 
     public void setUsername(String username) {
-        Username = username;
+        this.username = username;
     }
 
-    public String getFeedback(String feedback) {
-        return Feedback;
+    public String getMessage() {
+        return message;
     }
 
-    public void setFeedback(String feedback) {
-        Feedback = feedback;
+    public void setMessage(String message) {
+        this.message = message;
     }
 }
