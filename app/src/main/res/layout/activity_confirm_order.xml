@@ -16,11 +16,11 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_food"
+        app:layout_constraintTop_toBottomOf="@+id/tv_food2"
         app:layout_constraintVertical_bias="0.204" />
 
     <Button
-        android:id="@+id/btn_confim"
+        android:id="@+id/btn_deleteorder"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Yes, proceed to payment"
@@ -38,11 +38,11 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_confim"
+        app:layout_constraintTop_toBottomOf="@+id/btn_deleteorder"
         app:layout_constraintVertical_bias="0.12" />
 
     <TextView
-        android:id="@+id/tv_movieTitle"
+        android:id="@+id/tv_movieTitle4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Movie Title : Sonic THe HedgeHog"
@@ -55,7 +55,7 @@
         app:layout_constraintVertical_bias="0.263" />
 
     <TextView
-        android:id="@+id/tv_seat"
+        android:id="@+id/tv_seat4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Seat : A2"
@@ -64,11 +64,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.058"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_time"
+        app:layout_constraintTop_toBottomOf="@+id/tv_time4"
         app:layout_constraintVertical_bias="0.055" />
 
     <TextView
-        android:id="@+id/tv_date"
+        android:id="@+id/tv_date4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Date : 2021-03-10"
@@ -77,11 +77,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.073"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_movieTitle"
+        app:layout_constraintTop_toBottomOf="@+id/tv_movieTitle4"
         app:layout_constraintVertical_bias="0.052" />
 
     <TextView
-        android:id="@+id/tv_time"
+        android:id="@+id/tv_time4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Time : 3:00pm"
@@ -90,7 +90,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.067"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_date"
+        app:layout_constraintTop_toBottomOf="@+id/tv_date4"
         app:layout_constraintVertical_bias="0.055" />
 
     <TextView
@@ -109,7 +109,7 @@
         app:layout_constraintVertical_bias="0.095" />
 
     <TextView
-        android:id="@+id/tv_food"
+        android:id="@+id/tv_food2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Food and Beverage : Combo A * 1"
@@ -118,6 +118,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.099"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_seat"
+        app:layout_constraintTop_toBottomOf="@+id/tv_seat4"
         app:layout_constraintVertical_bias="0.075" />
 </androidx.constraintlayout.widget.ConstraintLayout>

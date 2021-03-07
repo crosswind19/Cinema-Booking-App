@@ -12,7 +12,7 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button logout,viewProfile,movieList,feedback;
+    private Button logout,viewProfile,movieList,feedback,orderHistory;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
         viewProfile=findViewById(R.id.btn_viewProfile);
         movieList=findViewById(R.id.btn_sl);
         feedback=findViewById(R.id.btn_feedback);
+        orderHistory=findViewById(R.id.btn_history);
 
         logout.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -49,6 +50,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(getApplicationContext(),sendFeedback.class));
+            }
+        });
+
+        orderHistory.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(),orderhistory.class));
             }
         });
 

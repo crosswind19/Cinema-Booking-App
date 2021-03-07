@@ -5,15 +5,17 @@ public class BookingData {
     private String showingDate;
     private String showingTime;
     private String seatNumber;
+    private String foodAndBeverage;
 
     public BookingData() {
     }
 
-    public BookingData(String movieTitle, String showingDate, String showingTime, String seatNumber) {
+    public BookingData(String movieTitle, String showingDate, String showingTime, String seatNumber, String foodAndBeverage) {
         this.movieTitle = movieTitle;
         this.showingDate = showingDate;
         this.showingTime = showingTime;
         this.seatNumber = seatNumber;
+        this.foodAndBeverage = foodAndBeverage;
     }
 
     public String getMovieTitle() {
@@ -47,4 +49,13 @@ public class BookingData {
     public void setSeatNumber(String seatNumber) {
         this.seatNumber = seatNumber;
     }
+
+    public String getFoodAndBeverage() {
+        return foodAndBeverage;
+    }
+
+    public void setFoodAndBeverage(String foodAndBeverage) {
+        this.foodAndBeverage = foodAndBeverage;
+    }
 }
+
