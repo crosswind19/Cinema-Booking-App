@@ -11,8 +11,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".comingsoonmovie"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="-64dp">
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="94dp">
 
         <Button
             android:id="@+id/button8"
