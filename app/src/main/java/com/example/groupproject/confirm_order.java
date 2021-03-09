@@ -19,7 +19,7 @@ public class confirm_order extends AppCompatActivity {
 
     TextView movieTitle,time,date,seat,extra;
     Button btnConfirm, btnCancel;
-    String title,sTime,sDate,sSeat,Extra, bookingtime, dateTime;
+    String title,sTime,sDate,sSeat,Extra,bookingDate,bookingTime;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,11 +35,11 @@ public class confirm_order extends AppCompatActivity {
 
         Intent gettime = getIntent();
         Calendar calendar = Calendar.getInstance();
-        bookingtime = gettime.getStringExtra("time");
+        bookingTime = gettime.getStringExtra("time");
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("EEEE, dd-MMM-yyyy ");
-        dateTime = simpleDateFormat.format(calendar.getTime());
-        date.setText("Date: " + dateTime);
-        time.setText("Time: " + bookingtime);
+        bookingDate = simpleDateFormat.format(calendar.getTime());
+        date.setText(bookingDate);
+        time.setText(bookingTime);
 
 
         btnConfirm.setOnClickListener((view) -> {
@@ -64,7 +64,7 @@ public class confirm_order extends AppCompatActivity {
         FirebaseAuth fAuth = FirebaseAuth.getInstance();
         FirebaseDatabase firebaseDatabase = FirebaseDatabase.getInstance();
         DatabaseReference myRef = firebaseDatabase.getReference("Booking Info").child(fAuth.getUid());
-        BookingData bookingData = new BookingData(title,sTime,sDate,sSeat,Extra);
+        BookingData bookingData = new BookingData(title,sDate,sTime,sSeat,Extra);
         myRef.setValue(bookingData);
     }
 

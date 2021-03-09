@@ -47,12 +47,17 @@ public class orderhistory extends AppCompatActivity {
         databaseReference.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
-                BookingData classBookingData = snapshot.getValue(BookingData.class);
-                title.setText(classBookingData.getMovieTitle());
-                date.setText(classBookingData.getShowingDate());
-                time.setText(classBookingData.getShowingTime());
-                seat.setText(classBookingData.getSeatNumber());
-                food.setText(classBookingData.getFoodAndBeverage());
+                if(snapshot.exists()){
+                    BookingData classBookingData = snapshot.getValue(BookingData.class);
+                    title.setText("Movie Title : " + classBookingData.getMovieTitle());
+                    date.setText("Date : " + classBookingData.getShowingDate());
+                    time.setText("Time : " + classBookingData.getShowingTime());
+                    seat.setText("Seat : " + classBookingData.getSeatNumber());
+                    food.setText("Food and Beverage : " + classBookingData.getFoodAndBeverage());
+                }else{
+                    startActivity(new Intent(orderhistory.this, MainActivity.class));
+                    Toast.makeText(orderhistory.this,"Booking data still empty",Toast.LENGTH_SHORT).show();
+                }
             }
 
             @Override
