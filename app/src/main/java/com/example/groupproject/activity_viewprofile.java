@@ -17,7 +17,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.groupproject.Model.UserProfile;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
@@ -103,10 +102,10 @@ public class activity_viewprofile extends AppCompatActivity {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 UserProfile classUserProfile = snapshot.getValue(UserProfile.class);
-                pName.setText("Name: " + classUserProfile.getName());
-                pEmail.setText("Email: " + classUserProfile.getEmailAddress());
-                pPhone.setText("Phone: " + classUserProfile.getPhone());
-              /*  String Email = snapshot.child("emailAddress").getValue().toString();
+                pName.setText(classUserProfile.getName());
+                pEmail.setText(classUserProfile.getEmailAddress());
+                pPhone.setText(classUserProfile.getPhone());/*
+                String Email = snapshot.child("emailAddress").getValue().toString();
                 String Name = snapshot.child("name").getValue().toString();
                 String Phone = snapshot.child("phone").getValue().toString();
                 pName.setText(Name);

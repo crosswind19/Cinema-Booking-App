@@ -1,4 +1,6 @@
-package com.example.groupproject.Model;
+package com.example.groupproject;
+
+import com.google.firebase.database.DataSnapshot;
 
 public class UserProfile {
     private String emailAddress;

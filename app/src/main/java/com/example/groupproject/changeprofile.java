@@ -19,7 +19,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.groupproject.Model.UserProfile;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
@@ -121,10 +120,10 @@ public class changeprofile extends AppCompatActivity {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 UserProfile classUserProfile = snapshot.getValue(UserProfile.class);
-                newUserName.setText("Name: " + classUserProfile.getName());
-                newUserEmail.setText("Email: " + classUserProfile.getEmailAddress());
-                newUserPhoneNumber.setText("Phone: " + classUserProfile.getPhone());            }
-
+                newUserName.setText(classUserProfile.getName());
+                newUserEmail.setText(classUserProfile.getEmailAddress());
+                newUserPhoneNumber.setText(classUserProfile.getPhone());
+            }
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
                 Toast.makeText(changeprofile.this, error.getCode(), Toast.LENGTH_SHORT).show();
