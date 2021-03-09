@@ -43,7 +43,7 @@ public class changepassword extends AppCompatActivity {
         renew = reNewPassword.getText().toString();
 
 
-        if (TextUtils.isEmpty(oldpass)) {
+        /*if (TextUtils.isEmpty(oldpass)) {
             oldPassword.setError("Old Password can't be empty.");
         }
 
@@ -63,23 +63,21 @@ public class changepassword extends AppCompatActivity {
             newPassword.setError("Password does not match.");
             reNewPassword.setError("Password does not match.");
         }else
-            result = true;
+            result = true;*/
 
         reset.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 String userPasswordNew = newPassword.getText().toString();
-                if (result == true){
-                    firebaseUser.updatePassword(userPasswordNew).addOnCompleteListener(new OnCompleteListener<Void>() {
-                        @Override
-                        public void onComplete(@NonNull Task<Void> task) {
-                            if (task.isSuccessful())
-                                Toast.makeText(changepassword.this, "Password Changed", Toast.LENGTH_SHORT).show();
-                            else
-                                Toast.makeText(changepassword.this, "Password Update Failed", Toast.LENGTH_SHORT).show();
-                        }
-                    });
-                }
+                firebaseUser.updatePassword(userPasswordNew).addOnCompleteListener(new OnCompleteListener<Void>() {
+                    @Override
+                    public void onComplete(@NonNull Task<Void> task) {
+                        if (task.isSuccessful())
+                            Toast.makeText(changepassword.this, "Password Changed", Toast.LENGTH_SHORT).show();
+                        else
+                            Toast.makeText(changepassword.this, "Password Update Failed", Toast.LENGTH_SHORT).show();
+                    }
+                });
             }
         });
     }
