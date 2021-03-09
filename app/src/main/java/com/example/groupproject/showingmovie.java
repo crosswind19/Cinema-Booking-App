@@ -8,8 +8,12 @@ import android.widget.TextView;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-public class showingmovie extends AppCompatActivity {
+import com.example.groupproject.Model.NowPlaying;
 
+public class showingmovie extends AppCompatActivity{
+
+    TextView name;
+    String moviename;
     Button next1, next2, next3, next4, next5, next6, next7;
 
     @Override
@@ -17,6 +21,7 @@ public class showingmovie extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_showingmovie);
 
+        name = findViewById(R.id.textView14);
         next1 = findViewById(R.id.button);
         next2 = findViewById(R.id.button2);
         next3 = findViewById(R.id.button3);
@@ -24,6 +29,8 @@ public class showingmovie extends AppCompatActivity {
         next5 = findViewById(R.id.button7);
         next6 = findViewById(R.id.button5);
         next7 = findViewById(R.id.button8);
+
+        //name.setText(moviename);
 
         next1.setOnClickListener((view) -> {
             Intent intent = new Intent(showingmovie.this, booking_seat.class);

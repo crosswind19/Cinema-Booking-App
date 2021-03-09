@@ -12,11 +12,14 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+
 public class confirm_order extends AppCompatActivity {
 
     TextView movieTitle,time,date,seat,extra;
     Button btnConfirm, btnCancel;
-    String title,sTime,sDate,sSeat,Extra;
+    String title,sTime,sDate,sSeat,Extra, bookingtime, dateTime;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +32,15 @@ public class confirm_order extends AppCompatActivity {
         extra=findViewById(R.id.tv_food2);
         btnConfirm = (Button)findViewById(R.id.btn_deleteorder);
         btnCancel = (Button)findViewById(R.id.btn_cancel);
+
+        Intent gettime = getIntent();
+        Calendar calendar = Calendar.getInstance();
+        bookingtime = gettime.getStringExtra("time");
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("EEEE, dd-MMM-yyyy ");
+        dateTime = simpleDateFormat.format(calendar.getTime());
+        date.setText("Date: " + dateTime);
+        time.setText("Time: " + bookingtime);
+
 
         btnConfirm.setOnClickListener((view) -> {
             title=movieTitle.getText().toString();

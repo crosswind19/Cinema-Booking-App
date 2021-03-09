@@ -15,6 +15,7 @@ public class booking_food extends AppCompatActivity {
     static int foodtotal2;
     static int alltotal;
     Button btnbuy;
+    private String time;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,8 +24,12 @@ public class booking_food extends AppCompatActivity {
         btnbuy = (Button)findViewById(R.id.btn_buy);
         totalcal();
 
+        Intent intent2 = getIntent();
+        time = intent2.getStringExtra("time");
+
         btnbuy.setOnClickListener((view) -> {
             Intent intent = new Intent(booking_food.this, confirm_order.class);
+            intent.putExtra("time", time);
             startActivity(intent);
         });
     }
