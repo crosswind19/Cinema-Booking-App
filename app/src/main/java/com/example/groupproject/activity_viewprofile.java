@@ -94,7 +94,8 @@ public class activity_viewprofile extends AppCompatActivity {
         }).addOnFailureListener(new OnFailureListener() {
             @Override
             public void onFailure(@NonNull Exception exception) {
-                // Handle any errors
+                Toast.makeText(activity_viewprofile.this, "Profile info fetch failed", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(activity_viewprofile.this, MainActivity.class));
             }
         });
 
