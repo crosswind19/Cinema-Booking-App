@@ -13,7 +13,7 @@
         android:layout_height="350dp"
         android:background="#00070707"
         android:gravity="center"
-        android:text="Thank You for Coming! Please enjoy your Movie!"
+        android:text="Thank You for Coming! Please pay at the counter!"
         android:textAlignment="center"
         android:textColor="#000000"
         android:textSize="30sp"
