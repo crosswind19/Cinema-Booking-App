@@ -17,9 +17,17 @@ import java.util.Calendar;
 
 public class confirm_order extends AppCompatActivity {
 
-    TextView movieTitle,time,date,seat,extra;
+    TextView movieTitle,time,date,seat,extra,totalprice;
     Button btnConfirm, btnCancel;
-    String title,sTime,sDate,sSeat,Extra,bookingDate,bookingTime;
+    String title;
+    String sTime;
+    String sDate;
+    String sSeat;
+    String Extra;
+    String bookingDate;
+    String bookingTime;
+    String Price;
+    double ttlprice;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,17 +38,12 @@ public class confirm_order extends AppCompatActivity {
         date=findViewById(R.id.tv_date4);
         seat=findViewById(R.id.tv_seat4);
         extra=findViewById(R.id.tv_food2);
+        totalprice=findViewById(R.id.priceview3);
         btnConfirm = (Button)findViewById(R.id.btn_deleteorder);
         btnCancel = (Button)findViewById(R.id.btn_cancel);
 
-        Intent gettime = getIntent();
-        Calendar calendar = Calendar.getInstance();
-        bookingTime = gettime.getStringExtra("time");
-        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("EEEE, dd-MMM-yyyy ");
-        bookingDate = simpleDateFormat.format(calendar.getTime());
-        date.setText(bookingDate);
-        time.setText(bookingTime);
-
+        fetchDate();
+        fetchPrice();
 
         btnConfirm.setOnClickListener((view) -> {
             title=movieTitle.getText().toString();
@@ -48,13 +51,14 @@ public class confirm_order extends AppCompatActivity {
             sDate=date.getText().toString();
             sSeat=seat.getText().toString();
             Extra=extra.getText().toString();
+            Price=totalprice.getText().toString();
             sendOrderData();
             Intent intent = new Intent(confirm_order.this, payment.class);
             startActivity(intent);
         } );
 
         btnCancel.setOnClickListener((view) -> {
-            Intent intent = new Intent(confirm_order.this, booking_food.class);
+            Intent intent = new Intent(confirm_order.this, showingmovie.class);
             startActivity(intent);
         } );
 
@@ -64,9 +68,27 @@ public class confirm_order extends AppCompatActivity {
         FirebaseAuth fAuth = FirebaseAuth.getInstance();
         FirebaseDatabase firebaseDatabase = FirebaseDatabase.getInstance();
         DatabaseReference myRef = firebaseDatabase.getReference("Booking Info").child(fAuth.getUid());
-        BookingData bookingData = new BookingData(title,sDate,sTime,sSeat,Extra);
+        BookingData bookingData = new BookingData(title,sDate,sTime,sSeat,Extra,Price);
         myRef.setValue(bookingData);
     }
 
+    private void fetchDate(){
+        Intent intent = getIntent();
+        Calendar calendar = Calendar.getInstance();
+        bookingTime = intent.getStringExtra("time");
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("EEEE, dd-MMM-yyyy ");
+        bookingDate = simpleDateFormat.format(calendar.getTime());
+        date.setText(bookingDate);
+        time.setText(bookingTime);
+    }
 
+    private void fetchPrice(){
+        Intent intent = getIntent();
+        String price = intent.getStringExtra("price");
+        String foodp = intent.getStringExtra("foodprice");
+        double x = Double.parseDouble(price);
+        double y = Double.parseDouble(foodp);
+        ttlprice = x+y;
+        totalprice.setText("RM " + ttlprice);
+    }
 }

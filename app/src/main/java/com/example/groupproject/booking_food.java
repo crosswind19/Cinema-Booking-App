@@ -16,20 +16,24 @@ public class booking_food extends AppCompatActivity {
     static int alltotal;
     Button btnbuy;
     private String time;
+    String price, p;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_booking_food);
         btnbuy = (Button)findViewById(R.id.btn_buy);
-        totalcal();
 
         Intent intent2 = getIntent();
         time = intent2.getStringExtra("time");
+        price = intent2.getStringExtra("price");
+        totalcal();
 
         btnbuy.setOnClickListener((view) -> {
             Intent intent = new Intent(booking_food.this, confirm_order.class);
             intent.putExtra("time", time);
+            intent.putExtra("price", price);
+            intent.putExtra("foodprice", p);
             startActivity(intent);
         });
     }
@@ -88,6 +92,7 @@ public class booking_food extends AppCompatActivity {
         alltotal = foodtotal1 + foodtotal2;
         if(alltotal > 0){
             TextView tv = (TextView)findViewById(R.id.totalfood);
+            p = String.valueOf(alltotal);
             tv.setText("RM" + alltotal);
         }
         else{

@@ -35,42 +35,49 @@ public class showingmovie extends AppCompatActivity{
         next1.setOnClickListener((view) -> {
             Intent intent = new Intent(showingmovie.this, booking_seat.class);
             intent.putExtra("bookingtime" , "8.15 AM");
+            intent.putExtra("price", "15.60");
             startActivity(intent);
         } );
 
         next2.setOnClickListener((view) -> {
             Intent intent = new Intent(showingmovie.this, booking_seat.class);
             intent.putExtra("bookingtime", "2.45 PM");
+            intent.putExtra("price", "15.60");
             startActivity(intent);
         } );
 
         next3.setOnClickListener((view) -> {
             Intent intent = new Intent(showingmovie.this, booking_seat.class);
             intent.putExtra("bookingtime", "4.55 PM");
+            intent.putExtra("price", "15.60");
             startActivity(intent);
         } );
 
         next4.setOnClickListener((view) -> {
             Intent intent = new Intent(showingmovie.this, booking_seat.class);
             intent.putExtra("bookingtime", "1.05 PM");
+            intent.putExtra("price", "17.20");
             startActivity(intent);
         } );
 
         next5.setOnClickListener((view) -> {
             Intent intent = new Intent(showingmovie.this, booking_seat.class);
             intent.putExtra("bookingtime", "3.05 PM");
+            intent.putExtra("price", "17.20");
             startActivity(intent);
         } );
 
         next6.setOnClickListener((view) -> {
             Intent intent = new Intent(showingmovie.this, booking_seat.class);
             intent.putExtra("bookingtime", "5.45 PM");
+            intent.putExtra("price", "17.20");
             startActivity(intent);
         } );
 
         next7.setOnClickListener((view) -> {
             Intent intent = new Intent(showingmovie.this, booking_seat.class);
             intent.putExtra("bookingtime", "8.25 PM");
+            intent.putExtra("price", "17.20");
             startActivity(intent);
         } );
     }

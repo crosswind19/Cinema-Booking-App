@@ -8,6 +8,19 @@
     tools:context=".confirm_order">
 
     <TextView
+        android:id="@+id/priceview3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0.00"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_confirmMessage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.067"
+        app:layout_constraintStart_toEndOf="@+id/textView26"
+        app:layout_constraintTop_toBottomOf="@+id/tv_food2"
+        app:layout_constraintVertical_bias="0.552" />
+
+    <TextView
         android:id="@+id/tv_confirmMessage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -186,4 +199,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView23"
         app:layout_constraintVertical_bias="0.05" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Price: "
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_confirmMessage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.08"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView24"
+        app:layout_constraintVertical_bias="0.564" />
 </androidx.constraintlayout.widget.ConstraintLayout>
