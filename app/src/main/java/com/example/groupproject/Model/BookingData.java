@@ -6,16 +6,18 @@ public class BookingData {
     private String showingTime;
     private String seatNumber;
     private String foodAndBeverage;
+    private int price;
 
     public BookingData() {
     }
 
-    public BookingData(String movieTitle, String showingDate, String showingTime, String seatNumber, String foodAndBeverage) {
+    public BookingData(String movieTitle, String showingDate, String showingTime, String seatNumber, String foodAndBeverage, int price) {
         this.movieTitle = movieTitle;
         this.showingDate = showingDate;
         this.showingTime = showingTime;
         this.seatNumber = seatNumber;
         this.foodAndBeverage = foodAndBeverage;
+        this.price = price;
     }
 
     public String getMovieTitle() {
@@ -56,6 +58,14 @@ public class BookingData {
 
     public void setFoodAndBeverage(String foodAndBeverage) {
         this.foodAndBeverage = foodAndBeverage;
+    }
+
+    public int getPrice() {
+        return price;
+    }
+
+    public void setPrice(int price) {
+        this.price = price;
     }
 }
 
