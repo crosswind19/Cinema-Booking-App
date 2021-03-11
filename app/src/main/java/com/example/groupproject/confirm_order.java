@@ -39,11 +39,12 @@ public class confirm_order extends AppCompatActivity {
         seat=findViewById(R.id.tv_seat4);
         extra=findViewById(R.id.tv_food2);
         totalprice=findViewById(R.id.priceview3);
-        btnConfirm = (Button)findViewById(R.id.btn_deleteorder);
-        btnCancel = (Button)findViewById(R.id.btn_cancel);
+        btnConfirm = findViewById(R.id.btn_deleteorder);
+        btnCancel = findViewById(R.id.btn_cancel);
 
         fetchDate();
         fetchPrice();
+        fetchSeat();
 
         btnConfirm.setOnClickListener((view) -> {
             title=movieTitle.getText().toString();
@@ -90,5 +91,11 @@ public class confirm_order extends AppCompatActivity {
         double y = Double.parseDouble(foodp);
         ttlprice = x+y;
         totalprice.setText("RM " + ttlprice);
+    }
+
+    private void fetchSeat(){
+        Intent intent = getIntent();
+        String st = intent.getStringExtra("seat");
+        seat.setText(st);
     }
 }
