@@ -28,6 +28,7 @@ public class confirm_order extends AppCompatActivity {
     String bookingTime;
     String Price;
     double ttlprice;
+    int p1,p2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -86,11 +87,18 @@ public class confirm_order extends AppCompatActivity {
     private void fetchPrice(){
         Intent intent = getIntent();
         String price = intent.getStringExtra("price");
+        String ticketNo = intent.getStringExtra("totalseat");
         String foodp = intent.getStringExtra("foodprice");
-        double x = Double.parseDouble(price);
-        double y = Double.parseDouble(foodp);
-        ttlprice = x+y;
+        String food1 = intent.getStringExtra("food1");
+        String food2 = intent.getStringExtra("food2");
+        double ticketPrice = Double.parseDouble(price);
+        double foodPrice = Double.parseDouble(foodp);
+        int totalSeat = Integer.parseInt(ticketNo);
+        p1 = Integer.parseInt(food1)/(10);
+        p2 = Integer.parseInt(food2)/(15);
+        ttlprice = (totalSeat*ticketPrice)+foodPrice;
         totalprice.setText("RM " + ttlprice);
+        extra.setText("Combo A * " + p1 + " Combo B * " + p2);
     }
 
     private void fetchSeat(){
@@ -98,4 +106,5 @@ public class confirm_order extends AppCompatActivity {
         String st = intent.getStringExtra("seat");
         seat.setText(st);
     }
+
 }

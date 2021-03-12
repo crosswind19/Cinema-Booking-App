@@ -12,7 +12,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.GROUPPROJECT">
-        <activity android:name=".orderhistory"></activity>
+        <activity android:name=".orderhistory" />
         <activity android:name=".sendFeedback" />
         <activity android:name=".payCard" />
         <activity android:name=".payment" />

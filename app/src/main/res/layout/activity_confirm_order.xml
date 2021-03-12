@@ -15,10 +15,10 @@
         android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/tv_confirmMessage"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.067"
+        app:layout_constraintHorizontal_bias="0.077"
         app:layout_constraintStart_toEndOf="@+id/textView26"
         app:layout_constraintTop_toBottomOf="@+id/tv_food2"
-        app:layout_constraintVertical_bias="0.552" />
+        app:layout_constraintVertical_bias="0.402" />
 
     <TextView
         android:id="@+id/tv_confirmMessage"
@@ -30,18 +30,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_food2"
-        app:layout_constraintVertical_bias="0.204" />
-
-    <Button
-        android:id="@+id/btn_deleteorder"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Yes, proceed to payment"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_confirmMessage"
-        app:layout_constraintVertical_bias="0.132" />
+        app:layout_constraintVertical_bias="0.326" />
 
     <Button
         android:id="@+id/btn_cancel"
@@ -50,9 +39,22 @@
         android:text="No, I regret my choice"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_deleteorder"
-        app:layout_constraintVertical_bias="0.12" />
+        app:layout_constraintVertical_bias="0.16" />
+
+    <Button
+        android:id="@+id/btn_deleteorder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Yes, proceed to payment"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_confirmMessage"
+        app:layout_constraintVertical_bias="0.166" />
 
     <TextView
         android:id="@+id/tv_movieTitle4"
@@ -129,10 +131,10 @@
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.658"
+        app:layout_constraintHorizontal_bias="0.083"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_seat4"
-        app:layout_constraintVertical_bias="0.053" />
+        app:layout_constraintTop_toBottomOf="@+id/textView24"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/textView20"
@@ -194,11 +196,11 @@
         android:text="Food and Beverage : "
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/tv_food2"
-        app:layout_constraintHorizontal_bias="0.702"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.106"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView23"
-        app:layout_constraintVertical_bias="0.05" />
+        app:layout_constraintVertical_bias="0.048" />
 
     <TextView
         android:id="@+id/textView26"

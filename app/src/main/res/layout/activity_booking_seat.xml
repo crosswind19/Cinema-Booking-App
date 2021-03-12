@@ -29,7 +29,7 @@
         app:layout_constraintStart_toStartOf="parent">
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/tv_movietitle"
         android:layout_width="358dp"
         android:layout_height="match_parent"
         android:layout_alignParentStart="true"
@@ -128,7 +128,7 @@
                 android:textOn="A1"
                 android:textOff="A1"
                 android:layout_marginLeft="15dp"
-                android:textColor="#ffff00"
+                android:textColor="#000000"
                 android:layout_width="45dp"
                 android:layout_height="45dp"/>
             <ToggleButton
@@ -139,7 +139,7 @@
                 android:onClick="countIN"
                 android:layout_marginTop="10dp"
                 android:layout_marginLeft="1dp"
-                android:textColor="#ffff00"
+                android:textColor="#000000"
                 android:layout_width="45dp"
                 android:layout_height="45dp"/>
 
@@ -151,7 +151,7 @@
                 android:layout_marginTop="10dp"
                 android:textOn="A3"
                 android:textOff="A3"
-                android:textColor="#ffff00"
+                android:textColor="#000000"
                 android:layout_marginLeft="1dp"
                 android:layout_width="45dp"
                 android:layout_height="45dp"/>
@@ -161,7 +161,7 @@
                 android:textOn="A4"
                 android:onClick="countIN"
                 android:textOff="A4"
-                android:textColor="#ffff00"
+                android:textColor="#000000"
                 android:layout_marginTop="10dp"
                 android:layout_marginLeft="1dp"
                 android:layout_width="45dp"
@@ -175,7 +175,7 @@
                 android:onClick="countIN"
                 android:layout_marginTop="10dp"
                 android:layout_marginLeft="1dp"
-                android:textColor="#ffff00"
+                android:textColor="#000000"
                 android:layout_width="45dp"
                 android:layout_height="45dp"/>
 
@@ -185,7 +185,7 @@
                 android:textOn="A6"
                 android:textOff="A6"
                 android:onClick="countIN"
-                android:textColor="#ffff00"
+                android:textColor="#000000"
                 android:layout_marginTop="10dp"
                 android:layout_marginLeft="1dp"
                 android:layout_width="45dp"
@@ -197,7 +197,7 @@
                 android:textOn="A7"
                 android:onClick="countIN"
                 android:textOff="A7"
-                android:textColor="#ffff00"
+                android:textColor="#000000"
                 android:layout_marginTop="10dp"
                 android:layout_marginLeft="1dp"
                 android:layout_width="45dp"
@@ -211,7 +211,7 @@
                 android:layout_marginTop="10dp"
                 android:layout_toRightOf="@id/button_07"
                 android:onClick="countIN"
-                android:textColor="#ffff00"
+                android:textColor="#000000"
                 android:textOff="A8"
                 android:textOn="A8" />
 
@@ -231,7 +231,7 @@
                 android:textOff="B1"
                 android:layout_marginLeft="15dp"
                 android:onClick="countIN"
-                android:textColor="#ffff00"
+                android:textColor="#000000"
                 android:layout_width="45dp"
                 android:layout_height="45dp"/>
             <ToggleButton
@@ -242,7 +242,7 @@
                 android:layout_marginTop="10dp"
                 android:onClick="countIN"
                 android:layout_marginLeft="1dp"
-                android:textColor="#ffff00"
+                android:textColor="#000000"
                 android:layout_width="45dp"
                 android:layout_height="45dp"/>
 
@@ -254,7 +254,7 @@
                 android:textOn="B3"
                 android:textOff="B3"
                 android:onClick="countIN"
-                android:textColor="#ffff00"
+                android:textColor="#000000"
                 android:layout_marginLeft="1dp"
                 android:layout_width="45dp"
                 android:layout_height="45dp"/>
@@ -264,7 +264,7 @@
                 android:textOn="B4"
                 android:onClick="countIN"
                 android:textOff="B4"
-                android:textColor="#ffff00"
+                android:textColor="#000000"
                 android:layout_marginTop="10dp"
                 android:layout_marginLeft="1dp"
                 android:layout_width="45dp"
@@ -278,7 +278,7 @@
                 android:layout_marginTop="10dp"
                 android:layout_marginLeft="1dp"
                 android:onClick="countIN"
-                android:textColor="#ffff00"
+                android:textColor="#000000"
                 android:layout_width="45dp"
                 android:layout_height="45dp"/>
 
@@ -288,7 +288,7 @@
                 android:textOn="B6"
                 android:textOff="B6"
                 android:onClick="countIN"
-                android:textColor="#ffff00"
+                android:textColor="#000000"
                 android:layout_marginTop="10dp"
                 android:layout_marginLeft="1dp"
                 android:layout_width="45dp"
@@ -299,7 +299,7 @@
                 android:id="@+id/button_17"
                 android:textOn="B7"
                 android:textOff="B7"
-                android:textColor="#ffff00"
+                android:textColor="#000000"
                 android:onClick="countIN"
                 android:layout_marginTop="10dp"
                 android:layout_marginLeft="1dp"
@@ -314,7 +314,7 @@
                 android:layout_marginTop="10dp"
                 android:layout_toRightOf="@id/button_17"
                 android:onClick="countIN"
-                android:textColor="#ffff00"
+                android:textColor="#000000"
                 android:textOff="B8"
                 android:textOn="B8" />
 
@@ -334,7 +334,7 @@
                 android:onClick="countIN"
                 android:textOff="C1"
                 android:layout_marginLeft="15dp"
-                android:textColor="#ffff00"
+                android:textColor="#000000"
                 android:layout_width="45dp"
                 android:layout_height="45dp"/>
             <ToggleButton
@@ -345,7 +345,7 @@
                 android:layout_marginTop="10dp"
                 android:onClick="countIN"
                 android:layout_marginLeft="1dp"
-                android:textColor="#ffff00"
+                android:textColor="#000000"
                 android:layout_width="45dp"
                 android:layout_height="45dp"/>
 
@@ -357,7 +357,7 @@
                 android:textOn="C3"
                 android:textOff="C3"
                 android:onClick="countIN"
-                android:textColor="#ffff00"
+                android:textColor="#000000"
                 android:layout_marginLeft="1dp"
                 android:layout_width="45dp"
                 android:layout_height="45dp"/>
@@ -366,7 +366,7 @@
                 android:id="@+id/button_24"
                 android:textOn="C4"
                 android:textOff="C4"
-                android:textColor="#ffff00"
+                android:textColor="#000000"
                 android:onClick="countIN"
                 android:layout_marginTop="10dp"
                 android:layout_marginLeft="1dp"
@@ -381,7 +381,7 @@
                 android:onClick="countIN"
                 android:layout_marginTop="10dp"
                 android:layout_marginLeft="1dp"
-                android:textColor="#ffff00"
+                android:textColor="#000000"
                 android:layout_width="45dp"
                 android:layout_height="45dp"/>
 
@@ -390,7 +390,7 @@
                 android:id="@+id/button_26"
                 android:textOn="C6"
                 android:textOff="C6"
-                android:textColor="#ffff00"
+                android:textColor="#000000"
                 android:onClick="countIN"
                 android:layout_marginTop="10dp"
                 android:layout_marginLeft="1dp"
@@ -402,7 +402,7 @@
                 android:id="@+id/button_27"
                 android:textOn="C7"
                 android:textOff="C7"
-                android:textColor="#ffff00"
+                android:textColor="#000000"
                 android:layout_marginTop="10dp"
                 android:layout_marginLeft="1dp"
                 android:layout_width="45dp"
@@ -414,7 +414,7 @@
                 android:id="@+id/button_28"
                 android:textOn="C8"
                 android:textOff="C8"
-                android:textColor="#ffff00"
+                android:textColor="#000000"
                 android:onClick="countIN"
                 android:layout_marginTop="10dp"
                 android:layout_marginLeft="1dp"
@@ -436,7 +436,7 @@
                 android:textOn="D1"
                 android:textOff="D1"
                 android:layout_marginLeft="15dp"
-                android:textColor="#ffff00"
+                android:textColor="#000000"
                 android:layout_width="45dp"
                 android:layout_height="45dp"/>
             <ToggleButton
@@ -447,7 +447,7 @@
                 android:layout_marginTop="10dp"
                 android:layout_marginLeft="1dp"
                 android:onClick="countIN"
-                android:textColor="#ffff00"
+                android:textColor="#000000"
                 android:layout_width="45dp"
                 android:layout_height="45dp"/>
 
@@ -459,7 +459,7 @@
                 android:textOn="D3"
                 android:textOff="D3"
                 android:onClick="countIN"
-                android:textColor="#ffff00"
+                android:textColor="#000000"
                 android:layout_marginLeft="1dp"
                 android:layout_width="45dp"
                 android:layout_height="45dp"/>
@@ -468,7 +468,7 @@
                 android:id="@+id/button_34"
                 android:textOn="D4"
                 android:textOff="D4"
-                android:textColor="#ffff00"
+                android:textColor="#000000"
                 android:onClick="countIN"
                 android:layout_marginTop="10dp"
                 android:layout_marginLeft="1dp"
@@ -483,7 +483,7 @@
                 android:layout_marginTop="10dp"
                 android:layout_marginLeft="1dp"
                 android:onClick="countIN"
-                android:textColor="#ffff00"
+                android:textColor="#000000"
                 android:layout_width="45dp"
                 android:layout_height="45dp"/>
 
@@ -493,7 +493,7 @@
                 android:onClick="countIN"
                 android:textOn="D6"
                 android:textOff="D6"
-                android:textColor="#ffff00"
+                android:textColor="#000000"
                 android:layout_marginTop="10dp"
                 android:layout_marginLeft="1dp"
                 android:layout_width="45dp"
@@ -504,7 +504,7 @@
                 android:id="@+id/button_37"
                 android:textOn="D7"
                 android:textOff="D7"
-                android:textColor="#ffff00"
+                android:textColor="#000000"
                 android:layout_marginTop="10dp"
                 android:onClick="countIN"
                 android:layout_marginLeft="1dp"
@@ -516,7 +516,7 @@
                 android:id="@+id/button_38"
                 android:textOn="D8"
                 android:textOff="D8"
-                android:textColor="#ffff00"
+                android:textColor="#000000"
                 android:layout_marginTop="10dp"
                 android:onClick="countIN"
                 android:layout_marginLeft="1dp"
@@ -538,7 +538,7 @@
                 android:textOn="E1"
                 android:textOff="E1"
                 android:layout_marginLeft="15dp"
-                android:textColor="#ffff00"
+                android:textColor="#000000"
                 android:layout_width="45dp"
                 android:layout_height="45dp"/>
             <ToggleButton
@@ -549,7 +549,7 @@
                 android:textOff="E2"
                 android:layout_marginTop="10dp"
                 android:layout_marginLeft="1dp"
-                android:textColor="#ffff00"
+                android:textColor="#000000"
                 android:layout_width="45dp"
                 android:layout_height="45dp"/>
 
@@ -561,7 +561,7 @@
                 android:textOn="E3"
                 android:textOff="E3"
                 android:onClick="countIN"
-                android:textColor="#ffff00"
+                android:textColor="#000000"
                 android:layout_marginLeft="1dp"
                 android:layout_width="45dp"
                 android:layout_height="45dp"/>
@@ -571,7 +571,7 @@
                 android:textOn="E4"
                 android:onClick="countIN"
                 android:textOff="E4"
-                android:textColor="#ffff00"
+                android:textColor="#000000"
                 android:layout_marginTop="10dp"
                 android:layout_marginLeft="1dp"
                 android:layout_width="45dp"
@@ -585,7 +585,7 @@
                 android:textOff="E5"
                 android:layout_marginTop="10dp"
                 android:layout_marginLeft="1dp"
-                android:textColor="#ffff00"
+                android:textColor="#000000"
                 android:layout_width="45dp"
                 android:layout_height="45dp"/>
 
@@ -595,7 +595,7 @@
                 android:textOn="E6"
                 android:textOff="E6"
                 android:onClick="countIN"
-                android:textColor="#ffff00"
+                android:textColor="#000000"
                 android:layout_marginTop="10dp"
                 android:layout_marginLeft="1dp"
                 android:layout_width="45dp"
@@ -607,7 +607,7 @@
                 android:textOn="E7"
                 android:textOff="E7"
                 android:onClick="countIN"
-                android:textColor="#ffff00"
+                android:textColor="#000000"
                 android:layout_marginTop="10dp"
                 android:layout_marginLeft="1dp"
                 android:layout_width="45dp"
@@ -618,7 +618,7 @@
                 android:id="@+id/button_48"
                 android:textOn="E8"
                 android:textOff="E8"
-                android:textColor="#ffff00"
+                android:textColor="#000000"
                 android:layout_marginTop="10dp"
                 android:onClick="countIN"
                 android:layout_marginLeft="1dp"
@@ -640,7 +640,7 @@
                 android:textOn="F1"
                 android:textOff="F1"
                 android:layout_marginLeft="15dp"
-                android:textColor="#ffff00"
+                android:textColor="#000000"
                 android:layout_width="45dp"
                 android:layout_height="45dp"/>
             <ToggleButton
@@ -651,7 +651,7 @@
                 android:onClick="countIN"
                 android:layout_marginTop="10dp"
                 android:layout_marginLeft="1dp"
-                android:textColor="#ffff00"
+                android:textColor="#000000"
                 android:layout_width="45dp"
                 android:layout_height="45dp"/>
 
@@ -663,7 +663,7 @@
                 android:textOn="F3"
                 android:textOff="F3"
                 android:onClick="countIN"
-                android:textColor="#ffff00"
+                android:textColor="#000000"
                 android:layout_marginLeft="1dp"
                 android:layout_width="45dp"
                 android:layout_height="45dp"/>
@@ -672,7 +672,7 @@
                 android:id="@+id/button_54"
                 android:textOn="F4"
                 android:textOff="F4"
-                android:textColor="#ffff00"
+                android:textColor="#000000"
                 android:onClick="countIN"
                 android:layout_marginTop="10dp"
                 android:layout_marginLeft="1dp"
@@ -687,7 +687,7 @@
                 android:layout_marginTop="10dp"
                 android:onClick="countIN"
                 android:layout_marginLeft="1dp"
-                android:textColor="#ffff00"
+                android:textColor="#000000"
                 android:layout_width="45dp"
                 android:layout_height="45dp"/>
 
@@ -696,7 +696,7 @@
                 android:id="@+id/button_56"
                 android:textOn="F6"
                 android:textOff="F6"
-                android:textColor="#ffff00"
+                android:textColor="#000000"
                 android:onClick="countIN"
                 android:layout_marginTop="10dp"
                 android:layout_marginLeft="1dp"
@@ -709,7 +709,7 @@
                 android:textOn="F7"
                 android:textOff="F7"
                 android:onClick="countIN"
-                android:textColor="#ffff00"
+                android:textColor="#000000"
                 android:layout_marginTop="10dp"
                 android:layout_marginLeft="1dp"
                 android:layout_width="45dp"
@@ -721,7 +721,7 @@
                 android:textOn="F8"
                 android:textOff="F8"
                 android:onClick="countIN"
-                android:textColor="#ffff00"
+                android:textColor="#000000"
                 android:layout_marginTop="10dp"
                 android:layout_marginLeft="1dp"
                 android:layout_width="45dp"
@@ -791,7 +791,6 @@
         android:paddingRight="20dp"
         android:fontFamily="@font/g_bold"
         android:textSize="14dp"
-        android:textAllCaps="false"
         android:textColor="#ffff00"
         android:id="@+id/confirm"
         android:layout_width="353dp"
@@ -805,7 +804,7 @@
         app:layout_constraintVertical_bias="0.826" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/tv_selectedseat"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/g_bold"
