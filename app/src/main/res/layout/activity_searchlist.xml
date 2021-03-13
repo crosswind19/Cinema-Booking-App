@@ -7,58 +7,58 @@
     android:layout_height="match_parent"
     tools:context=".searchlist">
 
-    <com.google.android.material.appbar.AppBarLayout
-        android:id="@+id/bar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#000000">
+<!--    <com.google.android.material.appbar.AppBarLayout-->
+<!--        android:id="@+id/bar"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="#000000">-->
 
-        <androidx.appcompat.widget.Toolbar
-            android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="60dp">
+<!--        <androidx.appcompat.widget.Toolbar-->
+<!--            android:id="@+id/toolbar"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="60dp">-->
 
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+<!--            <RelativeLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content">-->
 
-                <ImageView
-                    android:id="@+id/imaafe"
-                    android:layout_width="50dp"
-                    android:layout_marginTop="10dp"
-                    android:layout_height="50dp"
-                    android:src="@drawable/movie"
-                    android:layout_marginLeft="5dp"/>
+<!--                <ImageView-->
+<!--                    android:id="@+id/imaafe"-->
+<!--                    android:layout_width="50dp"-->
+<!--                    android:layout_marginTop="10dp"-->
+<!--                    android:layout_height="50dp"-->
+<!--                    android:src="@drawable/movie"-->
+<!--                    android:layout_marginLeft="5dp"/>-->
 
-                <TextView
-                    android:id="@+id/username"
-                    android:layout_width="148dp"
-                    android:layout_height="match_parent"
-                    android:layout_marginStart="10dp"
-                    android:layout_marginLeft="1dp"
-                    android:layout_marginTop="15dp"
-                    android:layout_toRightOf="@+id/imaafe"
-                    android:fontFamily="monospace"
-                    android:text="Not Cinema App"
-                    android:textColor="#ffffff"
-                    android:textSize="18sp"
-                    android:textStyle="bold" />
+<!--                <TextView-->
+<!--                    android:id="@+id/username"-->
+<!--                    android:layout_width="148dp"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_marginStart="10dp"-->
+<!--                    android:layout_marginLeft="1dp"-->
+<!--                    android:layout_marginTop="15dp"-->
+<!--                    android:layout_toRightOf="@+id/imaafe"-->
+<!--                    android:fontFamily="monospace"-->
+<!--                    android:text="Not Cinema App"-->
+<!--                    android:textColor="#ffffff"-->
+<!--                    android:textSize="18sp"-->
+<!--                    android:textStyle="bold" />-->
 
-                <ImageView
-                    android:layout_marginTop="10dp"
-                    android:id="@+id/home"
-                    android:layout_width="wrap_content"
-                    android:layout_height="36dp"
-                    android:layout_alignParentEnd="true"
-                    android:layout_alignParentRight="true"
-                    android:layout_marginRight="10dp"
-                    android:src="@drawable/ic_home2" />
+<!--                <ImageView-->
+<!--                    android:layout_marginTop="10dp"-->
+<!--                    android:id="@+id/home"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="36dp"-->
+<!--                    android:layout_alignParentEnd="true"-->
+<!--                    android:layout_alignParentRight="true"-->
+<!--                    android:layout_marginRight="10dp"-->
+<!--                    android:src="@drawable/ic_home2" />-->
 
-            </RelativeLayout>
+<!--            </RelativeLayout>-->
 
-        </androidx.appcompat.widget.Toolbar>
+<!--        </androidx.appcompat.widget.Toolbar>-->
 
-    </com.google.android.material.appbar.AppBarLayout>
+<!--    </com.google.android.material.appbar.AppBarLayout>-->
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation2"
