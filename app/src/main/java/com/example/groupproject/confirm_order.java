@@ -87,13 +87,13 @@ public class confirm_order extends AppCompatActivity {
     private void fetchPrice(){
         Intent intent = getIntent();
         String price = intent.getStringExtra("price");
-        String ticketNo = intent.getStringExtra("totalseat");
+        int ticketNo = intent.getIntExtra("totalseat", 0);
         String foodp = intent.getStringExtra("foodprice");
         String food1 = intent.getStringExtra("food1");
         String food2 = intent.getStringExtra("food2");
         double ticketPrice = Double.parseDouble(price);
         double foodPrice = Double.parseDouble(foodp);
-        int totalSeat = Integer.parseInt(ticketNo);
+        int totalSeat = ticketNo;//Integer.parseInt(ticketNo);
         p1 = Integer.parseInt(food1)/(10);
         p2 = Integer.parseInt(food2)/(15);
         ttlprice = (totalSeat*ticketPrice)+foodPrice;
@@ -106,5 +106,4 @@ public class confirm_order extends AppCompatActivity {
         String st = intent.getStringExtra("seat");
         seat.setText(st);
     }
-
 }

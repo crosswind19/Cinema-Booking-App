@@ -91,10 +91,10 @@ public class booking_seat extends AppCompatActivity {
                     }
                 }
                 seat="";
-                selectedSeat.setText("Seat(s) : ");
+                selectedSeat.setText("Seat(s) : " + seat);
             }
         });
-        totalTicket = String.valueOf(counter);
+        //totalTicket = String.valueOf(counter);
         fetchDateAndTime();
 
         exit.setOnClickListener((v -> {
@@ -107,7 +107,8 @@ public class booking_seat extends AppCompatActivity {
             intent.putExtra("time", time);
             intent.putExtra("price", price);
             intent.putExtra("seat", seat);
-            intent.putExtra("totalseat",totalTicket);
+            intent.putExtra("totalseat", counter);
+            //intent.putExtra("totalseat",totalTicket);
             startActivity(intent);
         }));
     }
