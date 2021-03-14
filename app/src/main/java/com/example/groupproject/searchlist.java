@@ -17,6 +17,7 @@ import com.example.groupproject.Fragment.NowPlayingFragment;
 import com.example.groupproject.Fragment.UpComingFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.tabs.TabLayout;
+import com.google.firebase.auth.FirebaseAuth;
 
 
 public class searchlist extends AppCompatActivity {
@@ -63,6 +64,9 @@ public class searchlist extends AppCompatActivity {
             case R.id.item3:
                 startActivity(new Intent(getApplicationContext(),sendFeedback.class));
                 return true;
+            case R.id.item4:
+                FirebaseAuth.getInstance().signOut();
+                startActivity(new Intent(getApplicationContext(),activity_login.class));
         }
         return super.onOptionsItemSelected(item);
     }

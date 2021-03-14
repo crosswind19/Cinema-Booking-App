@@ -4,15 +4,23 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.viewpager.widget.PagerAdapter;
+import androidx.viewpager.widget.ViewPager;
 
+import com.google.android.material.tabs.TabLayout;
 import com.google.firebase.auth.FirebaseAuth;
 
 
 public class MainActivity extends AppCompatActivity {
 
     private Button logout,viewProfile,movieList,feedback,orderHistory;
+    TabLayout tabLayout;
+    ViewPager viewPager;
+    PagerAdapter pagerAdapter;
+    ImageView home;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

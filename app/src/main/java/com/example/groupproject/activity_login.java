@@ -1,10 +1,5 @@
 package com.example.groupproject;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AlertDialog;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.AppCompatTextView;
-
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
@@ -15,6 +10,9 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -95,6 +93,11 @@ public class activity_login extends AppCompatActivity {
                 startActivity(new Intent(getApplicationContext(),activity_forgotpassword.class));
             }
         });
+
+        if (fAuth.getCurrentUser() != null) {
+            startActivity(new Intent(getApplicationContext(), searchlist.class));
+            finish();
+        }
     }
 
     private void checkEmailVerification(View v){
@@ -103,7 +106,7 @@ public class activity_login extends AppCompatActivity {
       if(emailflag){
           finish();
           Toast.makeText(activity_login.this, "Login Successful", Toast.LENGTH_SHORT).show();
-          startActivity(new Intent(getApplicationContext(), MainActivity.class));
+          startActivity(new Intent(getApplicationContext(), searchlist.class));
         }else{
           EditText verifyEmail = new EditText(v.getContext());
           AlertDialog.Builder verifyEmailDialog = new AlertDialog.Builder(v.getContext());
