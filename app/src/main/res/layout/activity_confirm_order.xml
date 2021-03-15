@@ -41,11 +41,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_deleteorder"
+        app:layout_constraintTop_toBottomOf="@+id/btn_comfirmorder"
         app:layout_constraintVertical_bias="0.16" />
 
     <Button
-        android:id="@+id/btn_deleteorder"
+        android:id="@+id/btn_comfirmorder"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Yes, proceed to payment"
@@ -214,4 +214,30 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView24"
         app:layout_constraintVertical_bias="0.564" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Comapny : "
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView20"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.062"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.847" />
+
+    <TextView
+        android:id="@+id/tv_company"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GSC"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_movieTitle4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.089"
+        app:layout_constraintStart_toEndOf="@+id/textView25"
+        app:layout_constraintTop_toBottomOf="@+id/tv_confirm"
+        app:layout_constraintVertical_bias="0.519" />
 </androidx.constraintlayout.widget.ConstraintLayout>

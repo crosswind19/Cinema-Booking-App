@@ -12,23 +12,26 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
-import java.text.SimpleDateFormat;
-import java.util.Calendar;
+import java.text.DecimalFormat;
 
 public class confirm_order extends AppCompatActivity {
 
-    TextView movieTitle,time,date,seat,extra,totalprice;
+    TextView movieTitle,time,date,seat,extra,totalprice,movieCompany;
     Button btnConfirm, btnCancel;
     String title;
     String sTime;
     String sDate;
     String sSeat;
     String Extra;
+    String Company;
     String bookingDate;
     String bookingTime;
     String Price;
+    String movie_title;
+    String company;
     double ttlprice;
     int p1,p2;
+    DecimalFormat decimalFormat = new DecimalFormat("#.##");
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,9 +43,11 @@ public class confirm_order extends AppCompatActivity {
         seat=findViewById(R.id.tv_seat4);
         extra=findViewById(R.id.tv_food2);
         totalprice=findViewById(R.id.priceview3);
-        btnConfirm = findViewById(R.id.btn_deleteorder);
+        movieCompany=findViewById(R.id.tv_company);
+        btnConfirm = findViewById(R.id.btn_comfirmorder);
         btnCancel = findViewById(R.id.btn_cancel);
 
+        fetchInfo();
         fetchDate();
         fetchPrice();
         fetchSeat();
@@ -54,6 +59,7 @@ public class confirm_order extends AppCompatActivity {
             sSeat=seat.getText().toString();
             Extra=extra.getText().toString();
             Price=totalprice.getText().toString();
+            Company=movieCompany.getText().toString();
             sendOrderData();
             Intent intent = new Intent(confirm_order.this, payment.class);
             startActivity(intent);
@@ -70,16 +76,22 @@ public class confirm_order extends AppCompatActivity {
         FirebaseAuth fAuth = FirebaseAuth.getInstance();
         FirebaseDatabase firebaseDatabase = FirebaseDatabase.getInstance();
         DatabaseReference myRef = firebaseDatabase.getReference("Booking Info").child(fAuth.getUid());
-        BookingData bookingData = new BookingData(title,sDate,sTime,sSeat,Extra,Price);
+        BookingData bookingData = new BookingData(title,sDate,sTime,sSeat,Extra,Price,Company);
         myRef.setValue(bookingData);
+    }
+
+    private void fetchInfo(){
+        Intent intent = getIntent();
+        movie_title = intent.getStringExtra("movietitle");
+        movieTitle.setText(movie_title);
+        company = intent.getStringExtra("company");
+        movieCompany.setText(company);
     }
 
     private void fetchDate(){
         Intent intent = getIntent();
-        Calendar calendar = Calendar.getInstance();
         bookingTime = intent.getStringExtra("time");
-        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("EEEE, dd-MMM-yyyy ");
-        bookingDate = simpleDateFormat.format(calendar.getTime());
+        bookingDate = intent.getStringExtra("date");
         date.setText(bookingDate);
         time.setText(bookingTime);
     }
@@ -97,7 +109,7 @@ public class confirm_order extends AppCompatActivity {
         p1 = Integer.parseInt(food1)/(10);
         p2 = Integer.parseInt(food2)/(15);
         ttlprice = (totalSeat*ticketPrice)+foodPrice;
-        totalprice.setText("RM " + ttlprice);
+        totalprice.setText("RM " + decimalFormat.format(ttlprice));
         extra.setText("Combo A * " + p1 + " Combo B * " + p2);
     }
 

@@ -2,4 +2,18 @@
     <string name="app_name">GROUPPROJECT</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name = "movieTitle">
+        <item>A Writers Odyssey</item>
+        <item>Calls</item>
+        <item>Demon Slayer - Kimetsu No Yaiba The Movie: Mugen Train</item>
+        <item>Detective Chinatown 3</item>
+        <item>Endgame</item>
+        <item>Monster Hunter</item>
+        <item>Nenjam Marappathillai</item>
+        <item>Raya And The Last Dragon</item>
+        <item>Selamat Hari X Jadi</item>
+        <item>Stand By Me Doraemon 2</item>
+        <item>The Con-Heartist</item>
+        <item>Wonder Woman 1984</item>
+    </string-array>
 </resources>

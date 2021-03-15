@@ -12,21 +12,15 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.groupproject.Fragment.DetailedFragment;
 
-import java.text.SimpleDateFormat;
 import java.util.Calendar;
-import java.util.Locale;
 
 public class booking_seat extends AppCompatActivity {
 
     Button exit,confirm;
-//    public String movieTitle,movieRating,movieReleaseDate,movieDesc,movieImagePath;
     Button clear;
-    TextView value,selectedSeat;
+    TextView value,selectedSeat,movieTitle;
     int counter = 0;
 
-    //private final static int requestcode1 = 1, requestcode2 = 2, requestcode3 = 3, requestcode4 = 4, requestcode5 = 5, requestcode6 = 6, requestcode7 = 7;
-
-    //ToggleButton a1,a2,a3,a4,a5,a6,a7,a8,b1,b2,b3,b4,b5,b6,b7,b8,c1,c2,c3,c4,c5,c6,c7,c8,d1,d2,d3,d4,d5,d6,d7,d8,e1,e2,e3,e4,e5,e6,e7,e8,f1,f2,f3,f4,f5,f6,f7,f8;
     ToggleButton buttons [][] = new ToggleButton [6][8];
     String time;
     String dateTime;
@@ -34,6 +28,7 @@ public class booking_seat extends AppCompatActivity {
     String seat="";
     String tempseat;
     String totalTicket;
+    String title,company;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,6 +40,7 @@ public class booking_seat extends AppCompatActivity {
         value = findViewById(R.id.value);
         clear = findViewById(R.id.clear);
         selectedSeat = findViewById(R.id.tv_selectedseat);
+        movieTitle = findViewById(R.id.tv_movietitle);
 
 
         for(int i=0;i<6;i++){
@@ -60,11 +56,11 @@ public class booking_seat extends AppCompatActivity {
                             seat += tempseat;
                             counter++;
                         }else{
-                            if(counter>0){
-                                if(seat.contains(tempseat)){
+                            if(counter>0) {
+                                if (seat.contains(tempseat)) {
                                     counter--;
-                                    seat=seat.substring(0,seat.length()-3);
-                                }else{
+                                    seat = seat.substring(0, seat.length() - 3);
+                                } else {
                                     seat += tempseat;
                                     counter++;
                                 }
@@ -95,7 +91,7 @@ public class booking_seat extends AppCompatActivity {
             }
         });
         //totalTicket = String.valueOf(counter);
-        fetchDateAndTime();
+        fetchInfo();
 
         exit.setOnClickListener((v -> {
             Intent intent = new Intent(booking_seat.this, DetailedFragment.class);
@@ -104,6 +100,9 @@ public class booking_seat extends AppCompatActivity {
 
         confirm.setOnClickListener((v -> {
             Intent intent = new Intent(booking_seat.this, booking_food.class);
+            intent.putExtra("movietitle",title);
+            intent.putExtra("company",company);
+            intent.putExtra("date",dateTime);
             intent.putExtra("time", time);
             intent.putExtra("price", price);
             intent.putExtra("seat", seat);
@@ -114,14 +113,16 @@ public class booking_seat extends AppCompatActivity {
     }
 
 
-    public void fetchDateAndTime(){
+    public void fetchInfo(){
         TextView date = findViewById(R.id.tvDate);
         Intent intent = getIntent();
+        title = intent.getStringExtra("movietitle");
+        movieTitle.setText(title);
+        company = intent.getStringExtra("company");
         Calendar calendar = Calendar.getInstance();
         time = intent.getStringExtra("bookingtime");
-        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("EEEE, dd-MMM-yyyy ");
-        dateTime = simpleDateFormat.format(calendar.getTime());
-        date.setText(dateTime + time);
+        dateTime = intent.getStringExtra("date");
+        date.setText(dateTime + " " +time);
         price = intent.getStringExtra("price");
     }
 

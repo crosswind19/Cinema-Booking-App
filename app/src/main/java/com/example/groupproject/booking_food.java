@@ -16,7 +16,7 @@ public class booking_food extends AppCompatActivity {
     static int alltotal;
     Button btnbuy;
     private String time;
-    String price, p,qtnFood1,qtnFood2, seat/*,totalseat*/;
+    String price, p,qtnFood1,qtnFood2, seat,movieTitle,company,date;
     TextView test;
     int totalseat;
 
@@ -27,6 +27,9 @@ public class booking_food extends AppCompatActivity {
         btnbuy = (Button)findViewById(R.id.btn_buy);
 
         Intent intent2 = getIntent();
+        movieTitle = intent2.getStringExtra("movietitle");
+        company = intent2.getStringExtra("company");
+        date = intent2.getStringExtra("date");
         time = intent2.getStringExtra("time");
         price = intent2.getStringExtra("price");
         seat = intent2.getStringExtra("seat");
@@ -37,6 +40,9 @@ public class booking_food extends AppCompatActivity {
 
         btnbuy.setOnClickListener((view) -> {
             Intent intent = new Intent(booking_food.this, confirm_order.class);
+            intent.putExtra("movietitle",movieTitle);
+            intent.putExtra("company",company);
+            intent.putExtra("date",date);
             intent.putExtra("time", time);
             intent.putExtra("price", price);
             intent.putExtra("food1",qtnFood1);
