@@ -95,7 +95,7 @@ public class activity_login extends AppCompatActivity {
         });
 
         if (fAuth.getCurrentUser() != null) {
-            startActivity(new Intent(getApplicationContext(), searchlist.class));
+            startActivity(new Intent(getApplicationContext(), MainActivity.class));
             finish();
         }
     }
@@ -106,7 +106,7 @@ public class activity_login extends AppCompatActivity {
       if(emailflag){
           finish();
           Toast.makeText(activity_login.this, "Login Successful", Toast.LENGTH_SHORT).show();
-          startActivity(new Intent(getApplicationContext(), searchlist.class));
+          startActivity(new Intent(getApplicationContext(), MainActivity.class));
         }else{
           EditText verifyEmail = new EditText(v.getContext());
           AlertDialog.Builder verifyEmailDialog = new AlertDialog.Builder(v.getContext());

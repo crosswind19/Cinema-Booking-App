@@ -17,7 +17,6 @@ import com.example.groupproject.Fragment.NowPlayingFragment;
 import com.example.groupproject.Fragment.UpComingFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.tabs.TabLayout;
-import com.google.firebase.auth.FirebaseAuth;
 
 
 public class searchlist extends AppCompatActivity {
@@ -45,31 +44,8 @@ public class searchlist extends AppCompatActivity {
 
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.example_menu, menu);
-        return true;
-    }
 
-    @Override
-    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        switch (item.getItemId()){
-            case R.id.item1:
-                startActivity(new Intent(getApplicationContext(),activity_viewprofile.class));
-                return true;
-            case R.id.item2:
-                startActivity(new Intent(getApplicationContext(),orderhistory.class));
-                return true;
-            case R.id.item3:
-                startActivity(new Intent(getApplicationContext(),sendFeedback.class));
-                return true;
-            case R.id.item4:
-                FirebaseAuth.getInstance().signOut();
-                startActivity(new Intent(getApplicationContext(),activity_login.class));
-        }
-        return super.onOptionsItemSelected(item);
-    }
+
 
     private BottomNavigationView.OnNavigationItemSelectedListener navListener =
             new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -84,10 +60,6 @@ public class searchlist extends AppCompatActivity {
                         case R.id.upcoming:
                             selectedFragment = new UpComingFragment();
                             break;
-//                        case R.id.profile:
-//                            Intent intent = new Intent(searchlist.this, activity_viewprofile.class);
-//                            startActivity(intent);
-//                            break;
                     }
 
                     getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContainer,
@@ -96,5 +68,22 @@ public class searchlist extends AppCompatActivity {
                     return true;
                 }
             };
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.home_menu, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        switch (item.getItemId()){
+            case R.id.item10:
+                startActivity(new Intent(getApplicationContext(),MainActivity.class));
+                return true;
+        }
+        return super.onOptionsItemSelected(item);
+    }
 
 }

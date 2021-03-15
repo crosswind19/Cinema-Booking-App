@@ -2,11 +2,14 @@ package com.example.groupproject;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
-import android.widget.Button;
-import android.widget.ImageView;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 import androidx.viewpager.widget.PagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
@@ -16,29 +19,20 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button logout,viewProfile,movieList,feedback,orderHistory;
+    private CardView viewProfile,movieList,feedback,orderHistory;
     TabLayout tabLayout;
     ViewPager viewPager;
     PagerAdapter pagerAdapter;
-    ImageView home;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        logout=findViewById(R.id.btn_logout);
-        viewProfile=findViewById(R.id.btn_viewProfile);
-        movieList=findViewById(R.id.btn_sl);
-        feedback=findViewById(R.id.btn_feedback);
-        orderHistory=findViewById(R.id.btn_history);
+        viewProfile=findViewById(R.id.cv_viewProfile);
+        movieList=findViewById(R.id.cv_movieList);
+        feedback=findViewById(R.id.cv_sendFeedback);
+        orderHistory=findViewById(R.id.cv_orderList);
 
-        logout.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                FirebaseAuth.getInstance().signOut();
-                startActivity(new Intent(getApplicationContext(),activity_login.class));
-            }
-        });
 
         viewProfile.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -68,6 +62,25 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.example_menu, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        switch (item.getItemId()){
+            case R.id.item1:
+                FirebaseAuth.getInstance().signOut();
+                startActivity(new Intent(MainActivity.this, activity_login.class));
+                finish();
+                return true;
+        }
+        return super.onOptionsItemSelected(item);
     }
 
 }

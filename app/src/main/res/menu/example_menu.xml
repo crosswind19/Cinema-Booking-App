@@ -4,22 +4,8 @@
 
     <item android:id="@+id/item1"
         android:icon="@drawable/ic_icon"
-        android:title="View Profile"
-        app:showAsAction="never"/>
-
-    <item android:id="@+id/item2"
-        android:icon="@drawable/ic_icon"
-        android:title="Order List"
-        app:showAsAction="never"/>
-
-    <item android:id="@+id/item3"
-        android:icon="@drawable/ic_icon"
-        android:title="Send Feedback"
-        app:showAsAction="never"/>
-
-    <item android:id="@+id/item4"
-        android:icon="@drawable/ic_icon"
         android:title="Logout"
         app:showAsAction="never"/>
+
 
 </menu>

@@ -1,8 +1,5 @@
 package com.example.groupproject;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -12,10 +9,16 @@ import android.graphics.DashPathEffect;
 import android.graphics.Paint;
 import android.graphics.pdf.PdfDocument;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.groupproject.Model.BookingData;
 import com.google.firebase.auth.FirebaseAuth;
@@ -28,7 +31,6 @@ import com.google.firebase.database.ValueEventListener;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.text.DecimalFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
@@ -77,7 +79,7 @@ public class orderhistory extends AppCompatActivity {
                     totalPrice=classBookingData.getPrice();
                     movieTitle=classBookingData.getMovieTitle();
                 }else{
-                    startActivity(new Intent(orderhistory.this, searchlist.class));
+                    startActivity(new Intent(orderhistory.this, MainActivity.class));
                     Toast.makeText(orderhistory.this,"Booking data still empty",Toast.LENGTH_SHORT).show();
                 }
             }
@@ -204,4 +206,22 @@ public class orderhistory extends AppCompatActivity {
 
         myPdfDocument.close();
     }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.home_menu, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        switch (item.getItemId()){
+            case R.id.item10:
+                startActivity(new Intent(getApplicationContext(),MainActivity.class));
+                return true;
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
 }

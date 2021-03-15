@@ -18,7 +18,7 @@ public class payCard extends AppCompatActivity {
         done = (Button)findViewById(R.id.btn_done);
 
         done.setOnClickListener((view) -> {
-            Intent intent = new Intent(payCard.this, searchlist.class);
+            Intent intent = new Intent(payCard.this, MainActivity.class);
             startActivity(intent);
         } );
 
