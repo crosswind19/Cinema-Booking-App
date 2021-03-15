@@ -110,7 +110,7 @@ public class confirm_order extends AppCompatActivity {
         p2 = Integer.parseInt(food2)/(15);
         ttlprice = (totalSeat*ticketPrice)+foodPrice;
         totalprice.setText("RM " + decimalFormat.format(ttlprice));
-        extra.setText("Combo A * " + p1 + " Combo B * " + p2);
+        extra.setText("Combo A * " + p1 + " |  Combo B * " + p2);
     }
 
     private void fetchSeat(){
