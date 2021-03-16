@@ -13,6 +13,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.GROUPPROJECT">
+        <activity android:name=".SplashScreen">
+            <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
         <activity android:name=".orderhistory" />
         <activity android:name=".sendFeedback" />
         <activity android:name=".payCard" />
@@ -35,13 +41,7 @@
         <activity
             android:name=".activity_signup"
             android:parentActivityName=".activity_login" />
-        <activity android:name=".activity_login">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+        <activity android:name=".activity_login"/>
     </application>
 
 </manifest>
