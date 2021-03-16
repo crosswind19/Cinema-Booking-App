@@ -180,7 +180,7 @@
                     android:layout_marginTop="10dp"
                     android:fontFamily="@font/g_bold"
                     android:text="Send Feedback"
-                    android:textSize="22sp" />
+                    android:textSize="20sp" />
 
                 <ImageView
                     android:id="@+id/iv_sendFeedbackHome"

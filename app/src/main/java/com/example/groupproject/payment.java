@@ -1,5 +1,8 @@
 package com.example.groupproject;
 
+import android.app.NotificationManager;
+import android.app.PendingIntent;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -8,6 +11,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.NotificationCompat;
 
 public class payment extends AppCompatActivity {
 
@@ -61,8 +65,21 @@ public class payment extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(payment.this, payCard.class);
                 startActivity(intent);
+                addNotification();
             }
         });
+
+    }
+
+    private void addNotification(){
+        NotificationCompat.Builder builder = new NotificationCompat.Builder(this).setSmallIcon(android.R.drawable.stat_notify_more)
+                .setContentTitle("Not Cinema App").setContentText("Thank you for the Purchase! \n You can check your movie info in Order List");
+
+        Intent notificationIntent = new Intent(this, orderhistory.class);
+        PendingIntent contentIntent = PendingIntent.getActivity(this ,0 , notificationIntent, PendingIntent.FLAG_UPDATE_CURRENT);
+        builder.setContentIntent(contentIntent);
+        NotificationManager manager = (NotificationManager)getSystemService(Context.NOTIFICATION_SERVICE);
+        manager.notify(0, builder.build());
 
     }
 }
