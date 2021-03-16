@@ -21,8 +21,8 @@ public class changepassword extends AppCompatActivity {
     private Button reset;
     private EditText oldPassword, newPassword, reNewPassword;
     private FirebaseUser firebaseUser;
-    private String oldpass, newpass, renew;
-    private Boolean result = false;
+    //private String oldpass, newpass, renew;
+    //private Boolean result = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,12 +38,12 @@ public class changepassword extends AppCompatActivity {
 
         firebaseUser = FirebaseAuth.getInstance().getCurrentUser();
 
-        oldpass = oldPassword.getText().toString();
+        /*oldpass = oldPassword.getText().toString();
         newpass = newPassword.getText().toString();
         renew = reNewPassword.getText().toString();
 
 
-        /*if (TextUtils.isEmpty(oldpass)) {
+        if (TextUtils.isEmpty(oldpass)) {
             oldPassword.setError("Old Password can't be empty.");
         }
 
