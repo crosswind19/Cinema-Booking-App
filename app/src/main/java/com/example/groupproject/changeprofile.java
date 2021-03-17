@@ -143,22 +143,28 @@ public class changeprofile extends AppCompatActivity {
 
                 StorageReference imageReference = storageReference.child(firebaseAuth.getUid()).child("Images").child("Profile Pic");
 
-                UploadTask uploadTask = imageReference.putFile(imagePath);
+                if(imagePath!=null){
+                    UploadTask uploadTask = imageReference.putFile(imagePath);
 
-                uploadTask.addOnFailureListener(new OnFailureListener() {
-                    @Override
-                    public void onFailure(@NonNull Exception e) {
+                    uploadTask.addOnFailureListener(new OnFailureListener() {
+                        @Override
+                        public void onFailure(@NonNull Exception e) {
 
-                        Toast.makeText(changeprofile.this,"Photo exceeds 1mb", Toast.LENGTH_SHORT).show();
-                    }
-                }).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
-                    @Override
-                    public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
+                            Toast.makeText(changeprofile.this,"Photo exceeds 1mb", Toast.LENGTH_SHORT).show();
+                        }
+                    }).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
+                        @Override
+                        public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
 
-                        Toast.makeText(changeprofile.this,"Upload Successful", Toast.LENGTH_SHORT).show();
-                        startActivity(new Intent(changeprofile.this, activity_viewprofile.class));
-                    }
-                });
+                            Toast.makeText(changeprofile.this,"Upload Successful", Toast.LENGTH_SHORT).show();
+                            startActivity(new Intent(changeprofile.this, activity_viewprofile.class));
+                        }
+                    });
+                }else{
+                    Toast.makeText(changeprofile.this,"Profile Data Upload Successful", Toast.LENGTH_SHORT).show();
+                    startActivity(new Intent(changeprofile.this, activity_viewprofile.class));
+                }
+
             }
         });
     }
