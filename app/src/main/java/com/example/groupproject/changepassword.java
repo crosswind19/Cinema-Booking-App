@@ -1,15 +1,15 @@
 package com.example.groupproject;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
+import android.content.Intent;
 import android.os.Bundle;
-import android.text.TextUtils;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -41,10 +41,13 @@ public class changepassword extends AppCompatActivity {
                 firebaseUser.updatePassword(userPasswordNew).addOnCompleteListener(new OnCompleteListener<Void>() {
                     @Override
                     public void onComplete(@NonNull Task<Void> task) {
-                        if (task.isSuccessful())
+                        if (task.isSuccessful()){
                             Toast.makeText(changepassword.this, "Password Changed", Toast.LENGTH_SHORT).show();
-                        else
+                            startActivity(new Intent(changepassword.this, activity_viewprofile.class));
+                        }
+                        else {
                             Toast.makeText(changepassword.this, "Password Update Failed", Toast.LENGTH_SHORT).show();
+                        }
                     }
                 });
             }
