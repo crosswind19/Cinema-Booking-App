@@ -5,59 +5,54 @@
     android:id="@+id/tv_4146"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background2"
     android:backgroundTintMode="multiply"
     tools:context=".MainActivity">
 
 
     <TextView
         android:id="@+id/textView28"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="56dp"
+        android:layout_width="236dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="228dp"
         android:fontFamily="@font/g_bold"
         android:text="Not Cinema App"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toStartOf="@+id/iv_homeLogo"
+        android:textColor="#E1009688"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView29"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
+        android:layout_width="149dp"
+        android:layout_height="25dp"
         android:text="Presented By Group 3"
-        app:layout_constraintEnd_toStartOf="@+id/iv_homeLogo"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView28" />
-
-    <ImageView
-        android:id="@+id/iv_homeLogo"
-        android:layout_width="0dp"
-        android:layout_height="160dp"
-        android:layout_marginEnd="16dp"
+        android:textColor="#A103AC9C"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/textView28"
-        app:layout_constraintTop_toBottomOf="@+id/bar"
-        app:srcCompat="@drawable/logo" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView28"
+        app:layout_constraintVertical_bias="0.0" />
 
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="0dp"
-        android:layout_height="175dp"
+        android:layout_width="334dp"
+        android:layout_height="173dp"
         android:orientation="horizontal"
         android:padding="10dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/iv_homeLogo">
+        tools:layout_editor_absoluteY="326dp">
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/cv_movieList"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_margin="10dp"
-            android:layout_weight="1"
-            android:id="@+id/cv_movieList">
+            android:layout_weight="1">
 
 
             <RelativeLayout
@@ -77,20 +72,20 @@
 
                 <ImageView
                     android:id="@+id/iv_movieListHome"
-                    android:layout_width="75dp"
+                    android:layout_width="match_parent"
                     android:layout_height="75dp"
-                    android:layout_centerHorizontal="true"
                     android:layout_marginTop="15dp"
                     app:srcCompat="@drawable/ic_upcoming" />
+
             </RelativeLayout>
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/cv_orderList"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_margin="10dp"
-            android:layout_weight="1"
-            android:id="@+id/cv_orderList">
+            android:layout_weight="1">
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -116,28 +111,29 @@
                     app:srcCompat="@drawable/ic_book" />
             </RelativeLayout>
         </androidx.cardview.widget.CardView>
+
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="0dp"
-        android:layout_height="175dp"
+        android:layout_width="333dp"
+        android:layout_height="173dp"
         android:orientation="horizontal"
         android:padding="10dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout">
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/cv_viewProfile"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_margin="10dp"
-            android:layout_weight="1"
-            android:id="@+id/cv_viewProfile">
+            android:layout_weight="1">
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:background="#FFFFFF">
 
                 <TextView
                     android:id="@+id/tv_viewProfileHome"
@@ -157,15 +153,16 @@
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="15dp"
                     app:srcCompat="@drawable/ic_name" />
+
             </RelativeLayout>
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/cv_sendFeedback"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_margin="10dp"
-            android:layout_weight="1"
-            android:id="@+id/cv_sendFeedback">
+            android:layout_weight="1">
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -179,7 +176,7 @@
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="10dp"
                     android:fontFamily="@font/g_bold"
-                    android:text="Send Feedback"
+                    android:text="Feedback"
                     android:textSize="20sp" />
 
                 <ImageView
@@ -192,4 +189,16 @@
             </RelativeLayout>
         </androidx.cardview.widget.CardView>
     </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="256dp"
+        android:layout_height="188dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.053"
+        app:srcCompat="@drawable/logo2" />
 </androidx.constraintlayout.widget.ConstraintLayout>
