@@ -12,20 +12,24 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="0.00"
+        android:textColor="#000000"
         android:textSize="18sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/tv_confirmMessage"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.077"
+        app:layout_constraintHorizontal_bias="0.172"
         app:layout_constraintStart_toEndOf="@+id/textView26"
         app:layout_constraintTop_toBottomOf="@+id/tv_food2"
-        app:layout_constraintVertical_bias="0.402" />
+        app:layout_constraintVertical_bias="0.64" />
 
     <TextView
         android:id="@+id/tv_confirmMessage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Have you confirm your order?"
+        android:textColor="#5A4545"
         android:textSize="24sp"
+        android:textStyle="italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -60,11 +64,12 @@
         android:id="@+id/tv_movieTitle4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Sonic THe HedgeHog"
+        android:text="Sonic The HedgeHog"
+        android:textColor="#000000"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.556"
+        app:layout_constraintHorizontal_bias="0.564"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.267" />
@@ -74,23 +79,25 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="A2"
+        android:textColor="#000000"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.285"
+        app:layout_constraintHorizontal_bias="0.347"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_time4"
-        app:layout_constraintVertical_bias="0.05" />
+        app:layout_constraintVertical_bias="0.068" />
 
     <TextView
         android:id="@+id/tv_date4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="2021-03-10"
+        android:textColor="#000000"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.375"
+        app:layout_constraintHorizontal_bias="0.419"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_movieTitle4"
         app:layout_constraintVertical_bias="0.048" />
@@ -100,10 +107,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="3:00pm"
+        android:textColor="#000000"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.292"
+        app:layout_constraintHorizontal_bias="0.38"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_date4"
         app:layout_constraintVertical_bias="0.056" />
@@ -128,13 +136,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Combo A * 1"
+        android:textColor="#000000"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.07"
+        app:layout_constraintHorizontal_bias="0.219"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView24"
-        app:layout_constraintVertical_bias="0.032" />
+        app:layout_constraintVertical_bias="0.102" />
 
     <TextView
         android:id="@+id/textView20"
@@ -154,11 +163,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:text=" Date : "
+        android:text="Date : "
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/tv_date4"
-        app:layout_constraintHorizontal_bias="0.241"
+        app:layout_constraintHorizontal_bias="0.166"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView20"
         app:layout_constraintVertical_bias="0.048" />
@@ -173,7 +182,7 @@
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/tv_time4"
-        app:layout_constraintHorizontal_bias="0.777"
+        app:layout_constraintHorizontal_bias="0.244"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView21"
         app:layout_constraintVertical_bias="0.056" />
@@ -187,10 +196,10 @@
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/tv_seat4"
-        app:layout_constraintHorizontal_bias="0.222"
+        app:layout_constraintHorizontal_bias="0.142"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView22"
-        app:layout_constraintVertical_bias="0.05" />
+        app:layout_constraintVertical_bias="0.068" />
 
     <TextView
         android:id="@+id/textView24"
@@ -200,10 +209,10 @@
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.09"
+        app:layout_constraintHorizontal_bias="0.081"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView23"
-        app:layout_constraintVertical_bias="0.048" />
+        app:layout_constraintVertical_bias="0.084" />
 
     <TextView
         android:id="@+id/textView26"
@@ -216,7 +225,7 @@
         app:layout_constraintHorizontal_bias="0.055"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView24"
-        app:layout_constraintVertical_bias="0.602" />
+        app:layout_constraintVertical_bias="0.775" />
 
     <TextView
         android:id="@+id/textView25"
@@ -237,6 +246,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="GSC"
+        android:textColor="#000000"
         android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/tv_movieTitle4"
         app:layout_constraintEnd_toEndOf="parent"
