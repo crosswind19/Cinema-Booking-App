@@ -4,20 +4,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#ffa500"
+    android:background="@drawable/background"
     tools:context=".booking_seat">
 
     <Button
         android:id="@+id/exit"
         android:layout_width="47dp"
         android:layout_height="40dp"
-        android:background="@drawable/ic_close"
         android:layout_marginStart="4dp"
+        android:background="@drawable/ic_close"
+        android:backgroundTint="#92FFFFFF"
+        android:textColor="#AAA4A4"
+        android:textColorHint="#AAA4A4"
         app:layout_constraintBottom_toTopOf="@+id/relativeLayout2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.457"
-        android:layout_marginLeft="4dp" />
+        app:layout_constraintVertical_bias="0.457" />
     
     <RelativeLayout
         android:id="@+id/relativeLayout2"
@@ -28,23 +30,24 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent">
 
-    <TextView
-        android:id="@+id/tv_movietitle"
-        android:layout_width="358dp"
-        android:layout_height="match_parent"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginStart="24dp"
-        android:layout_marginLeft="5dp"
-        android:layout_marginEnd="29dp"
-        android:layout_marginRight="5dp"
-        android:fontFamily="@font/g_bold"
-        android:text="Sonic: The HedgeHog"
-        android:textAlignment="center"
-        android:textSize="25sp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true"
-        android:gravity="center_horizontal" />
+        <TextView
+            android:id="@+id/tv_movietitle"
+            android:layout_width="358dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginEnd="29dp"
+            android:layout_marginRight="5dp"
+            android:fontFamily="@font/g_bold"
+            android:gravity="center_horizontal"
+            android:text="Sonic: The HedgeHog"
+            android:textAlignment="center"
+            android:textColor="#DAD3D3"
+            android:textSize="25sp" />
         
     </RelativeLayout>
     
@@ -56,24 +59,26 @@
         app:layout_constraintBottom_toTopOf="@+id/textView2"
         app:layout_constraintStart_toStartOf="parent">
 
-    <TextView
-        android:id="@+id/v1"
-        android:layout_width="359dp"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/g_bold"
-        android:text="Kuala Lumpur - Mid Valley Megamall"
-        android:textAlignment="center"
-        android:gravity="center_horizontal" />
+        <TextView
+            android:id="@+id/v1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/g_bold"
+            android:gravity="center_horizontal"
+            android:text="Kuala Lumpur - Mid Valley Megamall"
+            android:textAlignment="center"
+            android:textColor="#AAA4A4" />
 
-    <TextView
-        android:id="@+id/v2"
-        android:fontFamily="@font/g_bold"
-        android:layout_width="500dp"
-        android:layout_height="20dp"
-        android:layout_below="@id/v1"
-        android:text="Hall - 2"
-        android:textAlignment="center"
-        android:gravity="center_horizontal" />
+        <TextView
+            android:id="@+id/v2"
+            android:layout_width="500dp"
+            android:layout_height="20dp"
+            android:layout_below="@id/v1"
+            android:fontFamily="@font/g_bold"
+            android:gravity="center_horizontal"
+            android:text="Hall - 2"
+            android:textAlignment="center"
+            android:textColor="#AAA4A4" />
 
         <TextView
             android:id="@+id/tvDate"
@@ -83,15 +88,18 @@
             android:fontFamily="@font/g_bold"
             android:gravity="center_horizontal"
             android:text="Sat 22 Feb, 10:00 PM"
-            android:textAlignment="center" />
+            android:textAlignment="center"
+            android:textColor="#AAA4A4" />
 
     </RelativeLayout>
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="303dp"
-        android:layout_height="15dp"
+        android:layout_width="301dp"
+        android:layout_height="20dp"
         android:background="@drawable/btn_buy_dark"
+        android:backgroundTint="#CD0C9587"
+        android:gravity="center_horizontal"
         android:text="SCREEN"
         android:textAlignment="center"
         android:textColor="@color/white"
@@ -99,8 +107,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
-        android:gravity="center_horizontal" />
+        app:layout_constraintVertical_bias="1.0" />
 
     <RelativeLayout
         android:id="@+id/layoutSeat"
@@ -120,88 +127,91 @@
             android:id="@+id/S1"
             android:layout_width="match_parent"
             android:layout_height="50dp">
+
             <ToggleButton
                 android:id="@+id/button_01"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
                 android:onClick="countIN"
                 android:text="A1"
-                android:layout_marginTop="10dp"
-                android:textOn="A1"
+                android:textColor="#000000"
                 android:textOff="A1"
-                android:layout_marginLeft="15dp"
-                android:textColor="#000000"
-                android:layout_width="45dp"
-                android:layout_height="45dp"/>
+                android:textOn="A1" />
+
             <ToggleButton
-                android:layout_toRightOf="@id/button_01"
                 android:id="@+id/button_02"
-                android:textOn="A2"
-                android:textOff="A2"
-                android:onClick="countIN"
-                android:layout_marginTop="10dp"
-                android:layout_marginLeft="1dp"
-                android:textColor="#000000"
                 android:layout_width="45dp"
-                android:layout_height="45dp"/>
+                android:layout_height="45dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/button_01"
+                android:onClick="countIN"
+                android:textColor="#000000"
+                android:textOff="A2"
+                android:textOn="A2" />
 
             <ToggleButton
                 android:id="@+id/button_03"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="10dp"
                 android:layout_toRightOf="@id/button_02"
+                android:onClick="countIN"
                 android:text=""
-                android:onClick="countIN"
-                android:layout_marginTop="10dp"
-                android:textOn="A3"
+                android:textColor="#000000"
                 android:textOff="A3"
-                android:textColor="#000000"
-                android:layout_marginLeft="1dp"
-                android:layout_width="45dp"
-                android:layout_height="45dp"/>
+                android:textOn="A3" />
+
             <ToggleButton
-                android:layout_toRightOf="@id/button_03"
                 android:id="@+id/button_04"
-                android:textOn="A4"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/button_03"
                 android:onClick="countIN"
+                android:textColor="#000000"
                 android:textOff="A4"
-                android:textColor="#000000"
-                android:layout_marginTop="10dp"
-                android:layout_marginLeft="1dp"
-                android:layout_width="45dp"
-                android:layout_height="45dp"/>
+                android:textOn="A4" />
 
             <ToggleButton
-                android:layout_toRightOf="@id/button_04"
                 android:id="@+id/button_05"
-                android:textOn="A5"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/button_04"
+                android:onClick="countIN"
+                android:textColor="#000000"
                 android:textOff="A5"
-                android:onClick="countIN"
-                android:layout_marginTop="10dp"
-                android:layout_marginLeft="1dp"
-                android:textColor="#000000"
-                android:layout_width="45dp"
-                android:layout_height="45dp"/>
+                android:textOn="A5" />
 
             <ToggleButton
-                android:layout_toRightOf="@id/button_05"
                 android:id="@+id/button_06"
-                android:textOn="A6"
-                android:textOff="A6"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/button_05"
                 android:onClick="countIN"
                 android:textColor="#000000"
-                android:layout_marginTop="10dp"
-                android:layout_marginLeft="1dp"
-                android:layout_width="45dp"
-                android:layout_height="45dp"/>
+                android:textOff="A6"
+                android:textOn="A6" />
 
             <ToggleButton
-                android:layout_toRightOf="@id/button_06"
                 android:id="@+id/button_07"
-                android:textOn="A7"
-                android:onClick="countIN"
-                android:textOff="A7"
-                android:textColor="#000000"
-                android:layout_marginTop="10dp"
-                android:layout_marginLeft="1dp"
                 android:layout_width="45dp"
-                android:layout_height="45dp"/>
+                android:layout_height="45dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/button_06"
+                android:onClick="countIN"
+                android:textColor="#000000"
+                android:textOff="A7"
+                android:textOn="A7" />
 
             <ToggleButton
                 android:id="@+id/button_08"
@@ -734,69 +744,77 @@
     <RelativeLayout
         android:layout_width="412dp"
         android:layout_height="64dp"
+        android:layout_marginTop="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/layoutSeat"
-        app:layout_constraintVertical_bias="0.0">
+        app:layout_constraintTop_toBottomOf="@+id/layoutSeat">
 
-    </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="11dp"
+            android:background="#ffff00">
 
-    <RelativeLayout
-        android:layout_width="417dp"
-        android:layout_height="50dp"
-        android:background="#ffff00"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/layoutSeat"
-        app:layout_constraintVertical_bias="0.0">
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="207dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="9dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:fontFamily="@font/g_bold"
+                android:text="Seat has been taken:"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
 
-        <TextView
-            android:id="@+id/text"
-            android:layout_width="252dp"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/g_bold"
-            android:text="Seat has been taken:"
-            android:textColor="@color/black"
-            android:textSize="20sp" />
+            <TextView
+                android:id="@+id/value"
+                android:layout_width="28dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="11dp"
+                android:layout_marginTop="15dp"
+                android:layout_toRightOf="@+id/text"
+                android:fontFamily="@font/g_bold"
+                android:text="0"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
 
-        <TextView
-            android:layout_toRightOf="@+id/text"
-            android:id="@+id/value"
-            android:layout_width="20dp"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/g_bold"
-            android:text="0"
-            android:textColor="@color/black"
-            android:textSize="20sp" />
+            <Button
+                android:id="@+id/clear"
+                android:layout_width="71dp"
+                android:layout_height="32dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="38dp"
+                android:layout_marginBottom="9dp"
+                android:background="@drawable/btn_buy_dark"
+                android:onClick="countClear"
+                android:text="CLEAR"
+                android:textColor="#ffff00" />
 
-        <Button
-            android:id="@+id/clear"
-            android:layout_width="70dp"
-            android:layout_height="50dp"
-            android:layout_marginLeft="30dp"
-            android:text="CLEAR"
-            android:textColor="#ffff00"
-            android:onClick="countClear"
-            android:background="@drawable/btn_buy_dark"
-            android:layout_toRightOf="@+id/value"/>
-
+        </RelativeLayout>
     </RelativeLayout>
 
     <Button
+        android:id="@+id/confirm"
+        android:layout_width="193dp"
+        android:layout_height="54dp"
         android:layout_gravity="end|bottom"
         android:layout_margin="10dp"
+        android:background="@drawable/btn_buy_dark"
+        android:fontFamily="@font/g_bold"
         android:paddingLeft="20dp"
         android:paddingRight="20dp"
-        android:fontFamily="@font/g_bold"
-        android:textSize="14dp"
-        android:textColor="#ffff00"
-        android:id="@+id/confirm"
-        android:layout_width="353dp"
-        android:layout_height="82dp"
         android:text="Confirm"
-        android:background="@drawable/btn_buy_dark"
+        android:textColor="#ffff00"
+        android:textSize="14dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -809,11 +827,12 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/g_bold"
         android:text="Seats(s)"
+        android:textColor="#AAA4A4"
         app:layout_constraintBottom_toTopOf="@+id/textView2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.045"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/relativeLayout"
         app:layout_constraintVertical_bias="0.0" />
-    
+
 </androidx.constraintlayout.widget.ConstraintLayout>
