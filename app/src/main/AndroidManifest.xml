@@ -26,12 +26,9 @@
         <activity android:name=".confirm_order" />
         <activity android:name=".booking_food" />
         <activity android:name=".booking_seat" />
-        <activity android:name=".feedback" />
-        <activity android:name=".bookinginfo" />
         <activity android:name=".showingmovie" />
         <activity android:name=".comingsoonmovie2" />
         <activity android:name=".comingsoonmovie" />
-        <activity android:name=".viewmenu" />
         <activity android:name=".changeprofile" />
         <activity android:name=".changepassword" />
         <activity android:name=".activity_viewprofile" />

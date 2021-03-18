@@ -24,77 +24,80 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:background="#FFFFFF"
+            android:backgroundTint="#FBC02D"
             android:orientation="vertical">
 
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
                 android:id="@+id/movieTitle"
-                android:textColor="@color/black"
-                android:fontFamily="@font/g_bold"
-                android:textSize="20dp"
-                android:text="Joker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
                 android:layout_marginTop="10dp"
-                android:layout_marginLeft="20dp"/>
+                android:fontFamily="@font/g_bold"
+                android:text="Joker"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
                 android:id="@+id/movieRating"
-                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
                 android:fontFamily="@font/g_bold"
-                android:textSize="18dp"
                 android:text="7/10"
-                android:layout_marginTop="5dp"
-                android:layout_marginLeft="20dp"/>
+                android:textColor="@color/black"
+                android:textSize="18dp" />
 
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
                 android:id="@+id/movieReleaseDate"
-                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
                 android:fontFamily="@font/g_bold"
-                android:textSize="18dp"
                 android:text="11/11/19"
-                android:layout_marginTop="5dp"
-                android:layout_marginLeft="20dp"/>
+                android:textColor="@color/black"
+                android:textSize="18dp" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColor="@color/black"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
                 android:fontFamily="@font/g_bold"
-                android:textSize="18dp"
                 android:text="Summary"
-                android:layout_marginTop="5dp"
-                android:layout_marginLeft="20dp"/>
+                android:textColor="@color/black"
+                android:textSize="18dp" />
 
             <TextView
+                android:id="@+id/movieDesc"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/movieDesc"
-                android:textColor="@color/black"
-                android:fontFamily="@font/g_light"
-                android:textStyle="bold"
-                android:textSize="18dp"
-                android:text="Movie Desc"
+                android:layout_marginLeft="25dp"
                 android:layout_marginTop="5dp"
-                android:layout_marginLeft="25dp"/>
+                android:fontFamily="@font/g_light"
+                android:text="Movie Desc"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="bold" />
 
 
             <Button
+                android:id="@+id/btnBuyTicket"
                 android:layout_width="wrap_content"
                 android:layout_height="40dp"
-                android:layout_marginTop="10dp"
                 android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/btn_buy_dark"
+                android:fontFamily="@font/g_bold"
                 android:paddingLeft="20dp"
                 android:paddingRight="20dp"
-                android:fontFamily="@font/g_bold"
-                android:background="@drawable/btn_buy_dark"
                 android:text="Buy Ticket"
-                android:textSize="14dp"
                 android:textAllCaps="false"
-                android:textColor="#FFFF00"
-                android:id="@+id/btnBuyTicket"/>
+                android:textColor="#FBC02D"
+                android:textSize="14dp" />
 
 
         </LinearLayout>

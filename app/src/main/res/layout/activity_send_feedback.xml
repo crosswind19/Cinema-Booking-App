@@ -4,29 +4,37 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FBC02D"
     android:orientation="vertical"
     tools:context=".sendFeedback">
 
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/g_bold"
+        android:text="Feedback Form"
+        android:textSize="36sp" />
     <EditText
+        android:id="@+id/susername"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:id="@+id/susername"
-        android:hint="Username"/>
+        android:hint="Username" />
 
     <EditText
+        android:id="@+id/sfeedback"
         android:layout_width="match_parent"
         android:layout_height="300dp"
-        android:id="@+id/sfeedback"
-        android:hint="Feedback"/>
+        android:hint="Feedback" />
 
     <Button
+        android:id="@+id/btn_sfeedback"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/btn_sfeedback"
-        android:text="Send Feedback"/>
-
+        android:backgroundTint="#000000"
+        android:text="Send Feedback"
+        android:textColor="#FBC02D" />
 
 
 </LinearLayout>

@@ -26,7 +26,7 @@ public class payment extends AppCompatActivity {
         cash = (Button)findViewById(R.id.cash);
         card = (Button)findViewById(R.id.card);
 
-        card.setEnabled(false);
+//        card.setEnabled(false);
 
         card.setOnClickListener(new View.OnClickListener() {
             @Override

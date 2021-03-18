@@ -181,8 +181,10 @@
         android:id="@+id/btn_buy"
         android:layout_width="141dp"
         android:layout_height="64dp"
+        android:background="#000000"
         android:padding="20dp"
         android:text="BUY"
+        android:textColor="#FFFF00"
         android:textSize="20dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -207,56 +209,52 @@
         app:layout_constraintVertical_bias="0.811" />
 
     <Button
+        android:id="@+id/buttonadd1"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:layout_marginEnd="140dp"
-        android:text="+"
-        android:id="@+id/buttonadd1"
+        android:layout_marginEnd="124dp"
         android:onClick="food1_inc"
+        android:text="+"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.358"
-        android:layout_marginRight="140dp" />
+        app:layout_constraintVertical_bias="0.358" />
 
     <Button
         android:id="@+id/buttonmin2"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:layout_marginEnd="88dp"
+        android:layout_marginEnd="72dp"
         android:onClick="food2_dec"
         android:text="-"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.683"
-        android:layout_marginRight="88dp" />
+        app:layout_constraintVertical_bias="0.683" />
 
     <Button
         android:id="@+id/buttonadd2"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:layout_marginEnd="140dp"
+        android:layout_marginEnd="124dp"
         android:onClick="food2_inc"
         android:text="+"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.683"
-        android:layout_marginRight="140dp" />
+        app:layout_constraintVertical_bias="0.683" />
 
     <Button
         android:id="@+id/buttonmin1"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:layout_marginEnd="88dp"
+        android:layout_marginEnd="72dp"
         android:onClick="food1_dec"
         android:text="-"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.358"
-        android:layout_marginRight="88dp" />
+        app:layout_constraintVertical_bias="0.358" />
 
     <TextView
         android:id="@+id/totalfood"

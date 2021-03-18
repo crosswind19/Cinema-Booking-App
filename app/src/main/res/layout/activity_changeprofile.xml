@@ -10,6 +10,7 @@
         android:id="@+id/constraintLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="#FBC02D"
         tools:context=".activity_viewprofile"
         tools:layout_editor_absoluteX="48dp"
         tools:layout_editor_absoluteY="0dp">
@@ -135,7 +136,9 @@
             android:id="@+id/btn_edit"
             android:layout_width="204dp"
             android:layout_height="48dp"
+            android:backgroundTint="#000000"
             android:text="Upload and Save"
+            android:textColor="#FBC02D"
             android:textSize="14sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
