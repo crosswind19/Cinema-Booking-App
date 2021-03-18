@@ -2,6 +2,7 @@ package com.example.groupproject;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
@@ -37,19 +38,21 @@ public class changepassword extends AppCompatActivity {
         reset.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String userPasswordNew = newPassword.getText().toString();
-                firebaseUser.updatePassword(userPasswordNew).addOnCompleteListener(new OnCompleteListener<Void>() {
-                    @Override
-                    public void onComplete(@NonNull Task<Void> task) {
-                        if (task.isSuccessful()){
-                            Toast.makeText(changepassword.this, "Password Changed", Toast.LENGTH_SHORT).show();
-                            startActivity(new Intent(changepassword.this, activity_viewprofile.class));
+                if(fieldCheck()==true){
+                    String userPasswordNew = newPassword.getText().toString();
+                    firebaseUser.updatePassword(userPasswordNew).addOnCompleteListener(new OnCompleteListener<Void>() {
+                        @Override
+                        public void onComplete(@NonNull Task<Void> task) {
+                            if (task.isSuccessful()){
+                                Toast.makeText(changepassword.this, "Password Changed", Toast.LENGTH_SHORT).show();
+                                startActivity(new Intent(changepassword.this, activity_viewprofile.class));
+                            }
+                            else {
+                                Toast.makeText(changepassword.this, "Password Update Failed", Toast.LENGTH_SHORT).show();
+                            }
                         }
-                        else {
-                            Toast.makeText(changepassword.this, "Password Update Failed", Toast.LENGTH_SHORT).show();
-                        }
-                    }
-                });
+                    });
+                }
             }
         });
     }
@@ -61,5 +64,20 @@ public class changepassword extends AppCompatActivity {
                 onBackPressed();
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    private boolean fieldCheck(){
+        if (TextUtils.isEmpty(newPassword.getText().toString())) {
+            newPassword.setError("Password is Required.");
+            return false;
+        }
+        else if (newPassword.getText().toString().length() < 8) {
+            newPassword.setError("Password Must be >= 8 Characters");
+            return false;
+        }
+        else
+        {
+            return true;
+        }
     }
 }

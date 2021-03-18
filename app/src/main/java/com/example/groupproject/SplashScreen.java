@@ -9,7 +9,6 @@ import androidx.appcompat.app.AppCompatActivity;
 public class SplashScreen extends AppCompatActivity {
 
     Handler handler;
-    //FirebaseAuth fAuth = FirebaseAuth.getInstance();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,8 +21,6 @@ public class SplashScreen extends AppCompatActivity {
             public void run() {
                     startActivity(new Intent(getApplicationContext(), activity_login.class));
                     finish();
-
-
             }
         },4000);
     }
