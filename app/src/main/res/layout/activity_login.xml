@@ -25,8 +25,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.547" />
+        app:layout_constraintTop_toBottomOf="@+id/textView33"
+        app:layout_constraintVertical_bias="0.084" />
 
     <EditText
         android:id="@+id/tv_password"
@@ -53,7 +53,7 @@
         android:layout_width="98dp"
         android:layout_height="53dp"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="92dp"
+        android:layout_marginTop="36dp"
         android:layout_marginEnd="32dp"
         android:background="#7ACDDFDD"
         android:fontFamily="sans-serif-black"
@@ -66,8 +66,8 @@
 
     <ImageView
         android:id="@+id/IV_logo"
-        android:layout_width="266dp"
-        android:layout_height="258dp"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
         android:layout_marginTop="16dp"
         app:layout_constraintBottom_toTopOf="@+id/tv_Email"
         app:layout_constraintEnd_toEndOf="parent"
@@ -117,9 +117,10 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.382" />
+        app:layout_constraintTop_toBottomOf="@+id/IV_logo"
+        app:layout_constraintVertical_bias="0.012" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

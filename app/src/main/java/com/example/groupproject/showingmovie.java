@@ -3,7 +3,6 @@ package com.example.groupproject;
 import android.app.DatePickerDialog;
 import android.content.Intent;
 import android.os.Bundle;
-import android.text.TextUtils;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -14,7 +13,6 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import java.text.SimpleDateFormat;
@@ -48,7 +46,7 @@ public class showingmovie extends AppCompatActivity{
         next7 = findViewById(R.id.button8);
 
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
-                android.R.layout.simple_list_item_single_choice, moviename);
+                android.R.layout.simple_list_item_1, moviename);
         s1.setAdapter(adapter);
         s1.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override

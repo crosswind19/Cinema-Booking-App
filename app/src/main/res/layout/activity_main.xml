@@ -14,7 +14,6 @@
         android:id="@+id/textView28"
         android:layout_width="236dp"
         android:layout_height="46dp"
-        android:layout_marginTop="228dp"
         android:fontFamily="@font/g_bold"
         android:text="Not Cinema App"
         android:textColor="#E1009688"
@@ -22,7 +21,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView6" />
 
     <TextView
         android:id="@+id/textView29"
@@ -40,12 +39,13 @@
         android:id="@+id/linearLayout"
         android:layout_width="334dp"
         android:layout_height="173dp"
+        android:layout_marginTop="16dp"
         android:orientation="horizontal"
         android:padding="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="326dp">
+        app:layout_constraintTop_toBottomOf="@+id/textView29">
 
         <androidx.cardview.widget.CardView
             android:id="@+id/cv_movieList"
