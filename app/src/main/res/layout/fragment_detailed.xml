@@ -25,7 +25,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="#FFFFFF"
-            android:backgroundTint="#FFFF00"
+            android:backgroundTint="#FBC02D"
             android:orientation="vertical">
 
             <TextView
@@ -96,7 +96,7 @@
                 android:paddingRight="20dp"
                 android:text="Buy Ticket"
                 android:textAllCaps="false"
-                android:textColor="#FFFF00"
+                android:textColor="#FBC02D"
                 android:textSize="14dp" />
 
 

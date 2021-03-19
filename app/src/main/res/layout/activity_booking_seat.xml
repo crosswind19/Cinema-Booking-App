@@ -757,7 +757,7 @@
             android:layout_alignParentTop="true"
             android:layout_marginStart="0dp"
             android:layout_marginTop="11dp"
-            android:background="#ffff00">
+            android:background="#FBC02D">
 
             <TextView
                 android:id="@+id/text"
@@ -813,7 +813,7 @@
         android:paddingLeft="20dp"
         android:paddingRight="20dp"
         android:text="Confirm"
-        android:textColor="#ffff00"
+        android:textColor="#FBC02D"
         android:textSize="14dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

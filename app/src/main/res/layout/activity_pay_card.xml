@@ -31,7 +31,7 @@
         android:layout_height="wrap_content"
         android:backgroundTint="#000000"
         android:text="Back to Home Screen"
-        android:textColor="#FFFF00"
+        android:textColor="#FBC02D"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"

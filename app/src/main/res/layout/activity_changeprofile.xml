@@ -68,19 +68,19 @@
             app:layout_constraintVertical_bias="0.181"
             tools:srcCompat="@tools:sample/avatars" />
 
-        <ImageView
-            android:id="@+id/imageView3"
-            android:layout_width="33dp"
-            android:layout_height="26dp"
-            android:background="#FFFF00"
-            android:backgroundTint="#FFFF00"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.079"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tv_description"
-            app:layout_constraintVertical_bias="0.059"
-            app:srcCompat="@drawable/ic_name" />
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="33dp"
+        android:layout_height="26dp"
+        android:background="#FFFF00"
+        android:backgroundTint="#FBC02D"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.079"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_description"
+        app:layout_constraintVertical_bias="0.059"
+        app:srcCompat="@drawable/ic_name" />
 
         <TextView
             android:id="@+id/tv_name"
@@ -97,19 +97,19 @@
             app:layout_constraintTop_toBottomOf="@+id/tv_description"
             app:layout_constraintVertical_bias="0.06" />
 
-        <ImageView
-            android:id="@+id/iv_email"
-            android:layout_width="33dp"
-            android:layout_height="26dp"
-            android:background="#FFFF00"
-            android:backgroundTint="#FFFF00"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.079"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tv_newname"
-            app:layout_constraintVertical_bias="0.031"
-            app:srcCompat="@drawable/ic_email" />
+    <ImageView
+        android:id="@+id/iv_email"
+        android:layout_width="33dp"
+        android:layout_height="26dp"
+        android:background="#FFFF00"
+        android:backgroundTint="#FBC02D"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.079"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_newname"
+        app:layout_constraintVertical_bias="0.031"
+        app:srcCompat="@drawable/ic_email" />
 
         <TextView
             android:id="@+id/tv_email1"
@@ -126,18 +126,18 @@
             app:layout_constraintTop_toBottomOf="@+id/tv_newname"
             app:layout_constraintVertical_bias="0.036" />
 
-        <ImageView
-            android:id="@+id/iv_phone"
-            android:layout_width="33dp"
-            android:layout_height="26dp"
-            android:background="#FFFF00"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.079"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tv_newemail"
-            app:layout_constraintVertical_bias="0.062"
-            app:srcCompat="@drawable/ic_phone" />
+    <ImageView
+        android:id="@+id/iv_phone"
+        android:layout_width="33dp"
+        android:layout_height="26dp"
+        android:background="#FBC02D"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.079"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_newemail"
+        app:layout_constraintVertical_bias="0.062"
+        app:srcCompat="@drawable/ic_phone" />
 
         <TextView
             android:id="@+id/textView4"
@@ -154,21 +154,21 @@
             app:layout_constraintTop_toBottomOf="@+id/tv_newemail" />
 
 
-        <Button
-            android:id="@+id/btn_edit"
-            android:layout_width="204dp"
-            android:layout_height="48dp"
-            android:backgroundTint="#000000"
-            android:text="Upload and Save"
-            android:textColor="#FFFF00"
-            android:textSize="14sp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.497"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tv_newnum"
-            app:layout_constraintVertical_bias="0.864" />
+    <Button
+        android:id="@+id/btn_edit"
+        android:layout_width="204dp"
+        android:layout_height="48dp"
+        android:backgroundTint="#000000"
+        android:text="Upload and Save"
+        android:textColor="#FBC02D"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_newnum"
+        app:layout_constraintVertical_bias="0.864" />
 
         <EditText
             android:id="@+id/tv_newname"

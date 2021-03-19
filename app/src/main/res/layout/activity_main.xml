@@ -16,7 +16,7 @@
         android:layout_height="46dp"
         android:fontFamily="@font/g_bold"
         android:text="Not Cinema App"
-        android:textColor="#FFFF00"
+        android:textColor="#0097A7"
         android:textSize="30sp"
         android:textStyle="normal|bold|italic"
         app:layout_constraintEnd_toEndOf="parent"
@@ -29,7 +29,7 @@
         android:layout_width="177dp"
         android:layout_height="23dp"
         android:text="Presented By Group 3"
-        android:textColor="#9EFFFF00"
+        android:textColor="#0097A7"
         android:textSize="18sp"
         android:textStyle="italic"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -42,14 +42,14 @@
         android:id="@+id/linearLayout"
         android:layout_width="334dp"
         android:layout_height="174dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="8dp"
         android:background="#00FFFFFF"
         android:orientation="horizontal"
         android:padding="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView29">
+        app:layout_constraintTop_toBottomOf="@+id/textView28">
 
         <androidx.cardview.widget.CardView
             android:id="@+id/cv_movieList"
@@ -63,7 +63,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="#FFFFFF"
-                android:backgroundTint="#FFFF00">
+                android:backgroundTint="#FBC02D">
 
                 <TextView
                     android:id="@+id/tv_searchList"
@@ -82,7 +82,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="75dp"
                     android:layout_marginTop="15dp"
-                    android:backgroundTint="#FFFF00"
+                    android:backgroundTint="#FBC02D"
                     app:srcCompat="@drawable/ic_upcoming" />
 
             </RelativeLayout>
@@ -99,7 +99,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="#FFFF00"
-                android:backgroundTint="#FFFF00">
+                android:backgroundTint="#FBC02D">
 
                 <TextView
                     android:id="@+id/tv_orderListHome"
@@ -146,7 +146,7 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="#FFFF00">
+                android:background="#FBC02D">
 
                 <TextView
                     android:id="@+id/tv_viewProfileHome"
@@ -181,7 +181,7 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="#FFFF00">
+                android:background="#FBC02D">
 
                 <TextView
                     android:id="@+id/tv_sendFeedbackHome"
