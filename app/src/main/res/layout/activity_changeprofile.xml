@@ -13,7 +13,7 @@
         android:background="@drawable/background"
         tools:context=".activity_viewprofile"
         tools:layout_editor_absoluteX="-43dp"
-        tools:layout_editor_absoluteY="-160dp">
+        tools:layout_editor_absoluteY="-160dp"/>
 
         <TextView
             android:id="@+id/tv_resetpassword2"
@@ -36,12 +36,16 @@
             android:id="@+id/tv_newnum"
             android:layout_width="295dp"
             android:layout_height="42dp"
-<<<<<<< HEAD
+            android:backgroundTint="#FFFFFF"
+            android:text="Phone Number"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            tools:layout_editor_absoluteX="30dp"
+            tools:layout_editor_absoluteY="516dp" />
+
+        <HEAD
             android:layout_marginTop="20dp"
             android:backgroundTint="#FFFFFF"
-=======
-            android:layout_marginTop="8dp"
->>>>>>> b6703bf3a8333e5404bf7e6d79b049bdc5d33961
             android:ems="10"
             android:inputType="textPersonName"
             android:text="Phone Number"
@@ -164,12 +168,13 @@
             app:layout_constraintHorizontal_bias="0.497"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tv_newnum"
-            app:layout_constraintVertical_bias="0.443" />
+            app:layout_constraintVertical_bias="0.864" />
 
         <EditText
             android:id="@+id/tv_newname"
             android:layout_width="295dp"
             android:layout_height="42dp"
+            android:layout_marginTop="16dp"
             android:backgroundTint="#FFFFFF"
             android:ems="10"
             android:inputType="textPersonName"
@@ -210,4 +215,3 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-</androidx.constraintlayout.widget.ConstraintLayout>

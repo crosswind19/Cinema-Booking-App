@@ -4,11 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-<<<<<<< HEAD
     android:background="@drawable/background"
-=======
-    android:background="#FDFD96"
->>>>>>> b6703bf3a8333e5404bf7e6d79b049bdc5d33961
     tools:context=".comingsoonmovie">
 
     <TextView
