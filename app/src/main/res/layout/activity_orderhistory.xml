@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FBC02D"
+    android:background="@drawable/background"
     tools:context=".orderhistory"
     android:orientation="vertical">
 
@@ -12,93 +12,120 @@
         android:id="@+id/tv_detail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Order Details"
-        android:textSize="36sp"
+        android:layout_gravity="center"
         android:layout_marginTop="20dp"
-        android:layout_gravity="center"/>
+        android:text="Order Details"
+        android:textColor="#FFFFFF"
+        android:textSize="36sp" />
 
     <TextView
         android:id="@+id/tv_company2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="companyhere"
-        android:textSize="18sp"
+        android:layout_marginLeft="40dp"
         android:layout_marginTop="50dp"
-        android:layout_marginLeft="40dp"/>
+        android:text="companyhere"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
 
     <TextView
         android:id="@+id/tv_movieTitle4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="titlehere"
-        android:textSize="18sp"
+        android:layout_marginLeft="40dp"
         android:layout_marginTop="20dp"
-        android:layout_marginLeft="40dp"/>
+        android:text="titlehere"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
 
     <TextView
         android:id="@+id/tv_date4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="datehere"
-        android:textSize="18sp"
+        android:layout_marginLeft="40dp"
         android:layout_marginTop="20dp"
-        android:layout_marginLeft="40dp"/>
+        android:text="datehere"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
 
     <TextView
         android:id="@+id/tv_time4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="timehere"
-        android:textSize="18sp"
+        android:layout_marginLeft="40dp"
         android:layout_marginTop="20dp"
-        android:layout_marginLeft="40dp"/>
+        android:text="timehere"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
 
     <TextView
         android:id="@+id/tv_seat4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="seathere"
-        android:textSize="18sp"
+        android:layout_marginLeft="40dp"
         android:layout_marginTop="20dp"
-        android:layout_marginLeft="40dp"/>
+        android:text="seathere"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
 
     <TextView
         android:id="@+id/tv_food2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="foodorderhere"
-        android:textSize="18sp"
+        android:layout_marginLeft="40dp"
         android:layout_marginTop="20dp"
-        android:layout_marginLeft="40dp"/>
+        android:text="foodorderhere"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
 
     <TextView
         android:id="@+id/tv_totalprice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="total price here"
-        android:textSize="18sp"
+        android:layout_marginLeft="40dp"
         android:layout_marginTop="20dp"
-        android:layout_marginLeft="40dp"/>
+        android:text="total price here"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="352dp"
         android:layout_marginTop="40dp">
 
         <Button
             android:id="@+id/btn_deleteorder"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="49dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="68dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="181dp"
+            android:layout_marginEnd="212dp"
+            android:layout_marginBottom="122dp"
+            android:backgroundTint="#000000"
             android:text="cancel order"
-            android:layout_marginLeft="30dp"/>
+            android:textColor="#FFFF00" />
 
         <Button
             android:id="@+id/btn_printreceipt"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="49dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="232dp"
+            android:layout_marginTop="180dp"
+            android:layout_marginEnd="56dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="123dp"
+            android:backgroundTint="#000000"
             android:text="print receipt"
-            android:layout_alignParentRight="true"
-            android:layout_marginRight="30dp"/>
+            android:textColor="#FFFF00" />
 
     </RelativeLayout>
 
