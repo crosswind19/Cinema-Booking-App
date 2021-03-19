@@ -22,6 +22,7 @@ public class changepassword extends AppCompatActivity {
     private Button reset;
     private EditText newPassword;
     private FirebaseUser firebaseUser;
+    private FirebaseAuth fAuth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,7 +39,7 @@ public class changepassword extends AppCompatActivity {
         reset.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(fieldCheck()==true){
+                if(fieldCheck()){
                     String userPasswordNew = newPassword.getText().toString();
                     firebaseUser.updatePassword(userPasswordNew).addOnCompleteListener(new OnCompleteListener<Void>() {
                         @Override
@@ -66,12 +67,13 @@ public class changepassword extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    private boolean fieldCheck(){
-        if (TextUtils.isEmpty(newPassword.getText().toString())) {
+    public boolean fieldCheck(){
+        String checkPassword = newPassword.getText().toString();
+        if (TextUtils.isEmpty(checkPassword)) {
             newPassword.setError("Password is Required.");
             return false;
         }
-        else if (newPassword.getText().toString().length() < 8) {
+        else if (checkPassword.length() < 8) {
             newPassword.setError("Password Must be >= 8 Characters");
             return false;
         }

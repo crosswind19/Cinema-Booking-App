@@ -12,8 +12,8 @@
         android:layout_height="match_parent"
         android:background="#FBC02D"
         tools:context=".activity_viewprofile"
-        tools:layout_editor_absoluteX="48dp"
-        tools:layout_editor_absoluteY="0dp">
+        tools:layout_editor_absoluteX="-40dp"
+        tools:layout_editor_absoluteY="93dp">
 
         <TextView
             android:id="@+id/tv_resetpassword2"
@@ -61,6 +61,7 @@
             android:layout_width="33dp"
             android:layout_height="26dp"
             android:background="#FFFFFF"
+            android:backgroundTint="#FBC02D"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.079"
@@ -156,7 +157,7 @@
             android:inputType="textPersonName"
             android:text="Full Name"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.258"
+            app:layout_constraintHorizontal_bias="0.285"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tv_name" />
 
@@ -164,12 +165,12 @@
             android:id="@+id/tv_newemail"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="20dp"
             android:text="Email"
             android:textColor="#0C0202"
             android:textSize="18sp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.083"
+            app:layout_constraintHorizontal_bias="0.08"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tv_email1" />
 
