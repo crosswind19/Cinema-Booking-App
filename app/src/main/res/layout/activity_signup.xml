@@ -4,7 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+<<<<<<< HEAD
     android:background="@drawable/background"
+=======
+    android:background="@drawable/signupbackground"
+>>>>>>> b6703bf3a8333e5404bf7e6d79b049bdc5d33961
     tools:context=".activity_signup">
 
     <TextView
@@ -12,8 +16,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="ALREADY HAVE AN ACCOUNT? LOGIN"
+<<<<<<< HEAD
         android:textColor="#9AFFFF00"
         android:textColorHighlight="#FFFF00"
+=======
+        android:textColor="@color/ic_launcher_background"
+        android:textColorHighlight="#FFFFFF"
+>>>>>>> b6703bf3a8333e5404bf7e6d79b049bdc5d33961
         android:textSize="14sp"
         android:textStyle="bold|italic"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -27,7 +36,11 @@
         android:id="@+id/iv_userProfile"
         android:layout_width="140dp"
         android:layout_height="140dp"
+<<<<<<< HEAD
         android:background="#75FFFF00"
+=======
+        android:tint="@color/ic_launcher_background"
+>>>>>>> b6703bf3a8333e5404bf7e6d79b049bdc5d33961
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -44,8 +57,13 @@
         android:ems="10"
         android:hint="Full Name"
         android:inputType="textPersonName"
+<<<<<<< HEAD
         android:textColor="#FFFFFF"
         android:textColorHint="#9C9999"
+=======
+        android:textColor="@color/ic_launcher_background"
+        android:textColorHint="@color/ic_launcher_background"
+>>>>>>> b6703bf3a8333e5404bf7e6d79b049bdc5d33961
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -62,8 +80,13 @@
         android:ems="10"
         android:hint="Username"
         android:inputType="textPersonName"
+<<<<<<< HEAD
         android:textColor="#FFFEFE"
         android:textColorHint="#9C9999"
+=======
+        android:textColor="@color/ic_launcher_background"
+        android:textColorHint="@color/ic_launcher_background"
+>>>>>>> b6703bf3a8333e5404bf7e6d79b049bdc5d33961
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -80,8 +103,13 @@
         android:ems="10"
         android:hint="Email"
         android:inputType="textEmailAddress"
+<<<<<<< HEAD
         android:textColor="#FFFFFF"
         android:textColorHint="#9C9999"
+=======
+        android:textColor="@color/ic_launcher_background"
+        android:textColorHint="@color/ic_launcher_background"
+>>>>>>> b6703bf3a8333e5404bf7e6d79b049bdc5d33961
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -98,8 +126,13 @@
         android:ems="10"
         android:hint="Phone No."
         android:inputType="phone"
+<<<<<<< HEAD
         android:textColor="#FFFFFF"
         android:textColorHint="#9C9999"
+=======
+        android:textColor="@color/ic_launcher_background"
+        android:textColorHint="@color/ic_launcher_background"
+>>>>>>> b6703bf3a8333e5404bf7e6d79b049bdc5d33961
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -116,8 +149,13 @@
         android:ems="10"
         android:hint="Password"
         android:inputType="textPassword"
+<<<<<<< HEAD
         android:textColor="#FFFFFF"
         android:textColorHint="#9C9999"
+=======
+        android:textColor="@color/ic_launcher_background"
+        android:textColorHint="@color/ic_launcher_background"
+>>>>>>> b6703bf3a8333e5404bf7e6d79b049bdc5d33961
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -131,7 +169,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="SIGN UP FOR EASIER BOOKING TICKET"
+<<<<<<< HEAD
         android:textColor="#FFFFFF"
+=======
+        android:textColor="@color/ic_launcher_background"
+>>>>>>> b6703bf3a8333e5404bf7e6d79b049bdc5d33961
         android:textColorHighlight="#FFFFFF"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -146,7 +188,11 @@
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-smallcaps"
         android:text="WELCOME"
+<<<<<<< HEAD
         android:textColor="#F8F8F8"
+=======
+        android:textColor="@color/ic_launcher_background"
+>>>>>>> b6703bf3a8333e5404bf7e6d79b049bdc5d33961
         android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -179,8 +225,12 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
         android:text="Click to upload image"
+<<<<<<< HEAD
         android:textColor="#9C9999"
         android:textStyle="bold|italic"
+=======
+        android:textColor="@color/ic_launcher_background"
+>>>>>>> b6703bf3a8333e5404bf7e6d79b049bdc5d33961
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/iv_userProfile" />
