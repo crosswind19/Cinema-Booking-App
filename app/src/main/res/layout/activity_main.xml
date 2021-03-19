@@ -16,8 +16,9 @@
         android:layout_height="46dp"
         android:fontFamily="@font/g_bold"
         android:text="Not Cinema App"
-        android:textColor="#E1009688"
+        android:textColor="#FFFF00"
         android:textSize="30sp"
+        android:textStyle="normal|bold|italic"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
@@ -25,10 +26,12 @@
 
     <TextView
         android:id="@+id/textView29"
-        android:layout_width="149dp"
-        android:layout_height="25dp"
+        android:layout_width="177dp"
+        android:layout_height="23dp"
         android:text="Presented By Group 3"
-        android:textColor="#A103AC9C"
+        android:textColor="#9EFFFF00"
+        android:textSize="18sp"
+        android:textStyle="italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -38,8 +41,9 @@
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="334dp"
-        android:layout_height="173dp"
-        android:layout_marginTop="16dp"
+        android:layout_height="174dp"
+        android:layout_marginTop="48dp"
+        android:background="#00FFFFFF"
         android:orientation="horizontal"
         android:padding="10dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -58,8 +62,8 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="#002B0808"
-                android:backgroundTint="#19D86464">
+                android:background="#FFFFFF"
+                android:backgroundTint="#FFFF00">
 
                 <TextView
                     android:id="@+id/tv_searchList"
@@ -70,6 +74,7 @@
                     android:layout_marginTop="10dp"
                     android:fontFamily="@font/g_bold"
                     android:text="Movie List"
+                    android:textColor="#000000"
                     android:textSize="22sp" />
 
                 <ImageView
@@ -77,6 +82,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="75dp"
                     android:layout_marginTop="15dp"
+                    android:backgroundTint="#FFFF00"
                     app:srcCompat="@drawable/ic_upcoming" />
 
             </RelativeLayout>
@@ -91,7 +97,9 @@
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:background="#FFFF00"
+                android:backgroundTint="#FFFF00">
 
                 <TextView
                     android:id="@+id/tv_orderListHome"
@@ -102,6 +110,7 @@
                     android:layout_marginTop="10dp"
                     android:fontFamily="@font/g_bold"
                     android:text="Order List"
+                    android:textColor="#000000"
                     android:textSize="22sp" />
 
                 <ImageView
@@ -110,6 +119,7 @@
                     android:layout_height="75dp"
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="15dp"
+                    android:backgroundTint="#BD2424"
                     app:srcCompat="@drawable/ic_book" />
             </RelativeLayout>
         </androidx.cardview.widget.CardView>
@@ -119,6 +129,7 @@
     <LinearLayout
         android:layout_width="333dp"
         android:layout_height="173dp"
+        android:layout_marginTop="4dp"
         android:orientation="horizontal"
         android:padding="10dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -135,7 +146,7 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="#FFFFFF">
+                android:background="#FFFF00">
 
                 <TextView
                     android:id="@+id/tv_viewProfileHome"
@@ -146,6 +157,7 @@
                     android:layout_marginTop="10dp"
                     android:fontFamily="@font/g_bold"
                     android:text="View Profile"
+                    android:textColor="#000000"
                     android:textSize="22sp" />
 
                 <ImageView
@@ -168,7 +180,8 @@
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:background="#FFFF00">
 
                 <TextView
                     android:id="@+id/tv_sendFeedbackHome"
@@ -179,6 +192,7 @@
                     android:layout_marginTop="10dp"
                     android:fontFamily="@font/g_bold"
                     android:text="Feedback"
+                    android:textColor="#000000"
                     android:textSize="20sp" />
 
                 <ImageView

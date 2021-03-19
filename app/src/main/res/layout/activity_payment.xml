@@ -4,72 +4,80 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FBC02D"
+    android:background="@drawable/background"
     tools:context=".payment">
 
     <EditText
         android:id="@+id/email"
         android:layout_width="330dp"
         android:layout_height="50dp"
-        android:background="#ffffff"
+        android:background="#2CFFFF00"
         android:ems="10"
         android:fontFamily="@font/g_bold"
-        android:hint="EMAIL"
+        android:hint="   EMAIL"
         android:inputType="textEmailAddress"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.296"
+        app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.377" />
+        app:layout_constraintVertical_bias="0.443" />
 
     <EditText
         android:id="@+id/cardNumber"
         android:layout_width="330dp"
         android:layout_height="50dp"
-        android:background="#ffffff"
+        android:background="#2CFFFF00"
         android:ems="10"
         android:fontFamily="@font/g_bold"
-        android:hint="CARD NUMBER"
+        android:hint="   CARD NUMBER"
         android:inputType="textEmailAddress"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.296"
+        app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.471" />
+        app:layout_constraintVertical_bias="0.54" />
 
     <EditText
         android:id="@+id/date"
         android:layout_width="179dp"
         android:layout_height="44dp"
-        android:background="#ffffff"
+        android:background="#2CFFFF00"
         android:ems="10"
         android:fontFamily="@font/g_bold"
-        android:hint="DATE"
+        android:hint="   DATE"
         android:inputType="date"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.103"
+        app:layout_constraintHorizontal_bias="0.172"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.557" />
+        app:layout_constraintVertical_bias="0.631" />
 
     <EditText
         android:id="@+id/ccv"
         android:layout_width="121dp"
         android:layout_height="44dp"
-        android:background="#ffffff"
+        android:background="#2CFFFF00"
         android:ems="10"
         android:fontFamily="@font/g_bold"
-        android:hint="CCV"
+        android:hint="   CCV"
         android:inputType="number"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.803"
+        app:layout_constraintHorizontal_bias="0.858"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.557" />
+        app:layout_constraintVertical_bias="0.631" />
 
     <Button
         android:id="@+id/cash"
@@ -79,13 +87,13 @@
         android:fontFamily="@font/g_bold"
         android:gravity="center"
         android:text="PROCEED WITH CASH"
-        android:textColor="#FFD56D"
+        android:textColor="#FFFF00"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.454"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.897" />
+        app:layout_constraintVertical_bias="0.855" />
 
     <Button
         android:id="@+id/card"
@@ -95,45 +103,49 @@
         android:fontFamily="@font/g_bold"
         android:gravity="center"
         android:text="PROCEED WITH CARD"
-        android:textColor="#FFD56D"
+        android:textColor="#FFFF00"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.454"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.989" />
+        app:layout_constraintVertical_bias="0.948" />
 
     <EditText
         android:id="@+id/phoneNumber"
         android:layout_width="330dp"
         android:layout_height="50dp"
-        android:background="#ffffff"
+        android:background="#2CFFFF00"
         android:ems="10"
         android:fontFamily="@font/g_bold"
-        android:hint="PHONE NUMBER"
+        android:hint="   PHONE NUMBER"
         android:inputType="textPersonName"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.296"
+        app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.283" />
+        app:layout_constraintVertical_bias="0.345" />
 
     <EditText
         android:id="@+id/NAME"
         android:layout_width="330dp"
         android:layout_height="50dp"
-        android:background="#ffffff"
+        android:background="#2CFFFF00"
         android:ems="10"
         android:fontFamily="@font/g_bold"
-        android:hint="NAME"
+        android:hint="   NAME"
         android:inputType="textPersonName"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.296"
+        app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.171" />
+        app:layout_constraintVertical_bias="0.246" />
 
     <TextView
         android:id="@+id/payment"
@@ -141,6 +153,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/g_bold"
         android:text="PAYMENT DETAILS"
+        android:textColor="#FFFFFF"
         android:textSize="80px"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

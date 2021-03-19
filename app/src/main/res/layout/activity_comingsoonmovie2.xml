@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".comingsoonmovie2">
+    tools:context=".comingsoonmovie2"
+    android:background="@drawable/background">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -14,6 +15,7 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:background="#FDFD96"
             tools:context=".comingsoonmovie"
             tools:layout_editor_absoluteX="-108dp"
             tools:layout_editor_absoluteY="0dp">
@@ -23,6 +25,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="RM ----"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#FFFFFF"
                 android:textSize="18sp"
                 android:textStyle="italic"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -38,6 +42,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="104dp"
                 android:text="RM ----"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#FFFFFF"
                 android:textSize="18sp"
                 android:textStyle="italic"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -109,6 +115,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="RM ----"
+                android:textColor="#FFFFFF"
+                android:textColorHighlight="#FFFFFF"
+                android:textColorHint="#FFFFFF"
                 android:textSize="18sp"
                 android:textStyle="italic"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -123,6 +132,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Coming Soon at June 2021"
+                android:textColor="#B1ACAC"
                 android:textSize="30sp"
                 android:textStyle="italic"
                 app:layout_constraintBottom_toBottomOf="parent"
