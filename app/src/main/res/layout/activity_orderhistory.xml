@@ -95,24 +95,25 @@
 
         <Button
             android:id="@+id/btn_deleteorder"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
             android:layout_marginStart="63dp"
-            android:layout_marginLeft="30dp"
-            android:layout_marginTop="39dp"
+            android:layout_marginLeft="33dp"
+            android:layout_marginTop="34dp"
             android:layout_marginEnd="217dp"
-            android:layout_marginBottom="264dp"
+            android:layout_marginBottom="269dp"
             android:backgroundTint="#000000"
             android:text="cancel order"
-            android:textColor="#FBC02D" />
+            android:textColor="#FBC02D"
+            android:textSize="10sp" />
 
         <Button
             android:id="@+id/btn_printreceipt"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
@@ -125,7 +126,8 @@
             android:layout_marginBottom="270dp"
             android:backgroundTint="#000000"
             android:text="print receipt"
-            android:textColor="#FBC02D" />
+            android:textColor="#FBC02D"
+            android:textSize="10sp" />
 
     </RelativeLayout>
 

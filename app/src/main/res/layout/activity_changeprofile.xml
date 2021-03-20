@@ -12,8 +12,8 @@
         android:layout_height="match_parent"
         android:background="@drawable/background"
         tools:context=".activity_viewprofile"
-        tools:layout_editor_absoluteX="-43dp"
-        tools:layout_editor_absoluteY="-160dp"/>
+        tools:layout_editor_absoluteX="-40dp"
+        tools:layout_editor_absoluteY="93dp">
 
         <TextView
             android:id="@+id/tv_resetpassword2"
@@ -36,23 +36,13 @@
             android:id="@+id/tv_newnum"
             android:layout_width="295dp"
             android:layout_height="42dp"
-            android:backgroundTint="#FFFFFF"
-            android:text="Phone Number"
-            android:textColor="#FFFFFF"
-            android:textColorHint="#FFFFFF"
-            tools:layout_editor_absoluteX="30dp"
-            tools:layout_editor_absoluteY="516dp" />
-
-        <HEAD
             android:layout_marginTop="20dp"
-            android:backgroundTint="#FFFFFF"
             android:ems="10"
             android:inputType="textPersonName"
             android:text="Phone Number"
             android:textColor="#FFFFFF"
-            android:textColorHint="#FFFFFF"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.637"
+            app:layout_constraintHorizontal_bias="0.258"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
@@ -68,28 +58,27 @@
             app:layout_constraintVertical_bias="0.181"
             tools:srcCompat="@tools:sample/avatars" />
 
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="33dp"
-        android:layout_height="26dp"
-        android:background="#FFFF00"
-        android:backgroundTint="#FBC02D"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.079"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_description"
-        app:layout_constraintVertical_bias="0.059"
-        app:srcCompat="@drawable/ic_name" />
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="33dp"
+            android:layout_height="26dp"
+            android:background="#FFFFFF"
+            android:backgroundTint="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.079"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_description"
+            app:layout_constraintVertical_bias="0.059"
+            app:srcCompat="@drawable/ic_name" />
 
         <TextView
             android:id="@+id/tv_name"
             android:layout_width="97dp"
             android:layout_height="28dp"
             android:text="Full Name"
-            android:textColor="#959292"
+            android:textColor="#FFFCFC"
             android:textSize="18sp"
-            android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.043"
@@ -97,28 +86,27 @@
             app:layout_constraintTop_toBottomOf="@+id/tv_description"
             app:layout_constraintVertical_bias="0.06" />
 
-    <ImageView
-        android:id="@+id/iv_email"
-        android:layout_width="33dp"
-        android:layout_height="26dp"
-        android:background="#FFFF00"
-        android:backgroundTint="#FBC02D"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.079"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_newname"
-        app:layout_constraintVertical_bias="0.031"
-        app:srcCompat="@drawable/ic_email" />
+        <ImageView
+            android:id="@+id/iv_email"
+            android:layout_width="33dp"
+            android:layout_height="26dp"
+            android:background="#FDFDFD"
+            android:backgroundTint="#FBFBFB"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.079"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_newname"
+            app:layout_constraintVertical_bias="0.031"
+            app:srcCompat="@drawable/ic_email" />
 
         <TextView
             android:id="@+id/tv_email1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Email"
-            android:textColor="#959292"
+            android:textColor="#FDFCFC"
             android:textSize="18sp"
-            android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.036"
@@ -126,63 +114,60 @@
             app:layout_constraintTop_toBottomOf="@+id/tv_newname"
             app:layout_constraintVertical_bias="0.036" />
 
-    <ImageView
-        android:id="@+id/iv_phone"
-        android:layout_width="33dp"
-        android:layout_height="26dp"
-        android:background="#FBC02D"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.079"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_newemail"
-        app:layout_constraintVertical_bias="0.062"
-        app:srcCompat="@drawable/ic_phone" />
+        <ImageView
+            android:id="@+id/iv_phone"
+            android:layout_width="33dp"
+            android:layout_height="26dp"
+            android:background="#FFFFFF"
+            android:backgroundTint="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.079"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_newemail"
+            app:layout_constraintVertical_bias="0.062"
+            app:srcCompat="@drawable/ic_phone" />
+
 
         <TextView
             android:id="@+id/textView4"
             android:layout_width="137dp"
             android:layout_height="30dp"
-            android:layout_marginTop="12dp"
+            android:layout_marginTop="16dp"
             android:text="Phone Number"
-            android:textColor="#959292"
+            android:textColor="#FFFFFF"
             android:textSize="18sp"
-            android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.052"
+            app:layout_constraintHorizontal_bias="0.056"
             app:layout_constraintStart_toEndOf="@+id/iv_phone"
             app:layout_constraintTop_toBottomOf="@+id/tv_newemail" />
 
-
-    <Button
-        android:id="@+id/btn_edit"
-        android:layout_width="204dp"
-        android:layout_height="48dp"
-        android:backgroundTint="#000000"
-        android:text="Upload and Save"
-        android:textColor="#FBC02D"
-        android:textSize="14sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_newnum"
-        app:layout_constraintVertical_bias="0.864" />
+        <Button
+            android:id="@+id/btn_edit"
+            android:layout_width="204dp"
+            android:layout_height="48dp"
+            android:backgroundTint="#000000"
+            android:text="Upload and Save"
+            android:textColor="#FBC02D"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_newnum"
+            app:layout_constraintVertical_bias="0.215" />
 
         <EditText
             android:id="@+id/tv_newname"
             android:layout_width="295dp"
             android:layout_height="42dp"
-            android:layout_marginTop="16dp"
-            android:backgroundTint="#FFFFFF"
             android:ems="10"
             android:inputType="textPersonName"
             android:text="Full Name"
             android:textColor="#FFFFFF"
-            android:textColorHint="#FFFFFF"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.258"
+            app:layout_constraintHorizontal_bias="0.285"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tv_name" />
 
@@ -190,13 +175,12 @@
             android:id="@+id/tv_newemail"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
+            android:layout_marginTop="20dp"
             android:text="Email"
             android:textColor="#FFFFFF"
             android:textSize="18sp"
-            android:textStyle="normal"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.201"
+            app:layout_constraintHorizontal_bias="0.08"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tv_email1" />
 
@@ -205,8 +189,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Tap to change profile picture"
-            android:textColor="#FFFFFF"
-            android:textStyle="italic"
+            android:textColor="#ABA1A0A0"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -215,3 +198,4 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
+</androidx.constraintlayout.widget.ConstraintLayout>
